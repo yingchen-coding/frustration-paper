@@ -66,6 +66,11 @@ grounding theory \citep{clark1991grounding}.
 \paragraph{Dialogue breakdown detection.} The DBDC challenge series \citep{higashinaka2016dbdc} annotates
 system turns as breakdowns in chat-oriented dialogue. We use DBDC3 as a contrast corpus: without task goals,
 user repetition barely rises after breakdowns.
+\paragraph{Dialogue state tracking.} Classical dialogue state trackers infer slot--value belief states across
+turns \citep{budzianowski2018multiwoz}. REPAIR is a lightweight, zero-shot alternative focused on \emph{repair
+and grounding state}: rather than training a neural tracker, it pairs surface repair cues with a ledger of
+requested versus delivered items so any off-the-shelf generator can close pending needs without schema-specific
+fine-tuning.
 \paragraph{LLM judges.} LLM judges have known biases \citep{zheng2023judging}; we report one more in task
 dialogue: they reward confident, invented bookings.
 
@@ -132,7 +137,9 @@ constraints are relaxed one at a time (type and amenities first) and the relaxat
 when asked; at stage 4, say what can and cannot be done and offer a human.
 \end{enumerate}
 The reading is appended to the dialogue, together with the system's last turns marked ``do not repeat''.
-Any generator can use it.
+Any generator can use it. Among REPAIR's four components, the repair reader and the escalation policy are
+domain-agnostic; adapting to a new task domain requires only specifying its slot vocabulary and database table
+for the ledger.
 
 \section{Experiments}
 \paragraph{Cases.} From DialMAGE we take every dialogue at the first user turn that is negative and repeats
@@ -151,7 +158,10 @@ via Ollama). A--C have no database; D and E have the rows REPAIR selects.
 the dialogue and the five replies in random order, and score each reply: \emph{resolves} (0 does not, 1
 partly, 2 delivers the need), \emph{give\_up} (a user in this state would likely give up), \emph{repeats},
 and the best reply. In a second pass each judge also sees the database rows for the current request and is
-told that a contradicting fact cannot score 2. An objective check without any model asks whether the reply
+told that a contradicting fact cannot score 2. Across all 500 judged replies per run, the two judge families
+agree within 1 point on \emph{resolves} 96.4\%--100.0\% of the time; fact-checking raises inter-judge
+correlation from $r = 0.73$ to $r = 0.90$ on the 8B run (exact agreement 59.4\% to 85.2\%) and from $r = 0.66$
+to $r = 0.81$ on the Sonnet run. An objective check without any model asks whether the reply
 names a real database entity that satisfies the pending constraints. Differences are paired bootstrap 95\%
 intervals over cases.
 
@@ -236,7 +246,11 @@ resolves: Opus $+0.06$ [$-0.07$, 0.19]; Gemini $+0.12$ [$-0.05$, 0.28]): on the 
 explicit ledger and the database account for the entire gain. However, on the 12 stage-3 cases --- where the
 user shows stronger repair escalation --- D significantly outperforms E on the 8B model: Opus D$-$E $+0.50$
 [0.08, 0.92] (D 1.50 vs.\ E 1.00), Gemini $+0.67$ [0.25, 1.17] (D 1.92 vs.\ E 1.25), and give-ups drop from
-33\% (E) to 0--8\% (D). The escalation-aware policy helps precisely where users are most frustrated.
+33\% (E) to 0--8\% (D). For instance, when a user has asked three times for a 3-star hotel in the east (none
+exists in the database, case DMAGE271\#8), E stalls with ``Let me check if there are any hotels,'' whereas D's
+stage-3 policy immediately delivers the closest real match (Express by Holiday Inn, 2 stars in the east, with
+address and phone), scoring 2 under both judges against 0 for E. The escalation-aware policy helps precisely
+where users are most frustrated.
 
 \paragraph{Judges reward invented bookings.} Without the database, both judges gave full marks to a reply that
 ``booked'' train TR0899 for a Leicester--Cambridge request; in the database TR0899 runs Cambridge--London.
