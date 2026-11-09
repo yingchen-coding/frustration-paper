@@ -121,3 +121,29 @@ Files: `runs/final_llama/summary_gemini*.json`, `runs/final_claude/summary_gemin
 2. No human rating of generated replies; the paper says so in Limitations.
 3. Zenodo DOI 10.5281/zenodo.24077786 points to the version with the unsupported validation claims; a new
    Zenodo version (GitHub release) is needed after the fixes — Ying's decision.
+
+## Result 9 — Fair database baselines (F_lastdb, G_llmdst) + Policy v4 re-grounding (2026-11-09)
+Files: `runs/final_llama_fg/{objective,summary_gemini*}.json`, `runs/final_claude_fg/{objective,summary_gemini*}.json`.
+- **Objective check (`objective.py`, n=87 cases with DB request, no LLM)**:
+  - **Llama 3 8B (`final_llama_fg`, n=100)**: A 23.0% valid (13.8% invalid), B 21.8% (17.2%), C 18.4% (14.9%),
+    **F_lastdb 46.0% valid (35.6% invalid)**, **G_llmdst 42.5% valid (26.4% invalid)**, **D_repair (v4) 62.1% valid
+    (11.5% invalid)**, E 64.4% (12.6%).
+  - **Claude Sonnet (`final_claude_fg`, n=100 for A-F, n=90 for G)**: A 31.0% valid (18.4% invalid), B 43.7% (42.5%),
+    C 52.9% (33.3%), **F_lastdb 50.6% valid (24.1% invalid)**, **G_llmdst 53.8% valid (25.6% invalid)**,
+    **D_repair (v4) 67.8% valid (13.8% invalid)**, E 65.5% (12.6%).
+- **7-Condition Blind Gemini Evaluation (T-Z judged together)**:
+  - **Llama 3 8B (`final_llama_fg`, n=100)**:
+    - Plain judge: A 0.84, B 0.76, C 0.62 (give-up 40%), F_lastdb 1.06 (24%), G_llmdst 0.97 (38%),
+      **D_repair 1.44** [1.28, 1.59] (give-up 16%), E 1.50 (17%).
+      Paired diffs: **D - F +0.38 [0.18, 0.58]**, **D - G +0.47 [0.27, 0.67]**, D - B +0.68 [0.47, 0.90], D - C +0.82 [0.62, 1.00].
+    - Fact-checked judge (`ref`): A 0.43, B 0.39, C 0.33 (give-up 41%), F_lastdb 0.85 (26%), G_llmdst 0.78 (39%),
+      **D_repair 1.44** [1.28, 1.60] (give-up 15%), E 1.46 (16%).
+      Paired diffs: **D - F +0.59 [0.37, 0.80]**, **D - G +0.66 [0.46, 0.87]**, D - B +1.05 [0.85, 1.25], D - C +1.11 [0.91, 1.28].
+  - **Claude Sonnet (`final_claude_fg`, n=90)**:
+    - Plain judge: A 1.20, B 1.53, C 1.72, F_lastdb 1.28 (give-up 23.3%), G_llmdst 1.77 (3.3%),
+      **D_repair 1.81** (give-up **2.2%**), E 1.74 (3.3%). (Policy v4 eliminates the v3 plain-judge gap: D > C even without fact-checking!)
+      Paired diffs: **D - F +0.53 [0.36, 0.71]**, **D - B +0.28 [0.11, 0.44]**, D - C +0.09 [-0.06, 0.23].
+    - Fact-checked judge (`ref`): A 0.92, B 1.01, C 1.12, F_lastdb 1.21 (give-up 23.3%), G_llmdst 1.58 (3.3%),
+      **D_repair 1.92** (give-up **1.1%**), E 1.88 (2.2%).
+      Paired diffs: **D - F +0.71 [0.52, 0.90]**, **D - G +0.34 [0.21, 0.49]**, **D - C +0.80 [0.64, 0.96]**, **D - B +0.91 [0.74, 1.07]**.
+- **In progress**: `runs/final_llama31` (`llama3.1:8b` official instruct) and `runs/final_qwen` (`qwen2.5:7b`) running in background; Opus judge on `*_fg` + last 10 Sonnet G cases queued for when `claude` CLI 5-hour window resets at 2:40pm.

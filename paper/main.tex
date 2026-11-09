@@ -147,8 +147,11 @@ without domain words refine the current domain; a bare answer fills the slot the
 needs (``does not need wifi'') remove a constraint. Only the current topic is shown.
 \item \textbf{Database grounding.} Rows from the MultiWOZ database that match the pending request; if none,
 constraints are relaxed one at a time (type and amenities first) and the relaxation is stated.
-\item \textbf{Policy.} By stage: deliver the pending item first; ask only for missing required details; book
-when asked; at stage 4, say what can and cannot be done and offer a human.
+\item \textbf{Policy.} By stage: deliver the pending item first; ask only for missing required details, offering
+likely choices; book when asked. At stages 3--4 the model \emph{re-grounds} before delivering: one line
+restating what it understood the user wants (Clark and Brennan's presentation phase), then the best database
+option and at most two alternatives. It never hands the user to a person: escalation volume is exactly what a
+human team cannot absorb, so recovery has to happen in the model's own next turn.
 \end{enumerate}
 The reading is appended to the dialogue, together with the system's last turns marked ``do not repeat''.
 Any generator can use it. Among REPAIR's four components, the repair reader and the escalation policy are
@@ -193,7 +196,11 @@ train split, which were not looked at during development.
 \paragraph{Conditions.} A: reply to the last message. B: be concrete, answer rather than ask back.
 C: prompt-only reading --- find what is unresolved from the same linguistic cues and how the user feels,
 then deliver it (for the 8B model, two calls: read, then reply). D: REPAIR. E: REPAIR without stage, cues and
-policy (ledger and database only).
+policy (ledger and database only). To test whether REPAIR's gain is merely from database access, we also test
+two fair database-grounded baselines that use the exact same database, query relaxation and row formatting as
+REPAIR: F (last-message RAG, retrieving rows from the user's last turn alone) and G (LLM-tracked dialogue
+state, where the generator itself reads the full dialogue, outputs JSON \texttt{\{domain, constraints\}}, and
+queries the database).
 \paragraph{Generators.} Claude 3.5 Sonnet \citep{anthropic2024claude} via the
 \texttt{claude} CLI, and Llama 3 8B \citep{grattafiori2024llama3} (dolphin-llama3:8b
 via Ollama). A--C have no database; D and E have the rows REPAIR selects.
@@ -297,6 +304,26 @@ exists in the database, case DMAGE271\#8), E stalls with ``Let me check if there
 stage-3 policy immediately delivers the closest real match (Express by Holiday Inn, 2 stars in the east, with
 address and phone), scoring 2 under both judges against 0 for E. The escalation-aware policy helps precisely
 where users are most frustrated.
+
+\paragraph{Is the gain just database access? Fair RAG and LLM-DST baselines.} Because A--C have no database, a
+natural question is whether any database lookup would suffice. Evaluating F (last-message RAG) and G
+(LLM-tracked DST) with the exact same database and query function (\texttt{runs/final\_\{llama,claude\}\_fg})
+shows that database access alone falls far short of REPAIR. On the objective entity check ($n=87$), F delivers
+a valid matching entity in 46.0\% of cases on Llama 8B (naming a constraint-violating entity in 35.6\%) and G
+in 42.5\% (26.4\% invalid), versus \textbf{62.1\%} valid (\textbf{11.5\%} invalid) for D; on Claude Sonnet, F
+achieves 50.6\% valid (24.1\% invalid) and G 53.8\% valid (25.6\% invalid), versus \textbf{67.8\%} valid
+(\textbf{13.8\%} invalid) for D. In blind 7-way evaluation (candidates T--Z judged together by Gemini), D with
+the re-grounding policy (restate the need in one line, deliver the best option, never hand off to a human)
+significantly beats both F and G: on Llama 8B ($n=100$), plain D scores \textbf{1.44} vs.\ F 1.06 (D$-$F
+$+0.38$ [0.18, 0.58]) and G 0.97 (D$-$G $+0.47$ [0.27, 0.67], give-ups 16\% vs.\ 38\%), and fact-checked D
+scores \textbf{1.44} vs.\ F 0.85 (D$-$F $+0.59$ [0.37, 0.80]) and G 0.78 (D$-$G $+0.66$ [0.46, 0.87], give-ups
+15\% vs.\ 39\%). On Claude Sonnet ($n=90$), re-grounding eliminates the plain-judge gap --- D leads under
+both plain judging (\textbf{1.81}, give-ups \textbf{2.2\%}, vs.\ G 1.77, C 1.72, B 1.53 [D$-$B $+0.28$], F
+1.28 [D$-$F $+0.53$]) and fact-checked judging (\textbf{1.92}, give-ups \textbf{1.1\%}, vs.\ G 1.58 [D$-$G
+$+0.34$ [0.21, 0.49]] and F 1.21 [D$-$F $+0.71$ [0.52, 0.90]]). When users are frustrated, their last turn is
+often an elliptical repair fragment (``postcode?'', ``any area'', ``book it''), so F loses earlier constraints,
+while G's LLM state tracker is misled by failed system turns and earlier completed domains. Tracking
+\emph{requested minus delivered} explicitly is what makes the database useful.
 
 \paragraph{Judges reward invented bookings.} Across all 84 Sonnet replies that named a database entity
 violating the user's constraints (\texttt{named\_invalid}), plain judges still awarded full marks

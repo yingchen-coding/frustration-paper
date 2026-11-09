@@ -92,7 +92,7 @@ def main():
 
     conditions = list(next(iter(order.values())).keys())
     n_conds = len(conditions)
-    labels = "VWXYZ"[:n_conds]
+    labels = "".join(sorted(next(iter(order.values())).keys()))
 
     for case in cases:
         cid = case["id"]

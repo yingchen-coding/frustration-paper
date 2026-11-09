@@ -1,0 +1,815 @@
+{
+ "DMAGE2487.json#4": {
+  "domain": "train",
+  "constraints": {
+   "departure": "Bishops Stortford",
+   "destination": "London Kings Cross"
+  }
+ },
+ "DMAGE1490.json#20": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre",
+   "food": "british",
+   "pricerange": "moderate",
+   "name": "one seven"
+  }
+ },
+ "DMAGE2431.json#14": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "north",
+   "pricerange": "moderate",
+   "stars": "3",
+   "type": "guesthouse",
+   "parking": "yes",
+   "internet": "yes",
+   "name": "alpha-milton"
+  }
+ },
+ "DMAGE3198.json#20": {
+  "domain": "restaurant",
+  "constraints": {
+   "pricerange": "expensive",
+   "area": "centre",
+   "food": "Italian"
+  }
+ },
+ "DMAGE1576.json#16": {
+  "domain": "train",
+  "constraints": {
+   "departure": "User's location",
+   "destination": "User's desired destination",
+   "day": "User's desired travel day",
+   "leaveAt": "User's desired departure time (HH:MM)",
+   "arriveBy": "User's desired arrival time (HH:MM)"
+  }
+ },
+ "DMAGE2459.json#4": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "east",
+   "pricerange": "moderate",
+   "stars": 4,
+   "internet": "yes"
+  }
+ },
+ "DMAGE786.json#2": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "centre",
+   "stars": 4,
+   "type": "hotel"
+  }
+ },
+ "DMAGE1850.json#14": {
+  "domain": "attraction",
+  "constraints": {
+   "type": "museum",
+   "name": "All Saints Church",
+   "area": "west"
+  }
+ },
+ "DMAGE1354.json#18": {
+  "domain": "restaurant",
+  "constraints": {
+   "pricerange": "moderate",
+   "area": "centre",
+   "food": "fish and chips"
+  }
+ },
+ "DMAGE1551.json#4": {
+  "domain": "train",
+  "constraints": {
+   "departure": "Cambridge",
+   "destination": "Ely",
+   "day": "Saturday"
+  }
+ },
+ "DMAGE1239.json#14": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "north",
+   "food": "Indian",
+   "pricerange": "moderate",
+   "name": "none"
+  }
+ },
+ "DMAGE952.json#4": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre",
+   "food": "local"
+  }
+ },
+ "DMAGE811.json#6": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "The user's current want is to get the correct phone number."
+ },
+ "DMAGE1115.json#8": {
+  "domain": "hotel",
+  "constraints": {
+   "stars": "4",
+   "pricerange": "moderate"
+  }
+ },
+ "DMAGE1854.json#6": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre",
+   "food": "indian",
+   "pricerange": "moderate"
+  }
+ },
+ "DMAGE2347.json#2": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "centre",
+   "pricerange": "affordable",
+   "stars": "3"
+  }
+ },
+ "DMAGE38.json#4": {
+  "domain": "taxi",
+  "constraints": {
+   "departure": "today",
+   "destination": "none"
+  }
+ },
+ "DMAGE3103.json#8": {
+  "domain": "train",
+  "constraints": {
+   "departure": "cambridge",
+   "destination": "london liverpool street",
+   "day": "sunday",
+   "leaveAt": "13:30",
+   "arriveBy": "unspecified"
+  }
+ },
+ "DMAGE2734.json#10": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "north"
+  }
+ },
+ "DMAGE1624.json#6": {
+  "domain": "hotel",
+  "constraints": {
+   "stars": "four",
+   "pricerange": "expensive"
+  }
+ },
+ "DMAGE287.json#4": {
+  "domain": "restaurant",
+  "constraints": {
+   "food": "chinese"
+  }
+ },
+ "DMAGE1318.json#4": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "centre",
+   "pricerange": "moderate",
+   "stars": "3",
+   "type": "hotel",
+   "parking": "yes",
+   "internet": "yes",
+   "name": "Ashley Hotel"
+  }
+ },
+ "DMAGE2563.json#14": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre",
+   "pricerange": "expensive"
+  }
+ },
+ "DMAGE1825.json#2": {
+  "domain": "attraction",
+  "constraints": {
+   "area": "centre",
+   "type": "museum"
+  }
+ },
+ "DMAGE330.json#4": {
+  "domain": "hotel",
+  "constraints": {
+   "name": "Hilton Cambridge"
+  }
+ },
+ "DMAGE3227.json#20": {
+  "domain": "attraction",
+  "constraints": {
+   "area": "north"
+  }
+ },
+ "DMAGE2195.json#8": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "south",
+   "pricerange": "expensive",
+   "stars": "4"
+  }
+ },
+ "DMAGE1659.json#4": {
+  "domain": "hotel",
+  "constraints": {
+   "type": "guesthouse",
+   "area": "north",
+   "internet": "yes",
+   "name": "acorn guest house"
+  }
+ },
+ "DMAGE3045.json#10": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre",
+   "pricerange": "moderate",
+   "food": "Indian"
+  }
+ },
+ "DMAGE1118.json#8": {
+  "domain": "train",
+  "constraints": {
+   "departure": "Cambridge",
+   "destination": "London Kings Cross",
+   "day": "Thursday",
+   "leaveAt": "05:00",
+   "arriveBy": "18:00"
+  }
+ },
+ "DMAGE350.json#14": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "west"
+  }
+ },
+ "DMAGE2050.json#16": {
+  "domain": "restaurant",
+  "constraints": {
+   "food": "thai",
+   "name": "sala thong"
+  }
+ },
+ "DMAGE1074.json#28": {
+  "domain": "attraction",
+  "constraints": {
+   "area": "centre"
+  }
+ },
+ "DMAGE1090.json#32": {
+  "domain": "taxi",
+  "constraints": {
+   "departure": "restaurant",
+   "destination": "hotel",
+   "leaveAt": "none",
+   "arriveBy": "none"
+  }
+ },
+ "DMAGE1816.json#8": {
+  "domain": "train",
+  "constraints": {
+   "departure": "north",
+   "destination": "theatre",
+   "day": "none",
+   "leaveAt": "none",
+   "arriveBy": "none"
+  }
+ },
+ "DMAGE2404.json#12": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "centre",
+   "stars": "3",
+   "pricerange": "moderate"
+  }
+ },
+ "DMAGE213.json#16": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "north",
+   "pricerange": "moderate",
+   "name": "ashley hotel",
+   "internet": "yes"
+  }
+ },
+ "DMAGE1701.json#12": {
+  "domain": "attraction",
+  "constraints": {
+   "area": "west",
+   "type": "tourist attraction"
+  }
+ },
+ "DMAGE2769.json#2": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre",
+   "food": "korean",
+   "pricerange": "expensive"
+  }
+ },
+ "DMAGE400.json#28": {
+  "domain": "train",
+  "constraints": {
+   "departure": "Bishops Stortford",
+   "destination": "Broxbourne",
+   "day": "Wednesday",
+   "leaveAt": "after 10:30",
+   "arriveBy": "not specified"
+  }
+ },
+ "DMAGE2129.json#32": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "east",
+   "food": "Italian",
+   "pricerange": "moderate"
+  }
+ },
+ "DMAGE701.json#16": {
+  "domain": "attraction",
+  "constraints": {
+   "type": "boating",
+   "area": "centre"
+  }
+ },
+ "DMAGE836.json#12": {
+  "domain": "train",
+  "constraints": {
+   "departure": "cambridge",
+   "destination": "peterborough",
+   "day": "friday",
+   "leaveAt": "after 17:45",
+   "arriveBy": "05:51"
+  }
+ },
+ "DMAGE319.json#14": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "south",
+   "food": "spanish",
+   "pricerange": "none",
+   "name": "none"
+  }
+ },
+ "DMAGE2465.json#16": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre",
+   "food": "british",
+   "pricerange": "cheap",
+   "name": "restaurant one seven"
+  }
+ },
+ "DMAGE2992.json#4": {
+  "domain": "hospital",
+  "constraints": {
+   "area": "nearby",
+   "name": "any hospital"
+  }
+ },
+ "DMAGE2100.json#20": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "none",
+   "pricerange": "moderate",
+   "stars": "4",
+   "type": "hotel",
+   "parking": "yes",
+   "internet": "yes",
+   "name": "none"
+  }
+ },
+ "DMAGE2239.json#22": {
+  "domain": "attraction",
+  "constraints": {
+   "area": "centre",
+   "type": "museum",
+   "name": "Broughton House Gallery"
+  }
+ },
+ "DMAGE474.json#8": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre"
+  }
+ },
+ "DMAGE3242.json#6": {
+  "domain": "train",
+  "constraints": {
+   "departure": "London Kings Cross",
+   "destination": "Stansted Airport",
+   "day": "Thursday",
+   "leaveAt": "Not specified",
+   "arriveBy": "13:30"
+  }
+ },
+ "DMAGE76.json#18": {
+  "domain": "attraction",
+  "constraints": {
+   "type": "swimming pool",
+   "name": "Abbey Pool and Astroturf Pitch",
+   "area": "Whitehill Road, off Newmarket Road"
+  }
+ },
+ "DMAGE2740.json#10": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre",
+   "name": "pizza hut city centre"
+  }
+ },
+ "DMAGE1738.json#2": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre",
+   "food": "none",
+   "pricerange": "none",
+   "name": "none"
+  }
+ },
+ "DMAGE2105.json#6": {
+  "domain": "train",
+  "constraints": {
+   "departure": "Cambridge",
+   "destination": "Bishops Stortford",
+   "day": "Monday",
+   "leaveAt": "21:00",
+   "arriveBy": "05:00",
+   "trainID": "TR7075",
+   "seats": 6
+  }
+ },
+ "DMAGE1839.json#8": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre",
+   "food": "turkish",
+   "pricerange": "moderate",
+   "name": "meze bar"
+  }
+ },
+ "DMAGE3073.json#8": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "The user currently wants to book a table for 7 people at a specific Indian restaurant in the south area. The restaurant's name is Taj Tandoori, and its postcode is CB17AA. The user requested a reservation for Friday at 13:00, but the assistant was unable to make the reservation. The user is now look"
+ },
+ "DMAGE949.json#4": {
+  "domain": "train",
+  "constraints": {
+   "departure": "none",
+   "destination": "cambridge"
+  }
+ },
+ "DMAGE2940.json#2": {
+  "domain": "attraction",
+  "constraints": {
+   "area": "centre",
+   "type": "tourist attraction"
+  }
+ },
+ "DMAGE112.json#6": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "none",
+   "pricerange": "none",
+   "stars": "none",
+   "type": "guesthouse",
+   "parking": "yes",
+   "internet": "yes",
+   "name": "Parkside, Cambridge",
+   "day": "Monday",
+   "duration": "4 nights"
+  }
+ },
+ "DMAGE812.json#14": {
+  "domain": "none",
+  "constraints": {}
+ },
+ "DMAGE591.json#2": {
+  "domain": "restaurant",
+  "constraints": {
+   "food": "turkish"
+  }
+ },
+ "DMAGE2661.json#20": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "To properly respond to the user's request, I need to identify the current domain and the user's constraints. In this case, the domain is \"train,\" and the constraints are: departure: \"Birmingham New Street,\" destination: \"Frimai,\" and day: \"unspecified.\" The user also mentioned wanting to leave by a "
+ },
+ "DMAGE587.json#16": {
+  "domain": "train",
+  "constraints": {
+   "departure": "none",
+   "destination": "none",
+   "day": "none",
+   "leaveAt": "none",
+   "arriveBy": "none"
+  }
+ },
+ "DMAGE2354.json#2": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "none",
+   "pricerange": "none",
+   "stars": "none",
+   "type": "none",
+   "parking": "yes",
+   "internet": "yes",
+   "name": "none"
+  }
+ },
+ "DMAGE1817.json#12": {
+  "domain": "train",
+  "constraints": {
+   "departure": "Cambridge",
+   "destination": "Stansted Airport",
+   "day": "Tuesday",
+   "leaveAt": "08:15",
+   "arriveBy": "N/A"
+  }
+ },
+ "DMAGE600.json#14": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "area"
+  }
+ },
+ "DMAGE624.json#2": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre",
+   "pricerange": "expensive"
+  }
+ },
+ "DMAGE2198.json#4": {
+  "domain": "hotel",
+  "constraints": {
+   "stars": "4"
+  }
+ },
+ "DMAGE2594.json#10": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "centre",
+   "pricerange": "moderate"
+  }
+ },
+ "DMAGE2853.json#8": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "east",
+   "name": "Hotel Travel"
+  }
+ },
+ "DMAGE965.json#14": {
+  "domain": "train",
+  "constraints": {
+   "departure": "London Kings Cross",
+   "destination": "Cambridge",
+   "day": "Friday",
+   "leaveAt": "05:00",
+   "arriveBy": "15:00"
+  }
+ },
+ "DMAGE823.json#8": {
+  "domain": "attraction",
+  "constraints": {
+   "area": "centre",
+   "type": "college"
+  }
+ },
+ "DMAGE2009.json#12": {
+  "domain": "hotel",
+  "constraints": {
+   "stars": 4,
+   "parking": "yes",
+   "internet": "yes",
+   "name": "acorn guest house"
+  }
+ },
+ "DMAGE2618.json#2": {
+  "domain": "restaurant",
+  "constraints": {
+   "pricerange": "expensive",
+   "area": "local"
+  }
+ },
+ "DMAGE2728.json#20": {
+  "domain": "attraction",
+  "constraints": {
+   "area": "centre",
+   "type": "swimmingpool",
+   "name": "Adc Theatre"
+  }
+ },
+ "DMAGE3109.json#10": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "west",
+   "type": "guesthouse",
+   "name": "tandoori palace"
+  }
+ },
+ "DMAGE1094.json#4": {
+  "domain": "none",
+  "constraints": {}
+ },
+ "DMAGE2415.json#4": {
+  "domain": "train",
+  "constraints": {
+   "departure": "saturday",
+   "day": "saturday",
+   "leaveAt": "none",
+   "arriveBy": "none"
+  }
+ },
+ "DMAGE271.json#8": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "east",
+   "stars": "3"
+  }
+ },
+ "DMAGE3258.json#12": {
+  "domain": "attraction",
+  "constraints": {
+   "area": "south"
+  }
+ },
+ "DMAGE2395.json#16": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "{\n  \"domain\": \"attraction\",\n  \"constraints\": {\n    \"type\": \"college\",\n    \"area\": \"local\"\n  }\n}\n\n{\n  \"domain\": \"restaurant\",\n  \"constraints\": {\n    \"pricerange\": \"cheap\",\n    \"area\": \"centre\"\n  }\n}\n\n{\n  \"domain\": \"hotel\",\n  \"constraints\": {\n    \"area\": \"none\",\n    \"stars\": \"none\",\n    \"type\": \"hotel"
+ },
+ "DMAGE1994.json#14": {
+  "domain": "taxi",
+  "constraints": {
+   "departure": "kings-hedges-learner-pool",
+   "destination": "castle-galleries",
+   "leaveAt": "11:00",
+   "day": "today"
+  }
+ },
+ "DMAGE1182.json#12": {
+  "domain": "taxi",
+  "constraints": {
+   "departure": "The address is Parkside, Cambridge.",
+   "destination": "the attraction",
+   "leaveAt": "11:30",
+   "arriveBy": "11:30",
+   "phone": "01223358966",
+   "carType": "none"
+  }
+ },
+ "DMAGE504.json#12": {
+  "domain": "train",
+  "constraints": {
+   "departure": "Cambridge",
+   "destination": "Bishops Stortford",
+   "day": "Wednesday",
+   "leaveAt": "05:00",
+   "arriveBy": "05:51"
+  }
+ },
+ "DMAGE2687.json#2": {
+  "domain": "hotel",
+  "constraints": {
+   "stars": "4",
+   "area": "none"
+  }
+ },
+ "DMAGE3100.json#14": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "west",
+   "pricerange": "cheap",
+   "stars": "4",
+   "type": "hotel",
+   "parking": "yes",
+   "internet": "yes",
+   "name": "Huntingdon Marriott Hotel",
+   "postcode": "pe296fl",
+   "departure": "london",
+   "destination": "cambridge"
+  }
+ },
+ "DMAGE1370.json#8": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre",
+   "name": "curry garden",
+   "pricerange": "none",
+   "food": "indian"
+  }
+ },
+ "DMAGE1342.json#10": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "east",
+   "pricerange": "cheap"
+  }
+ },
+ "DMAGE2586.json#2": {
+  "domain": "restaurant",
+  "constraints": {
+   "food": "asian oriental"
+  }
+ },
+ "DMAGE898.json#12": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre",
+   "food": "italian",
+   "pricerange": "expensive"
+  }
+ },
+ "DMAGE66.json#12": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "centre",
+   "type": "guesthouse",
+   "parking": "yes"
+  }
+ },
+ "DMAGE454.json#14": {
+  "domain": "train",
+  "constraints": {
+   "departure": "Brobourne",
+   "destination": "Cambridge",
+   "day": "",
+   "leaveAt": "05:00",
+   "arriveBy": "05:51"
+  }
+ },
+ "DMAGE2396.json#14": {
+  "domain": "attraction",
+  "constraints": {
+   "area": "north",
+   "entrance_fee": "none",
+   "college": "none",
+   "address": "none",
+   "postcode": "none",
+   "train_id": "none"
+  }
+ },
+ "DMAGE55.json#10": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "The user is currently looking for a local Portuguese restaurant in the centre area, with a focus on cheap prices. The current constraints are: \n- Area: centre\n- Food: portuguese"
+ },
+ "DMAGE3137.json#2": {
+  "domain": "hotel",
+  "constraints": {
+   "type": "guesthouse",
+   "stars": "hotel"
+  }
+ },
+ "DMAGE2182.json#6": {
+  "domain": "train",
+  "constraints": {
+   "departure": "Kings Lynn",
+   "destination": "Ely",
+   "day": "Wednesday",
+   "leaveAt": "Not specified",
+   "arriveBy": "Not specified"
+  }
+ },
+ "DMAGE323.json#10": {
+  "domain": "train",
+  "constraints": {
+   "departure": "Cambridge",
+   "destination": "London Kings Cross",
+   "day": "any",
+   "leaveAt": "05:00",
+   "arriveBy": "05:51"
+  }
+ },
+ "DMAGE1358.json#10": {
+  "domain": "restaurant",
+  "constraints": {
+   "food": "Mediterranean"
+  }
+ },
+ "DMAGE969.json#22": {
+  "domain": "attraction",
+  "constraints": {
+   "area": "centre",
+   "type": "college",
+   "name": "Christ's College"
+  }
+ },
+ "DMAGE3177.json#8": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "north",
+   "pricerange": "yes",
+   "stars": "4",
+   "type": "guesthouse",
+   "parking": "yes",
+   "internet": "yes",
+   "name": "Acorn Guest House"
+  }
+ }
+}

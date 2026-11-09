@@ -294,7 +294,8 @@ def brief(log, upto, max_rows=3):
                      + (f"; user also asked for: {', '.join(sorted(e['asked']))}" if e["asked"] else ""))
         if e["missing"]:
             lines.append(f"  Missing before anything can be delivered: {', '.join(e['missing'])}. Ask for exactly these "
-                         "in one short question, say why you need them, and do not guess or list unrelated options.")
+                         "in one short question, offering likely choices where you can, and do not guess or list "
+                         "unrelated options.")
             continue
         rows, relaxed = query(d, cons)
         if d == "police":
@@ -322,8 +323,14 @@ def brief(log, upto, max_rows=3):
         0: "Answer normally.",
         1: "Answer the request directly.",
         2: "Deliver the pending item first, using the database rows. Ask a question back only for the details listed as missing.",
-        3: "Deliver the pending item completely in this reply, with the details the user asked for. If it cannot be done, say why in one sentence and give the closest option. One short acknowledgment is fine; no long apology.",
-        4: "The user is close to giving up. Say in two short sentences what you can give them right now (from the database) and what you cannot, and offer a human agent.",
+        3: ("Re-ground, then deliver: open with one line that restates what you understand the user wants, then "
+            "deliver it completely from the database rows, with the details they asked for. If nothing matches "
+            "exactly, give the closest option and say in a few words what differs. At most three words of apology; "
+            "no question unless a required detail is missing."),
+        4: ("The user is about to give up. Take ownership and recover in this reply: restate in one line what they "
+            "want, give the best database option now (book it if the booking details are known), and at most two "
+            "alternatives as a short choice. Do not hand the user to a person and do not ask open questions; if a "
+            "required detail is missing, offer two concrete choices for it."),
     }[r["stage"]]
     lines.append("Policy: " + policy)
     return "\n".join(lines), r

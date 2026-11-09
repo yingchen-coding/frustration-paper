@@ -12,12 +12,13 @@ Usage: python3 intervene.py data/ runs/pilot N
 import json
 import os
 import random
+import re
 import subprocess
 import sys
 from pathlib import Path
 
 from analyze import NEG, final_label, jaccard
-from repair import brief, log_for
+from repair import DB, REQUIRED, brief, constraints, domains_in, log_for, query, row_text
 
 BATCH = 10
 SEED = 0
@@ -42,6 +43,23 @@ LEDGER_TAIL = (" Below each dialogue is what the user has requested and real dat
                "rows instead of your own knowledge, and write the assistant's next reply.")
 PROMPTS["D_repair"] = DOMAIN + REPAIR_TAIL
 PROMPTS["E_ledger_db"] = DOMAIN + LEDGER_TAIL
+# Fair-comparison baselines (2026-11-09): the same database, without REPAIR's linguistic reading.
+PROMPTS["F_lastdb"] = DOMAIN + (" Below each dialogue are real database rows retrieved for the user's last message. "
+                                "Use them instead of your own knowledge, and write the assistant's next reply.")
+PROMPTS["G_llmdst"] = DOMAIN + (" Below each dialogue is the dialogue state (what the user wants) tracked by a model, "
+                                "and real database rows for it. Use them instead of your own knowledge, and write "
+                                "the assistant's next reply.")
+DST_PROMPT = ("Track the dialogue state. Read the whole dialogue and return only JSON describing what the user "
+              "currently wants: {\"domain\": one of restaurant|hotel|attraction|train|taxi|police|hospital|none, "
+              "\"constraints\": {slot: value}}. Slots: restaurant: area, food, pricerange, name; hotel: area, "
+              "pricerange, stars, type (hotel|guesthouse), parking (yes), internet (yes), name; attraction: area, type, "
+              "name; train: departure, destination, day, leaveAt (HH:MM), arriveBy (HH:MM); taxi: departure, "
+              "destination, leaveAt, arriveBy. Areas: centre|north|south|east|west. Leave out slots the user did not give.")
+SLOTS = {"restaurant": {"area", "food", "pricerange", "name"},
+         "hotel": {"area", "pricerange", "stars", "type", "parking", "internet", "name"},
+         "attraction": {"area", "type", "name"},
+         "train": {"departure", "destination", "day", "leaveAt", "arriveBy"},
+         "taxi": {"departure", "destination", "leaveAt", "arriveBy"}}
 CONDITIONS = os.environ.get("CONDITIONS", ",".join(PROMPTS)).split(",")
 OUT_A = 'Return only JSON: {"<case id>": "<reply>", ...} for every case.'
 OUT_C = 'Return only JSON: {"<case id>": {"unresolved": "...", "feeling": "...", "reply": "..."}, ...} for every case.'
@@ -55,7 +73,7 @@ For each case:
   repeats = true if the reply repeats a question or information the assistant already gave, instead of understanding the user.
 - best: the one candidate letter that best gets the user what they need.
 Return only JSON: {{"<case id>": {{"need": "...", "{first}": {{"resolves": 0, "give_up": false, "repeats": false}}, ..., "best": "{first}"}}, ...}}"""
-LETTERS = "VWXYZ"
+LETTERS = "TUVWXYZ"
 
 
 def render(log, upto):
@@ -157,9 +175,89 @@ def reading(case, cond):
     return f"\n[Reading of the user]\n{text}"
 
 
+def rows_block(domain, cons):
+    """Same database section as REPAIR's brief, for a given domain and constraints."""
+    if domain in (None, "", "none"):
+        return "No domain request found; answer the last message directly."
+    lines = [f"Pending request: {domain}" + (f" with {json.dumps(cons)}" if cons else " (no constraints given yet)")]
+    missing = [alts[0] for alts in REQUIRED.get(domain, []) if not any(a in cons for a in alts)]
+    if missing:
+        lines.append(f"  Missing before anything can be delivered: {', '.join(missing)}. Ask for exactly these.")
+        return "\n".join(lines)
+    if domain == "police":
+        p = DB["police"][0]
+        lines.append(f"  Database: {p['name']}, {p['address']}, phone {p['phone']}")
+    elif domain == "taxi":
+        lines.append("  Taxi: can be booked; give car colour/type and a 10-digit contact number.")
+    else:
+        rows, relaxed = query(domain, cons)
+        if rows and relaxed:
+            lines.append(f"  No exact match. Closest options after dropping {relaxed[0]}:")
+        lines += ["  Database: " + row_text(domain, r) for r in rows[:3]]
+        if len(rows) > 3:
+            lines.append(f"  ({len(rows)} matches in total)")
+        if not rows and domain in ("restaurant", "hotel", "attraction", "train"):
+            lines.append("  Database: nothing matches.")
+    return "\n".join(lines)
+
+
+def last_message_rows(case):
+    log, i = log_for(case["id"], _data())
+    last = log[i]["text"]
+    doms = domains_in(last)
+    if not doms:
+        return rows_block(None, {})
+    d = doms[-1]
+    return rows_block(d, {k: v for k, v in constraints(last, d).items() if v is not None})
+
+
+def normalize_state(state):
+    d = str(state.get("domain", "none")).lower()
+    cons = {}
+    for k, v in (state.get("constraints") or {}).items():
+        if d in SLOTS and k in SLOTS[d] and v not in (None, "", "dontcare", "any"):
+            v = str(v).lower().strip()
+            if k in ("leaveAt", "arriveBy") and re.fullmatch(r"\d:\d\d", v):
+                v = "0" + v
+            if k in ("parking", "internet"):
+                v = "yes" if v in ("yes", "true", "free") else None
+            if v:
+                cons[k] = v
+    return d, cons
+
+
+def dst_state(case):
+    cache = _DATA.setdefault("dst", {})
+    if case["id"] not in cache:
+        prompt = f"{DST_PROMPT}\n\n{case['dialogue']}"
+        if GEN.startswith("ollama:"):
+            raw = ollama_call(GEN.split(":", 1)[1], prompt)
+        else:
+            raw = subprocess.run(["claude", "-p", "--model", "sonnet", prompt], capture_output=True, text=True,
+                                 timeout=900, check=True).stdout
+        try:
+            cache[case["id"]] = parse_json(raw)
+        except (ValueError, json.JSONDecodeError):
+            cache[case["id"]] = {"domain": "none", "constraints": {}, "unparsed": raw[:300]}
+        if _DATA.get("dst_path"):
+            _DATA["dst_path"].write_text(json.dumps(cache, indent=1))
+    return cache[case["id"]]
+
+
+def _data():
+    if "dm" not in _DATA:
+        _DATA["dm"] = json.load(open(Path(__file__).resolve().parent / "data" / "emowoz-dialmage.json"))
+    return _DATA["dm"]
+
+
 def with_reading(case, cond):
     if cond in ("D_repair", "E_ledger_db"):
         return dict(case, dialogue=case["dialogue"] + "\n" + reading(case, cond))
+    if cond == "F_lastdb":
+        return dict(case, dialogue=case["dialogue"] + "\n\n[Database rows for the last message]\n" + last_message_rows(case))
+    if cond == "G_llmdst":
+        d, cons = normalize_state(dst_state(case))
+        return dict(case, dialogue=case["dialogue"] + "\n\n[Tracked dialogue state and database rows]\n" + rows_block(d, cons))
     return case
 
 
@@ -173,6 +271,9 @@ def cases_block(batch):
 
 
 def generate(cases, run_dir):
+    _DATA["dst_path"] = run_dir / "dst.json"
+    if _DATA["dst_path"].exists():
+        _DATA["dst"] = json.loads(_DATA["dst_path"].read_text())
     path = run_dir / "replies.json"
     replies = json.loads(path.read_text()) if path.exists() else {}
     for cond in CONDITIONS:
