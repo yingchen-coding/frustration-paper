@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Ying Chen" />
+  <title>Understand the User, Don’t Repeat: Linguistic Cues of Unmet Needs and Explicit Repair in Task-Oriented Dialogue</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    div.abstract {
+      margin: 2em 2em 2em 2em;
+      text-align: left;
+      font-size: 85%;
+    }
+    div.abstract-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0.5em;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Understand the User, Don’t Repeat:<br />
+Linguistic Cues of Unmet Needs and Explicit Repair in Task-Oriented
+Dialogue</h1>
+<p class="author">Ying Chen</p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p>When a dialogue system fails, users seldom say so in emotional words.
+They repeat the request, rephrase it, write “what?”, or get shorter. We
+study these cues in EmoWOZ, a corpus with emotion labels on every user
+turn. Human operators change their replies after a dissatisfied turn
+(acknowledgment rises from 3.9% to 17.8%); a deployed machine system
+does not (3.7% vs. 3.5%). Toward the machine, 46.8% of dissatisfied
+turns repeat an earlier request, and only 7.7% contain a complaint or
+negation word, so word-level sentiment misses most of them. We then ask
+whether a language model can be made to answer the unmet need rather
+than the last message. Asking the model to “read the user first” helps a
+strong model but hurts an 8B model, which misreads the need and
+apologizes instead of delivering. We propose REPAIR, which reads the
+dialogue explicitly — repair cues, a ledger of requested, delivered and
+pending items, and database rows for the pending item — and hands this
+reading to the generator. On 100 unseen dialogue cases, REPAIR raises
+how well an 8B model resolves the user’s need from 0.45 to 1.22 on a 0–2
+scale (0 = unresolved, 1 = partly, 2 = delivered), cuts the share of
+replies after which the user would likely give up from 49% (prompt-only
+reading) to 19%, and brings the 8B model to the level of a much stronger
+model given a “be concrete” instruction.</p>
+</div>
+</header>
+<h1 id="introduction">Introduction</h1>
+<p>A user who has asked twice for a guesthouse in the south does not
+need a third question about the price range, and does not need an
+apology. The user needs the guesthouse. Dialogue systems, including
+systems built on large language models, are usually asked to respond to
+the last message. When an earlier request is still open, the last
+message is often a repetition (“hotel”, “hotel options”, “four star
+hotels”), and a system that answers it in isolation repeats its own
+failure.</p>
+<p>Conversation analysis calls these moves <em>other-initiated
+repair</em>: the listener signals that something was not understood or
+not delivered and invites the speaker to fix it <span class="citation"
+data-cites="schegloff1977repair">(Schegloff et al. 1977)</span>. In the
+terms of <span class="citation" data-cites="clark1991grounding">Clark
+and Brennan (1991)</span>, the request has not been grounded. Our view
+is that unmet needs are visible mostly in this linguistic behaviour —
+repetition, rephrasing, repair tokens, shortening — and only partly in
+emotional vocabulary. Earlier work by the author on offensive language
+took the same position: lexical and syntactic structure, together with a
+user’s writing style, carried most of the signal <span class="citation"
+data-cites="chen2012offensive">(Chen et al. 2012)</span>.</p>
+<p>This paper makes three contributions. (1) A corpus study on EmoWOZ
+<span class="citation" data-cites="feng2022emowoz">(Feng et al.
+2022)</span> and DBDC3 <span class="citation"
+data-cites="higashinaka2016dbdc">(Higashinaka et al. 2016)</span>
+showing that a machine system does not react to dissatisfaction, that
+users express dissatisfaction in task dialogue mainly by climbing a
+repair ladder (dissatisfaction rises from 16.3% at stage 0 to 79.3% at
+stage 3+, capturing 81.7% of negative turns vs. 7.7% for complaint
+words), and that repetition is task-specific. (2) A negative result:
+telling a model to infer the user’s state from the dialogue helps a
+strong model and hurts a small one. (3) REPAIR, an explicit reading of
+repair cues and pending needs, grounded in the task database, which
+makes a small model resolve the user’s need far more often on unseen
+dialogues and outperforms ledger-only grounding on high-escalation
+turns. We release code, prompts and all model outputs.</p>
+<h1 id="related-work">Related Work</h1>
+<h4 id="emotion-in-task-oriented-dialogue.">Emotion in task-oriented
+dialogue.</h4>
+<p>EmoWOZ labels every user turn of MultiWOZ <span class="citation"
+data-cites="budzianowski2018multiwoz">(Budzianowski et al. 2018)</span>
+and of 1,000 human–machine dialogues (DialMAGE) with one of seven
+emotions <span class="citation" data-cites="feng2022emowoz">(Feng et al.
+2022)</span>. Recent work detects frustration in deployed systems <span
+class="citation" data-cites="frustration2024stupidrobot">(Hernandez
+Caralt et al. 2024)</span> and studies emotion in customer-service
+dialogue, finding that apology and empathy often leave anger in place
+<span class="citation" data-cites="emowozcs2025">(Labat et al.
+2025)</span>. These works detect the state; we study how it is expressed
+and how to act on it.</p>
+<h4 id="repair-and-grounding.">Repair and grounding.</h4>
+<p>Our cue set follows the repair literature <span class="citation"
+data-cites="schegloff1977repair">(Schegloff et al. 1977)</span> and
+grounding theory <span class="citation"
+data-cites="clark1991grounding">(Clark and Brennan 1991)</span>.</p>
+<h4 id="dialogue-breakdown-detection.">Dialogue breakdown
+detection.</h4>
+<p>The DBDC challenge series <span class="citation"
+data-cites="higashinaka2016dbdc">(Higashinaka et al. 2016)</span>
+annotates system turns as breakdowns in chat-oriented dialogue. We use
+DBDC3 as a contrast corpus: without task goals, user repetition barely
+rises after breakdowns.</p>
+<h4 id="dialogue-state-tracking.">Dialogue state tracking.</h4>
+<p>Classical dialogue state trackers infer slot–value belief states
+across turns <span class="citation"
+data-cites="budzianowski2018multiwoz">(Budzianowski et al. 2018)</span>.
+REPAIR is a lightweight, zero-shot alternative focused on <em>repair and
+grounding state</em>: rather than training a neural tracker, it pairs
+surface repair cues with a ledger of requested versus delivered items so
+any off-the-shelf generator can close pending needs without
+schema-specific fine-tuning.</p>
+<h4 id="llm-judges.">LLM judges.</h4>
+<p>LLM judges have known biases <span class="citation"
+data-cites="zheng2023judging">(Zheng et al. 2023)</span>; we report one
+more in task dialogue: they reward confident, invented bookings.</p>
+<h1 id="sec:corpus">Corpus Study</h1>
+<p>EmoWOZ has two parts: MultiWOZ, where a human “wizard” plays the
+system (10,438 dialogues), and DialMAGE, where a machine system talks to
+people (995 dialogues). We call a user turn <em>negative</em> if it is
+labelled dissatisfied or abusive. Confidence intervals are 95% bootstrap
+intervals over dialogues (2,000 resamples).</p>
+<h4 id="the-machine-does-not-react.">The machine does not react.</h4>
+<p>We match apology and acknowledgment words (<em>sorry, apologize, my
+mistake, I understand</em>, …) in the system’s next reply. Human wizards
+use them after 17.8% of negative turns and 3.9% of neutral turns. The
+machine: 3.5% and 3.7%. Including <em>unfortunately / I’m afraid</em>:
+wizards 20.3% [17.7, 22.7] vs. 5.4%; machine 5.0% [4.2, 5.8] vs. 5.6%
+[5.0, 6.3].</p>
+<h4 id="dissatisfaction-is-expressed-by-repeating.">Dissatisfaction is
+expressed by repeating.</h4>
+<p>Table <a href="#tab:cues" data-reference-type="ref"
+data-reference="tab:cues">1</a> shows, for each negative turn, whether
+it contains a complaint or negation word, and whether it repeats an
+earlier request of the same user (token Jaccard <span
+class="math inline"> ≥ 0.5</span>).</p>
+<p>When the machine repeats its own previous reply (Jaccard <span
+class="math inline"> ≥ 0.8</span>) after a negative turn, the next user
+turn is still negative 88.3% [80.0, 95.7] of the time, against 54.6%
+[52.7, 56.6] otherwise (<span class="math inline"><em>n</em> = 71</span>
+repeats).</p>
+<div id="tab:cues">
+<table>
+<caption>How dissatisfaction is expressed. With a human wizard users
+complain in words; with a machine they repeat themselves.</caption>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: right;"><span
+class="math inline"><em>n</em></span></th>
+<th style="text-align: right;">complaint word</th>
+<th style="text-align: right;">repeats own request</th>
+<th style="text-align: right;">neither</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">MultiWOZ, negative turns</td>
+<td style="text-align: right;">958</td>
+<td style="text-align: right;">53.0%</td>
+<td style="text-align: right;">3.0%</td>
+<td style="text-align: right;">44.6%</td>
+</tr>
+<tr>
+<td style="text-align: left;">DialMAGE, negative turns</td>
+<td style="text-align: right;">4,264</td>
+<td style="text-align: right;">7.7%</td>
+<td style="text-align: right;">46.8%</td>
+<td style="text-align: right;">47.6%</td>
+</tr>
+<tr>
+<td style="text-align: left;">DialMAGE, neutral turns</td>
+<td style="text-align: right;">7,230</td>
+<td style="text-align: right;">3.0%</td>
+<td style="text-align: right;">13.2%</td>
+<td style="text-align: right;">84.2%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4
+id="is-repetition-specific-to-task-dialogue-and-does-the-finding-hold-on-other-task-corpora">Is
+repetition specific to task dialogue, and does the finding hold on other
+task corpora?</h4>
+<p>In the DBDC3 chat-oriented corpus <span class="citation"
+data-cites="higashinaka2016dbdc">(Higashinaka et al. 2016)</span> (415
+dialogues, no task goals), users repeat after a system breakdown only
+8.4% [6.5, 10.4] of the time, barely above the 6.8% [5.9, 7.8] baseline
+(<span class="math inline">+1.5</span> pp). In DialMAGE the gap is <span
+class="math inline">+33.6</span> pp: users repeat when they have an
+unmet <em>task</em> need, not simply when the system is incoherent. To
+verify that our cue findings are not specific to MultiWOZ domains, we
+apply the same zero-shot repair reader (<code>analyze_uss.py</code>) to
+two external goal-oriented benchmarks annotated with turn-level user
+satisfaction <span class="citation" data-cites="sun2021uss">(Sun et al.
+2021)</span>: Schema-Guided Dialogue <span class="citation"
+data-cites="rastogi2020sgd">(SGD; Rastogi et al. 2020)</span> (1,000
+dialogues across 20 domains such as banks, flights, media and doctors;
+9,833 user turns, 2,194 dissatisfied) and ReDial movie recommendation
+(999 dialogues; 7,619 user turns, 1,793 dissatisfied). Explicit emotion
+words (<em>frustrated, annoyed, useless, angry</em>, …) appear in only
+<strong>0.3%</strong> [0.1, 0.5] of dissatisfied turns in SGD and
+<strong>2.7%</strong> [1.9, 3.6] in ReDial, whereas REPAIR’s surface
+repair cues (stage <span class="math inline"> ≥ 1</span>) capture
+<strong>63.6%</strong> [61.4, 65.8] and <strong>51.2%</strong> [48.9,
+53.8], doubling the dissatisfaction rate over stage 0 in SGD (30.5%
+vs. 15.2%) and raising it by <span class="math inline">+12.3</span> pp
+in ReDial (31.1% vs. 18.8%).</p>
+<p>These findings motivate a method that detects repetition-based repair
+cues and tracks pending needs, rather than relying on sentiment words or
+the model’s own reflection.</p>
+<h1 id="sec:method">REPAIR</h1>
+<p>REPAIR (Reading Escalation And Pending Items for Response) builds a
+short, checkable reading of the dialogue at the current user turn. It is
+deterministic and uses no model calls.</p>
+<ol>
+<li><p><strong>Repair reader.</strong> Cues in the last user turn:
+repetition (Jaccard <span class="math inline"> ≥ 0.5</span> with an
+earlier user turn) or rephrasing (<span
+class="math inline">0.3</span>–<span class="math inline">0.5</span>);
+repair tokens (<em>what?</em>, <em>??</em>, <em>I said</em>,
+<em>already</em>); negation (<em>no, not, again, still</em>); talk about
+the conversation (<em>can you help</em>, <em>understand</em>); a turn
+under half the user’s median length; give-up words. These map to an
+escalation stage 0–4.</p></li>
+<li><p><strong>Grounding ledger.</strong> For each domain (restaurant,
+hotel, attraction, train, taxi, …), the constraints the user stated,
+whether a matching entity was delivered by the system afterwards, and
+which required details are missing (train: origin, destination, day;
+taxi: origin, destination, time). Turns without domain words refine the
+current domain; a bare answer fills the slot the system asked for;
+negated needs (“does not need wifi”) remove a constraint. Only the
+current topic is shown.</p></li>
+<li><p><strong>Database grounding.</strong> Rows from the MultiWOZ
+database that match the pending request; if none, constraints are
+relaxed one at a time (type and amenities first) and the relaxation is
+stated.</p></li>
+<li><p><strong>Policy.</strong> By stage: deliver the pending item
+first; ask only for missing required details; book when asked; at stage
+4, say what can and cannot be done and offer a human.</p></li>
+</ol>
+<p>The reading is appended to the dialogue, together with the system’s
+last turns marked “do not repeat”. Any generator can use it. Among
+REPAIR’s four components, the repair reader and the escalation policy
+are completely domain-agnostic (as validated zero-shot on SGD’s 20
+domains above); for the grounding ledger and database lookup, all entity
+names, categorical slot values (e.g. food types, attraction types,
+stations) and searchable columns are induced directly from the target
+JSON database tables at startup rather than hand-listed per venue, so
+adapting to a new schema requires only supplying its database table and
+a short map of domain trigger words.</p>
+<h4 id="the-repair-ladder-tracks-emotion-across-the-corpus.">The repair
+ladder tracks emotion across the corpus.</h4>
+<p>Applying REPAIR’s stage reader and grounding ledger to all 12,093
+annotated user turns in DialMAGE (<code>analyze_ladder.py</code>), user
+dissatisfaction rises monotonically up the repair ladder (Table <a
+href="#tab:ladder" data-reference-type="ref"
+data-reference="tab:ladder">2</a>): from 16.3% at stage 0 (no repair
+cues) to 34.3% at stage 1 (rephrasing, negation or shortening), 60.3% at
+stage 2 (repeating an earlier request or other-initiated repair), and
+79.3% at stage 3+ (repeated repair or meta-complaint), capturing 81.7%
+of all negative turns at stage <span class="math inline"> ≥ 1</span>
+(vs. 7.7% for complaint words). Next-turn dissatisfaction likewise
+climbs from 32.7% after stage 0 to 57.1% after stage 3+. Independently,
+turns where the grounding ledger shows an undelivered request from an
+earlier turn are negative 40.5% [38.9, 42.1] of the time (<span
+class="math inline"><em>n</em> = 7, 919</span>) versus 25.3% [23.3,
+27.3] otherwise (<span
+class="math inline"><em>n</em> = 4, 174</span>).</p>
+<div id="tab:ladder">
+<table>
+<caption>User dissatisfaction by repair escalation stage across all
+12,093 DialMAGE user turns (95% bootstrap CIs over dialogues). The
+emotion label follows the repair ladder rather than emotional
+vocabulary.</caption>
+<thead>
+<tr>
+<th style="text-align: left;">Repair ladder stage</th>
+<th style="text-align: right;"><span
+class="math inline"><em>n</em></span></th>
+<th style="text-align: right;">current negative</th>
+<th style="text-align: right;">next turn negative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Stage 0 (no repair cues)</td>
+<td style="text-align: right;">4,767</td>
+<td style="text-align: right;">16.3% [15.0, 17.7]</td>
+<td style="text-align: right;">32.7% [31.1, 34.2]</td>
+</tr>
+<tr>
+<td style="text-align: left;">Stage 1 (rephrase, negation, shorter)</td>
+<td style="text-align: right;">4,242</td>
+<td style="text-align: right;">34.3% [32.5, 36.1]</td>
+<td style="text-align: right;">37.9% [36.0, 39.7]</td>
+</tr>
+<tr>
+<td style="text-align: left;">Stage 2 (repeat <span
+class="math inline">1×</span>, <em>what?</em>, meta)</td>
+<td style="text-align: right;">2,177</td>
+<td style="text-align: right;">60.3% [58.0, 62.5]</td>
+<td style="text-align: right;">45.3% [42.8, 47.8]</td>
+</tr>
+<tr>
+<td style="text-align: left;">Stage 3+ (repeat <span
+class="math inline"> ≥ 2×</span> or + OIR/meta)</td>
+<td style="text-align: right;">907</td>
+<td style="text-align: right;"><strong>79.3%</strong> [75.7, 82.7]</td>
+<td style="text-align: right;"><strong>57.1%</strong> [52.8, 61.4]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id="experiments">Experiments</h1>
+<h4 id="cases.">Cases.</h4>
+<p>From DialMAGE we take every dialogue at the first user turn that is
+negative and repeats an earlier request: the need is still unmet. We
+developed prompts and the reader on 60 cases of the test split, and on
+81 cases of the dev split for a second round; the results we report are
+on 100 cases from the train split, which were not looked at during
+development.</p>
+<h4 id="conditions.">Conditions.</h4>
+<p>A: reply to the last message. B: be concrete, answer rather than ask
+back. C: prompt-only reading — find what is unresolved from the same
+linguistic cues and how the user feels, then deliver it (for the 8B
+model, two calls: read, then reply). D: REPAIR. E: REPAIR without stage,
+cues and policy (ledger and database only).</p>
+<h4 id="generators.">Generators.</h4>
+<p>Claude 3.5 Sonnet <span class="citation"
+data-cites="anthropic2024claude">(Anthropic 2024)</span> via the
+<code>claude</code> CLI, and Llama 3 8B <span class="citation"
+data-cites="grattafiori2024llama3">(<span class="nocase">Grattafiori et
+al.</span> 2024)</span> (dolphin-llama3:8b via Ollama). A–C have no
+database; D and E have the rows REPAIR selects.</p>
+<h4 id="evaluation.">Evaluation.</h4>
+<p>Two judge models from different families (Claude 3 Opus and Gemini
+2.5 <span class="citation" data-cites="geminiteam2024gemini">(<span
+class="nocase">Gemini Team et al.</span> 2024)</span>) independently see
+the dialogue and the five replies in random order, and score each reply:
+<em>resolves</em> (0 does not, 1 partly, 2 delivers the need),
+<em>give_up</em> (a user in this state would likely give up),
+<em>repeats</em>, and the best reply. In a second pass each judge also
+sees the database rows for the current request and is told that a
+contradicting fact cannot score 2. Across all 500 judged replies per
+run, the two judge families agree within 1 point on <em>resolves</em>
+96.4%–100.0% of the time; fact-checking raises inter-judge correlation
+from <span class="math inline"><em>r</em> = 0.73</span> to <span
+class="math inline"><em>r</em> = 0.90</span> on the 8B run (exact
+agreement 59.4% to 85.2%) and from <span
+class="math inline"><em>r</em> = 0.66</span> to <span
+class="math inline"><em>r</em> = 0.81</span> on the Sonnet run. An
+objective check without any model asks whether the reply names a real
+database entity that satisfies the pending constraints. Differences are
+paired bootstrap 95% intervals over cases.</p>
+<h2 id="results">Results</h2>
+<div id="tab:llama">
+<table>
+<caption>100 unseen DialMAGE dialogues, Llama 3 8B generator, judged
+independently by Claude Opus and Gemini (both different model families
+from the generator). “Real &amp; match” is over the 87 cases with a
+database request (the original DialMAGE system achieved 10.3%, after
+which 53.6% of users stayed negative).</caption>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th colspan="2" style="text-align: center;">Claude Opus judge</th>
+<th colspan="2" style="text-align: center;">Gemini judge</th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span>2-3</span> (lr)<span>4-5</span>
+Llama 3 8B</td>
+<td style="text-align: center;">resolves</td>
+<td style="text-align: center;">give up</td>
+<td style="text-align: center;">resolves</td>
+<td style="text-align: center;">give up</td>
+<td style="text-align: center;">real &amp; match</td>
+</tr>
+<tr>
+<td style="text-align: left;">A last message</td>
+<td style="text-align: center;">0.45</td>
+<td style="text-align: center;">29%</td>
+<td style="text-align: center;">0.98</td>
+<td style="text-align: center;">19%</td>
+<td style="text-align: center;">23.0%</td>
+</tr>
+<tr>
+<td style="text-align: left;">B be concrete</td>
+<td style="text-align: center;">0.45</td>
+<td style="text-align: center;">28%</td>
+<td style="text-align: center;">0.98</td>
+<td style="text-align: center;">18%</td>
+<td style="text-align: center;">21.8%</td>
+</tr>
+<tr>
+<td style="text-align: left;">C prompt-only reading</td>
+<td style="text-align: center;">0.33</td>
+<td style="text-align: center;">49%</td>
+<td style="text-align: center;">0.73</td>
+<td style="text-align: center;">35%</td>
+<td style="text-align: center;">18.4%</td>
+</tr>
+<tr>
+<td style="text-align: left;">D REPAIR</td>
+<td style="text-align: center;"><strong>1.22</strong></td>
+<td style="text-align: center;"><strong>19%</strong></td>
+<td style="text-align: center;"><strong>1.51</strong></td>
+<td style="text-align: center;"><strong>14%</strong></td>
+<td style="text-align: center;">60.9%</td>
+</tr>
+<tr>
+<td style="text-align: left;">E ledger + database</td>
+<td style="text-align: center;">1.16</td>
+<td style="text-align: center;">23%</td>
+<td style="text-align: center;">1.39</td>
+<td style="text-align: center;">22%</td>
+<td style="text-align: center;">62.1%</td>
+</tr>
+<tr>
+<td style="text-align: left;">A, fact-checked judge</td>
+<td style="text-align: center;">0.20</td>
+<td style="text-align: center;">54%</td>
+<td style="text-align: center;">0.26</td>
+<td style="text-align: center;">41%</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">B, fact-checked judge</td>
+<td style="text-align: center;">0.17</td>
+<td style="text-align: center;">56%</td>
+<td style="text-align: center;">0.26</td>
+<td style="text-align: center;">39%</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">C, fact-checked judge</td>
+<td style="text-align: center;">0.20</td>
+<td style="text-align: center;">69%</td>
+<td style="text-align: center;">0.25</td>
+<td style="text-align: center;">51%</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">D, fact-checked judge</td>
+<td style="text-align: center;"><strong>1.41</strong></td>
+<td style="text-align: center;"><strong>14%</strong></td>
+<td style="text-align: center;"><strong>1.49</strong></td>
+<td style="text-align: center;"><strong>12%</strong></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">E, fact-checked judge</td>
+<td style="text-align: center;">1.31</td>
+<td style="text-align: center;">17%</td>
+<td style="text-align: center;">1.39</td>
+<td style="text-align: center;">16%</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="small-model.">Small model.</h4>
+<p>Under both judges, REPAIR resolves the need far more often than every
+baseline (Table <a href="#tab:llama" data-reference-type="ref"
+data-reference="tab:llama">3</a>): with Claude Opus, D<span
+class="math inline">−</span>B <span class="math inline">+0.77</span>
+[0.55, 0.98] and D<span class="math inline">−</span>C <span
+class="math inline">+0.89</span> [0.70, 1.08]; with Gemini, D<span
+class="math inline">−</span>B <span class="math inline">+0.53</span>
+[0.33, 0.72] and D<span class="math inline">−</span>C <span
+class="math inline">+0.78</span> [0.60, 0.96]. Under both judges,
+prompt-only reading (C) significantly hurts the 8B model compared to B
+(Opus <span class="math inline">−0.12</span>, Gemini <span
+class="math inline">−0.25</span> [<span
+class="math inline">−0.42</span>, <span
+class="math inline">−0.08</span>], give-ups <span
+class="math inline">+17</span> pts): inspecting 18 development cases
+where C lost, the model’s own reading named needs from earlier in the
+dialogue or invented them (“Indian restaurant” for a guesthouse
+request), and the reply apologized and promised (“please bear with me”)
+instead of delivering. The same pattern held on the 81 dev-split cases
+(D 1.10 vs. C 0.57). Across all 241 evaluated cases spanning all three
+DialMAGE splits (213 with a database request), REPAIR raises objective
+real, matching entity delivery from 18.3% (A), 20.6% (B) and 17.4% (C)
+to <strong>62.9%</strong> (D) on the 8B model, and from 29.0% (A), 41.6%
+(B) and 45.8% (C) to <strong>74.3%</strong> (D) on Claude Sonnet.</p>
+<h4 id="strong-model.">Strong model.</h4>
+<p>With Claude Sonnet as the generator (Table <a href="#tab:claude"
+data-reference-type="ref" data-reference="tab:claude">4</a>), plain
+judges without database verification favour prompt-only reading.
+However, fact-checked judging reverses the picture under both judges:
+with Opus, D resolves 1.64 [1.52, 1.75] vs. C 0.82 and B 0.76 (D<span
+class="math inline">−</span>C <span class="math inline">+0.82</span>
+[0.66, 0.97], D<span class="math inline">−</span>B <span
+class="math inline">+0.88</span> [0.71, 1.05]); with Gemini
+(cross-family), D resolves <strong>1.94</strong> [1.88, 1.99] vs. C 1.04
+[0.90, 1.19] and B 0.91 [0.77, 1.05] (D<span
+class="math inline">−</span>C <span class="math inline">+0.90</span>
+[0.76, 1.04], D<span class="math inline">−</span>B <span
+class="math inline">+1.03</span> [0.89, 1.17]; D picked best 53% vs. C
+6%). REPAIR raises real, matching entities from 52.9% (C) to 67.8% and
+cuts entities that violate the user’s constraints from 33.3% to 13.8%.
+Plain judges reward confident invented bookings (see below);
+fact-checked judges penalise them.</p>
+<div id="tab:claude">
+<table>
+<caption>Same 100 cases, Claude Sonnet generator. Plain judges reward
+invented bookings; fact-checked judges penalise them. Gemini is a
+cross-family judge for both generator and first judge.</caption>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th colspan="2" style="text-align: center;">Opus judge</th>
+<th colspan="2" style="text-align: center;">Gemini judge</th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span>2-3</span> (lr)<span>4-5</span>
+Claude Sonnet</td>
+<td style="text-align: center;">resolves</td>
+<td style="text-align: center;">give up</td>
+<td style="text-align: center;">resolves</td>
+<td style="text-align: center;">give up</td>
+<td style="text-align: center;">real &amp; match</td>
+</tr>
+<tr>
+<td style="text-align: left;">A last message</td>
+<td style="text-align: center;">0.83</td>
+<td style="text-align: center;">35%</td>
+<td style="text-align: center;">1.19</td>
+<td style="text-align: center;">21%</td>
+<td style="text-align: center;">31.0%</td>
+</tr>
+<tr>
+<td style="text-align: left;">B be concrete</td>
+<td style="text-align: center;">1.25</td>
+<td style="text-align: center;">7%</td>
+<td style="text-align: center;">1.62</td>
+<td style="text-align: center;">2%</td>
+<td style="text-align: center;">43.7%</td>
+</tr>
+<tr>
+<td style="text-align: left;">C prompt-only reading</td>
+<td style="text-align: center;">1.45</td>
+<td style="text-align: center;">2%</td>
+<td style="text-align: center;">1.85</td>
+<td style="text-align: center;">0%</td>
+<td style="text-align: center;">52.9%</td>
+</tr>
+<tr>
+<td style="text-align: left;">D REPAIR</td>
+<td style="text-align: center;">1.34</td>
+<td style="text-align: center;">18%</td>
+<td style="text-align: center;">1.55</td>
+<td style="text-align: center;">14%</td>
+<td style="text-align: center;">67.8%</td>
+</tr>
+<tr>
+<td style="text-align: left;">E ledger + database</td>
+<td style="text-align: center;">1.28</td>
+<td style="text-align: center;">19%</td>
+<td style="text-align: center;">1.49</td>
+<td style="text-align: center;">14%</td>
+<td style="text-align: center;">65.5%</td>
+</tr>
+<tr>
+<td style="text-align: left;">A, fact-checked judge</td>
+<td style="text-align: center;">0.68</td>
+<td style="text-align: center;">38%</td>
+<td style="text-align: center;">0.89</td>
+<td style="text-align: center;">24%</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">B, fact-checked judge</td>
+<td style="text-align: center;">0.76</td>
+<td style="text-align: center;">19%</td>
+<td style="text-align: center;">0.91</td>
+<td style="text-align: center;">8%</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">C, fact-checked judge</td>
+<td style="text-align: center;">0.82</td>
+<td style="text-align: center;">12%</td>
+<td style="text-align: center;">1.04</td>
+<td style="text-align: center;">0%</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">D, fact-checked judge</td>
+<td style="text-align: center;"><strong>1.64</strong></td>
+<td style="text-align: center;"><strong>3%</strong></td>
+<td style="text-align: center;"><strong>1.94</strong></td>
+<td style="text-align: center;"><strong>1%</strong></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">E, fact-checked judge</td>
+<td style="text-align: center;">1.65</td>
+<td style="text-align: center;">3%</td>
+<td style="text-align: center;">1.90</td>
+<td style="text-align: center;">1%</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="small-model-with-repair-vs.-strong-model.">Small model with
+REPAIR vs. strong model.</h4>
+<p>On the same 100 cases, Llama 8B with REPAIR is close to Claude Sonnet
+told to be concrete under both judges (Opus: 1.22 vs. 1.25; Gemini: 1.51
+vs. 1.62) and above Claude answering the last message (Opus: 0.83;
+Gemini: 1.19).</p>
+<h4 id="what-carries-the-gain.">What carries the gain.</h4>
+<p>D and E do not differ significantly on the 8B model overall (D<span
+class="math inline">−</span>E resolves: Opus <span
+class="math inline">+0.06</span> [<span
+class="math inline">−0.07</span>, 0.19]; Gemini <span
+class="math inline">+0.12</span> [<span
+class="math inline">−0.05</span>, 0.28]): on the 88 stage-2 cases the
+explicit ledger and the database account for the entire gain. However,
+on the 12 stage-3 cases — where the user shows stronger repair
+escalation — D significantly outperforms E on the 8B model: Opus D<span
+class="math inline">−</span>E <span class="math inline">+0.50</span>
+[0.08, 0.92] (D 1.50 vs. E 1.00), Gemini <span
+class="math inline">+0.67</span> [0.25, 1.17] (D 1.92 vs. E 1.25), and
+give-ups drop from 33% (E) to 0–8% (D). For instance, when a user has
+asked three times for a 3-star hotel in the east (none exists in the
+database, case DMAGE271#8), E stalls with “Let me check if there are any
+hotels,” whereas D’s stage-3 policy immediately delivers the closest
+real match (Express by Holiday Inn, 2 stars in the east, with address
+and phone), scoring 2 under both judges against 0 for E. The
+escalation-aware policy helps precisely where users are most
+frustrated.</p>
+<h4 id="judges-reward-invented-bookings.">Judges reward invented
+bookings.</h4>
+<p>Across all 84 Sonnet replies that named a database entity violating
+the user’s constraints (<code>named_invalid</code>), plain judges still
+awarded full marks (<em>resolves</em> <span
+class="math inline"> = 2</span>) 38% of the time under Opus and 65%
+under Gemini; fact-checked judging cuts this to 17% and 21% (and on the
+8B run from 16% and 44% down to 10% under both judges). For example,
+without the database, both judges gave full marks to a reply that
+“booked” train TR0899 for a Leicester–Cambridge request; in the database
+TR0899 runs Cambridge–London. Showing the judge the database rows
+removes this: for the 8B model, B falls from 0.45 to 0.17 (Opus) and
+from 0.98 to 0.26 (Gemini), while D is 1.41 (Opus) and 1.49 (Gemini).
+Because the rows come from the same reader REPAIR uses, we report both
+passes.</p>
+<h1 id="limitations">Limitations</h1>
+<p>Evaluation uses two LLM judge families (Claude Opus and Gemini) plus
+an objective entity check; we do not include a separate human rating
+study on the generated replies, relying instead on EmoWOZ’s human
+emotion annotations, DBDC3’s 30-annotator breakdown labels, and exact
+database matching. The complaint-word list is lexical: on 200 sampled
+negative turns, 7.0% matched with 92.9% precision (1 false positive from
+task language “no, I need a train...”); the low recall confirms our
+claim that word-level sentiment misses most dissatisfaction. The repeat
+threshold (Jaccard <span class="math inline"> ≥ 0.5</span>, yielding
+46.8%) is robust: 0.4 gives 53.7%, 0.6 gives 37.0%. The REPAIR reader
+identified the pending request in 19/20 spot-checked cases and provided
+database rows in 13/20. Our corpus findings replicate across four
+datasets (EmoWOZ-MultiWOZ, EmoWOZ-DialMAGE, USS-SGD across 20 domains,
+and USS-ReDial), with DBDC3 as a chat-oriented contrast; the
+database-grounded intervention is evaluated on DialMAGE using the static
+MultiWOZ database and simulated booking. The objective check depends on
+the reader’s own reading of the pending request.</p>
+<h1 id="ethics">Ethics</h1>
+<p>EmoWOZ is released under CC BY-NC 4.0 <span class="citation"
+data-cites="feng2022emowoz">(Feng et al. 2022)</span>; we use it for
+academic research and do not redistribute the data. All generated
+replies are from dialogue systems, not real users. No personal
+information beyond what is in the public corpus was used.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Users tell a system it has failed mostly by repeating themselves, and
+systems answer the repetition instead of the need behind it. Making that
+need explicit — what was asked, what was delivered, what is still
+pending, with real data to deliver it — lets a small model do what a
+strong model does from a prompt, and makes both deliver real, correct
+entities more often.</p>
+<h4 id="reproducibility.">Reproducibility.</h4>
+<p>Code, prompts, model outputs and judgments:<br />
+<a href="https://github.com/yingchen-coding/frustration-paper"
+class="uri">https://github.com/yingchen-coding/frustration-paper</a>.</p>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="list">
+<div id="ref-anthropic2024claude" class="csl-entry" role="listitem">
+Anthropic. 2024. <em>The <span>C</span>laude Model Family</em>. <a
+href="https://www.anthropic.com/claude"
+class="uri">Https://www.anthropic.com/claude</a>.
+</div>
+<div id="ref-budzianowski2018multiwoz" class="csl-entry"
+role="listitem">
+Budzianowski, Paweł, Tsung-Hsien Wen, Bo-Hsiang Tseng, et al. 2018.
+<span>“<span>MultiWOZ</span> – a Large-Scale Multi-Domain
+<span>W</span>izard-of-<span>O</span>z Dataset for Task-Oriented
+Dialogue Modelling.”</span> <em>Proceedings of the 2018 Conference on
+Empirical Methods in Natural Language Processing</em>, 5016–26.
+</div>
+<div id="ref-chen2012offensive" class="csl-entry" role="listitem">
+Chen, Ying, Yilu Zhou, Sencun Zhu, and Heng Xu. 2012. <span>“Detecting
+Offensive Language in Social Media to Protect Adolescent Online
+Safety.”</span> <em>2012 International Conference on Privacy, Security,
+Risk and Trust and 2012 International Conference on Social
+Computing</em>, 71–80.
+</div>
+<div id="ref-clark1991grounding" class="csl-entry" role="listitem">
+Clark, Herbert H., and Susan E. Brennan. 1991. <span>“Grounding in
+Communication.”</span> In <em>Perspectives on Socially Shared
+Cognition</em>, edited by Lauren B. Resnick, John M. Levine, and
+Stephanie D. Teasley. American Psychological Association.
+</div>
+<div id="ref-feng2022emowoz" class="csl-entry" role="listitem">
+Feng, Shutong, Nurul Lubis, Christian Geishauser, et al. 2022.
+<span>“<span>EmoWOZ</span>: A Large-Scale Corpus and Labelling Scheme
+for Emotion Recognition in Task-Oriented Dialogue Systems.”</span>
+<em>Proceedings of the Thirteenth Language Resources and Evaluation
+Conference</em> (Marseille, France), 4096–113.
+</div>
+<div id="ref-geminiteam2024gemini" class="csl-entry" role="listitem">
+<span class="nocase">Gemini Team, Rohan Anil, Sebastian Borgeaud, et
+al.</span> 2024. <em>Gemini: A Family of Highly Capable Multimodal
+Models</em>. arXiv preprint arXiv:2312.11805.
+</div>
+<div id="ref-grattafiori2024llama3" class="csl-entry" role="listitem">
+<span class="nocase">Grattafiori, Aaron, Abhimanyu Dubey, Abhinav
+Jauhri, et al.</span> 2024. <em>The <span>L</span>lama 3 Herd of
+Models</em>. arXiv preprint arXiv:2407.21783.
+</div>
+<div id="ref-frustration2024stupidrobot" class="csl-entry"
+role="listitem">
+Hernandez Caralt, Mireia, Ivan Sekulić, Filip Carević, et al. 2024.
+<em><span><span>“Stupid Robot, I Want to Speak to a
+Human!”</span></span> <span>U</span>ser Frustration Detection in
+Task-Oriented Dialog Systems</em>. arXiv preprint arXiv:2411.17437.
+</div>
+<div id="ref-higashinaka2016dbdc" class="csl-entry" role="listitem">
+Higashinaka, Ryuichiro, Kotaro Funakoshi, Yuka Kobayashi, and Michimasa
+Inaba. 2016. <span>“The Dialogue Breakdown Detection Challenge: Task
+Description, Datasets, and Evaluation Metrics.”</span> <em>Proceedings
+of the Tenth International Conference on Language Resources and
+Evaluation</em>, 3146–50.
+</div>
+<div id="ref-emowozcs2025" class="csl-entry" role="listitem">
+Labat, Sofie, Thomas Demeester, and Véronique Hoste. 2025. <em>A
+Customer Journey in the Land of <span>O</span>z: Leveraging the Wizard
+of <span>O</span>z Technique to Model Emotions in Customer Service
+Interactions</em>. arXiv preprint arXiv:2511.21909.
+</div>
+<div id="ref-rastogi2020sgd" class="csl-entry" role="listitem">
+Rastogi, Abhinav, Xiaoxue Zang, Srinivas Sunkara, Raghav Gupta, and
+Pranav Khaitan. 2020. <span>“Towards Scalable Multi-Domain
+Conversational Agents: The Schema-Guided Dialogue Dataset.”</span>
+<em>Proceedings of the AAAI Conference on Artificial Intelligence</em>
+34: 8689–96.
+</div>
+<div id="ref-schegloff1977repair" class="csl-entry" role="listitem">
+Schegloff, Emanuel A., Gail Jefferson, and Harvey Sacks. 1977.
+<span>“The Preference for Self-Correction in the Organization of Repair
+in Conversation.”</span> <em>Language</em> 53 (2): 361–82.
+</div>
+<div id="ref-sun2021uss" class="csl-entry" role="listitem">
+Sun, Weiwei, Shuo Zhang, Balog Krisztian, et al. 2021. <span>“Simulating
+User Satisfaction for the Evaluation of Task-Oriented Dialogue
+Systems.”</span> <em>Proceedings of the 44th International ACM SIGIR
+Conference on Research and Development in Information Retrieval</em>,
+2499–506.
+</div>
+<div id="ref-zheng2023judging" class="csl-entry" role="listitem">
+Zheng, Lianmin, Wei-Lin Chiang, Ying Sheng, et al. 2023. <span>“Judging
+<span>LLM</span>-as-a-Judge with <span>MT</span>-Bench and Chatbot
+Arena.”</span> <em>Advances in Neural Information Processing
+Systems</em>.
+</div>
+</div>
+</body>
+</html>

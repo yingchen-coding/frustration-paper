@@ -1,9 +1,20 @@
-# Understand the user, don't repeat: unmet needs in task-oriented dialogue
+# Understand the User, Don't Repeat: Linguistic Cues of Unmet Needs and Explicit Repair in Task-Oriented Dialogue
+
+[![Version](https://img.shields.io/github/v/tag/yingchen-coding/frustration-paper?sort=semver&label=version)](https://github.com/yingchen-coding/frustration-paper/releases)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 When a dialogue system fails, users rarely say so with complaint words. They repeat or rephrase the request,
 write "what?" or "??", or get shorter. This repository studies those linguistic and emotional cues of an
 unmet need and tests a method, **REPAIR**, that reads them explicitly so a model solves what the user is
 still waiting for instead of answering only the last message.
+
+## Paper
+
+The preprint source is in [`paper/main.tex`](paper/main.tex); rendered artifacts are
+[`paper/frustration-paper.pdf`](paper/frustration-paper.pdf) ([`paper/main.pdf`](paper/main.pdf)),
+[`paper/frustration-paper.html`](paper/frustration-paper.html),
+[`paper/frustration-paper.docx`](paper/frustration-paper.docx), and the arXiv source bundle
+[`paper/arxiv-upload.zip`](paper/arxiv-upload.zip).
 
 The resulting brief is given to any generator. Paper PDF: [`paper/main.pdf`](paper/main.pdf) (`paper/main.tex`).
 

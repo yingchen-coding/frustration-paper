@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use REPAIR or the paper artifact, please cite this work."
+title: "Understand the User, Don't Repeat: Linguistic Cues of Unmet Needs and Explicit Repair in Task-Oriented Dialogue"
+authors:
+  - family-names: Chen
+    given-names: Ying
+date-released: "2026-11-09"
+version: "0.1.0"
+repository-code: "https://github.com/yingchen-coding/frustration-paper"
+license: "MIT"
