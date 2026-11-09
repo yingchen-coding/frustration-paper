@@ -162,7 +162,7 @@ Repair ladder stage & $n$ & current negative & next turn negative \\
 Stage 0 (no repair cues) & 4,767 & 16.3\% [15.0, 17.7] & 32.7\% [31.1, 34.2] \\
 Stage 1 (rephrase, negation, shorter) & 4,242 & 34.3\% [32.5, 36.1] & 37.9\% [36.0, 39.7] \\
 Stage 2 (repeat $1\times$, \emph{what?}, meta) & 2,177 & 60.3\% [58.0, 62.5] & 45.3\% [42.8, 47.8] \\
-Stage 3+ (repeat $\ge 2\times$ or repeat + OIR/meta) & 907 & \textbf{79.3\%} [75.7, 82.7] & \textbf{57.1\%} [52.8, 61.4] \\
+Stage 3+ (repeat $\ge 2\times$ or + OIR/meta) & 907 & \textbf{79.3\%} [75.7, 82.7] & \textbf{57.1\%} [52.8, 61.4] \\
 \bottomrule
 \end{tabular}
 \caption{User dissatisfaction by repair escalation stage across all 12,093 DialMAGE user turns (95\% bootstrap
@@ -217,8 +217,8 @@ E, fact-checked judge & 1.31 & 17\% & 1.39 & 16\% & \\
 \bottomrule
 \end{tabular}
 \caption{100 unseen DialMAGE dialogues, Llama 3 8B generator, judged independently by Claude Opus and Gemini
-(both different model families from the generator). ``Real \& matching'' is over the 87 cases with a database
-request.}
+(both different model families from the generator). ``Real \& match'' is over the 87 cases with a database
+request (the original DialMAGE system achieved 10.3\%, after which 53.6\% of users stayed negative).}
 \label{tab:llama}
 \end{table}
 
@@ -281,11 +281,14 @@ stage-3 policy immediately delivers the closest real match (Express by Holiday I
 address and phone), scoring 2 under both judges against 0 for E. The escalation-aware policy helps precisely
 where users are most frustrated.
 
-\paragraph{Judges reward invented bookings.} Without the database, both judges gave full marks to a reply that
-``booked'' train TR0899 for a Leicester--Cambridge request; in the database TR0899 runs Cambridge--London.
-Showing the judge the database rows removes this: for the 8B model, B falls from 0.45 to 0.17 (Opus) and from
-0.98 to 0.26 (Gemini), while D is 1.41 (Opus) and 1.49 (Gemini). Because the rows come from the same reader
-REPAIR uses, we report both passes.
+\paragraph{Judges reward invented bookings.} Across all 84 Sonnet replies that named a database entity
+violating the user's constraints (\texttt{named\_invalid}), plain judges still awarded full marks
+($\emph{resolves}=2$) 38\% of the time under Opus and 65\% under Gemini; fact-checked judging cuts this to
+17\% and 21\% (and on the 8B run from 16\% and 44\% down to 10\% under both judges). For example, without the
+database, both judges gave full marks to a reply that ``booked'' train TR0899 for a Leicester--Cambridge
+request; in the database TR0899 runs Cambridge--London. Showing the judge the database rows removes this: for
+the 8B model, B falls from 0.45 to 0.17 (Opus) and from 0.98 to 0.26 (Gemini), while D is 1.41 (Opus) and
+1.49 (Gemini). Because the rows come from the same reader REPAIR uses, we report both passes.
 
 \section{Limitations}
 Evaluation uses two LLM judge families (Claude Opus and Gemini) plus an objective entity check; we do not
