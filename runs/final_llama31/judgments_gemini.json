@@ -1,0 +1,3902 @@
+{
+ "DMAGE2487.json#4": {
+  "need": "The user needs to find a train from Bishops Stortford to London Kings Cross.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE1490.json#20": {
+  "need": "The user needs to book a taxi from restaurant one seven to their hotel.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "best": "W"
+ },
+ "DMAGE2431.json#14": {
+  "need": "The user needs to know the price range of the Alpha-Milton Guest House.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "X"
+ },
+ "DMAGE3198.json#20": {
+  "need": "The user needs an expensive restaurant in the centre and a table booked for 5 people at 16:45 on Sunday.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE1576.json#16": {
+  "need": "The user wants to book a train ticket and needs the assistant to ask for their travel details.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE2459.json#4": {
+  "need": "The user needs recommendations for a moderately priced, 4-star guesthouse in the east that includes free wifi.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE786.json#2": {
+  "need": "The user needs a 4-star hotel located in the centre of Cambridge.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE1850.json#14": {
+  "need": "The user needs to book Aylesbray Lodge Guest House for 7 people on Thursday for 2 nights.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE1354.json#18": {
+  "need": "The user needs to know if free Wi-Fi is available at the Acorn Guest House.",
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": true
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE1551.json#4": {
+  "need": "The user needs train options from Cambridge to Ely departing on Saturday.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE1239.json#14": {
+  "need": "The user needs recommendations for a restaurant serving Indian food (ideally in the north or moderately priced).",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE952.json#4": {
+  "need": "The user needs recommendations for a local restaurant in the centre of Cambridge.",
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE811.json#6": {
+  "need": "The user needs the assistant to acknowledge the earlier phone number was wrong and explain how to get help or clarify their request.",
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "best": "Y"
+ },
+ "DMAGE1115.json#8": {
+  "need": "The user needs recommendations for a 4-star hotel or guesthouse within a moderate price range.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Y"
+ },
+ "DMAGE1854.json#6": {
+  "need": "The user needs to know the price range of Curry Garden.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE2347.json#2": {
+  "need": "The user needs recommendations for a place to stay in Cambridge.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE38.json#4": {
+  "need": "The user wants a taxi for today and needs to be asked for their pickup location, destination, and departure time.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE3103.json#8": {
+  "need": "The user needs a train from Cambridge to London Liverpool Street on Sunday leaving at or after 13:30.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "best": "U"
+ },
+ "DMAGE2734.json#10": {
+  "need": "The user needs hotel recommendations in the north area of Cambridge.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE1624.json#6": {
+  "need": "The user needs options for expensive 4-star hotels in Cambridge.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE287.json#4": {
+  "need": "The user needs recommendations for Chinese restaurants in Cambridge.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE1318.json#4": {
+  "need": "The user needs the postcode for the Ashley Hotel.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE2563.json#14": {
+  "need": "The user needs recommendations for an expensive restaurant in the centre of Cambridge.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE1825.json#2": {
+  "need": "The user wants to know what museums are in the centre of Cambridge.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE330.json#4": {
+  "need": "The user wants hotel recommendations and names in Cambridge.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE3227.json#20": {
+  "need": "The user is asking for parks in Bishops Stortford and needs to know the assistant covers Cambridge parks (such as Milton Country Park).",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": true
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Y"
+ },
+ "DMAGE2195.json#8": {
+  "need": "The user needs 4-star accommodation options in the South area (such as Aylesbray Lodge Guest House and Rosa's Bed and Breakfast).",
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE1659.json#4": {
+  "need": "The user needs the postcode for Acorn Guest House.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE3045.json#10": {
+  "need": "The user needs recommendations for a cheap Indian restaurant in the centre of Cambridge.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE1118.json#8": {
+  "need": "The user needs a Thursday train from Cambridge to London Liverpool Street around 18:00 instead of repeating the 05:00 train.",
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE350.json#14": {
+  "need": "The user needs to know if Acorn Guest House has free Wi-Fi (along with its free parking and star rating).",
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE2050.json#16": {
+  "need": "The user needs train options from London Liverpool Street to Cambridge on Wednesday.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": true
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE1074.json#28": {
+  "need": "The user needs a taxi arranged from Lensfield Hotel (confirming the destination and departure time) or the car type for their ride.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE1090.json#32": {
+  "need": "The user needs to arrange a taxi from Ali Baba to the Huntingdon Marriott Hotel, which requires asking for their departure time.",
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": true
+  },
+  "best": "X"
+ },
+ "DMAGE1816.json#8": {
+  "need": "The user wants to book a train and needs to be asked for their departure station, destination, and travel day.",
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "X"
+ },
+ "DMAGE2404.json#12": {
+  "need": "The user needs a 3-star moderately priced accommodation on the west side of Cambridge (Hobsons House).",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "best": "T"
+ },
+ "DMAGE213.json#16": {
+  "need": "The user wants the Ashley Hotel booked without being re-asked the same preference questions.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "best": "T"
+ },
+ "DMAGE1701.json#12": {
+  "need": "The user needs a 3-star hotel recommendation in the city centre (Gonville Hotel).",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE2769.json#2": {
+  "need": "The user needs a recommendation for an expensive Korean restaurant in Cambridge (Little Seoul).",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE400.json#28": {
+  "need": "The user needs a valid resolution for their Wednesday after-10:30 train request from Bishops Stortford to Broxbourne.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE2129.json#32": {
+  "need": "The user needs the car type and contact phone number for the taxi from Pizza Hut Fen Ditton to the hotel at 14:45.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": true
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "X"
+ },
+ "DMAGE701.json#16": {
+  "need": "The user needs the assistant to ask for their pickup location, destination, and departure time to book a taxi.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "best": "Y"
+ },
+ "DMAGE836.json#12": {
+  "need": "The user needs the postcode for Alexander Bed and Breakfast.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "best": "W"
+ },
+ "DMAGE319.json#14": {
+  "need": "The user needs the details for Taj Tandoori (address and postcode) after confirming interest in the restaurant.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "best": "Y"
+ },
+ "DMAGE2465.json#16": {
+  "need": "The user needs the reservation reference number for their booking for 7 people at Saint Johns Chop House on Thursday at 16:30.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": true
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "best": "X"
+ },
+ "DMAGE2992.json#4": {
+  "need": "The user needs the name and location of the nearest hospital in Cambridge (Addenbrooke's Hospital) and help getting there.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE2100.json#20": {
+  "need": "The user needs the assistant to ask for their departure station and travel day so it can find a train arriving by 14:00 and its price.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE2239.json#22": {
+  "need": "The user needs the contact phone number for Broughton House Gallery (01223 314960).",
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE474.json#8": {
+  "need": "The user needs restaurant recommendations in Cambridge without unsolicited bookings.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE3242.json#6": {
+  "need": "The user needs a train arriving at Stansted Airport by 13:30 on Thursday or to be clearly told none is available and offered an alternative.",
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Y"
+ },
+ "DMAGE76.json#18": {
+  "need": "The user needs the address for the Abbey Pool and Astroturf Pitch.",
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE2740.json#10": {
+  "need": "The user needs the address of Pizza Hut City Centre.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE1738.json#2": {
+  "need": "The user needs restaurant recommendations or clarifying questions to find a restaurant.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE2105.json#6": {
+  "need": "The user needs their train for 6 people from Cambridge to Bishops Stortford on Monday booked and confirmed.",
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE1839.json#8": {
+  "need": "The user needs the address of Meze Bar and a reservation for today.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE3073.json#8": {
+  "need": "The user needs a table booked for 7 people at 13:00 on Friday at Taj Tandoori.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE949.json#4": {
+  "need": "The user needs to be asked for their departure station and travel day to find a train to Cambridge.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE2940.json#2": {
+  "need": "The user needs recommendations for tourist attractions in the centre of Cambridge.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE112.json#6": {
+  "need": "The user needs a named hotel option and a booking for 4 nights starting on Monday.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE812.json#14": {
+  "need": "The user is wrapping up the conversation and needs a polite closing.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": true
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE591.json#2": {
+  "need": "The user needs recommendations for Turkish restaurants in Cambridge.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE2661.json#20": {
+  "need": "The user needs to specify their destination (and confirm travel day/time) to book a train departing from Birmingham New Street.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE587.json#16": {
+  "need": "The user needs to provide their departure station, destination, and travel day to get train price details.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE2354.json#2": {
+  "need": "The user needs help finding and booking a hotel by specifying their accommodation preferences or hotel name.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE1817.json#12": {
+  "need": "The user needs a Tuesday train from Cambridge to Stansted Airport departing at or after 08:15.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE600.json#14": {
+  "need": "The user needs the area of the Ashley Hotel.",
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "X"
+ },
+ "DMAGE624.json#2": {
+  "need": "The user needs recommendations for expensive restaurants in the centre of Cambridge.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE2198.json#4": {
+  "need": "The user needs recommendations for 4-star hotels in Cambridge.",
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE2594.json#10": {
+  "need": "The user needs recommendations for moderately priced places to stay in Cambridge.",
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE2853.json#8": {
+  "need": "The user needs a hotel recommendation in the east of Cambridge.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE965.json#14": {
+  "need": "The user needs a Friday train from London Kings Cross to Cambridge leaving after 15:00 for one person.",
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE823.json#8": {
+  "need": "The user needs the travel time for the Sunday train from Birmingham New Street to Broxbourne arriving by 16:30 (or to know that no such train exists).",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE2009.json#12": {
+  "need": "The user needs a Thursday train from Birmingham New Street to Cambridge arriving by 16:30.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE2618.json#2": {
+  "need": "The user needs recommendations for an expensive local restaurant in Cambridge.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Y"
+ },
+ "DMAGE2728.json#20": {
+  "need": "The user needs the train ID for a Friday train from Bishop's Stortford to Cambridge arriving by 13:15 (or clarification of the departure station).",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": true
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": true,
+   "repeats": true
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE3109.json#10": {
+  "need": "The user needs hotel or guesthouse recommendations instead of restaurant suggestions.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "X"
+ },
+ "DMAGE1094.json#4": {
+  "need": "The user needs a clear answer about whether there are any strip clubs in Cambridge and possible nightlife alternatives.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": true,
+   "repeats": false
+  },
+  "best": "Y"
+ },
+ "DMAGE2415.json#4": {
+  "need": "The user needs help finding a Saturday train by being asked for their departure and destination stations.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE271.json#8": {
+  "need": "The user needs a hotel option in the east of Cambridge for Saturday.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE3258.json#12": {
+  "need": "The user needs the price details for a Tuesday train from Cambridge to Peterborough arriving by 14:00.",
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE2395.json#16": {
+  "need": "The user needs the address and postcode for a hotel or a cheap restaurant in the centre of Cambridge.",
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE1994.json#14": {
+  "need": "The user needs a taxi booked from Kings Hedges Learner Pool to Castle Galleries at 11:00 today, along with the car type and contact number.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE1182.json#12": {
+  "need": "The user needs the car type and contact phone number for a taxi from Pizza Hut City Centre arriving at the attraction by 11:30 (or clarification of which attraction).",
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": true
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE504.json#12": {
+  "need": "The user needs 2 train tickets booked from Cambridge to Bishops Stortford on Wednesday with a booking reference number.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE2687.json#2": {
+  "need": "The user needs the names and addresses of 4-star hotels in the Cambridge area.",
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Y"
+ },
+ "DMAGE3100.json#14": {
+  "need": "The user needs the assistant to ask which day and which London station (King's Cross or Liverpool Street) they want to depart from for their train to Cambridge.",
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE1370.json#8": {
+  "need": "The user needs the accurate address for Curry Garden (106 Regent Street City Centre).",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE1342.json#10": {
+  "need": "The user needs to book a table at The Missing Sock (the cheap restaurant in the east) by providing the day, time, and party size.",
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE2586.json#2": {
+  "need": "The user needs recommendations for Asian oriental restaurants in Cambridge.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE898.json#12": {
+  "need": "The user needs recommendations for an expensive Italian restaurant in the centre of Cambridge.",
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE66.json#12": {
+  "need": "The user needs the address of Pizza Hut City Centre.",
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE454.json#14": {
+  "need": "The user needs to book the train to Cambridge (which requires specifying the travel day and confirming the departure station).",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE2396.json#14": {
+  "need": "The user needs to provide their departure station, destination, and travel day so the assistant can find a train and its ID.",
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE55.json#10": {
+  "need": "The user needs recommendations and details for a cheap Portuguese restaurant in the centre of Cambridge.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Y"
+ },
+ "DMAGE3137.json#2": {
+  "need": "The user needs recommendations for guesthouses in Cambridge.",
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE2182.json#6": {
+  "need": "The user needs to know that no direct train runs from Kings Lynn to Ely on Wednesday and be offered an alternative.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "X"
+ },
+ "DMAGE323.json#10": {
+  "need": "The user needs help switching to local tourist attractions (or providing a travel day if they still want the train).",
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": true
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE1358.json#10": {
+  "need": "The user needs to provide their departure station and travel day to find a train to Cambridge.",
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE969.json#22": {
+  "need": "The user needs the details for the college attraction, the north guesthouse (Alpha-Milton Guest House), and a taxi between them arriving by 12:15.",
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE3177.json#8": {
+  "need": "The user needs the address and contact details for the Acorn Guest House.",
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ }
+}

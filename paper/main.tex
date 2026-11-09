@@ -202,8 +202,9 @@ REPAIR: F (last-message RAG, retrieving rows from the user's last turn alone) an
 state, where the generator itself reads the full dialogue, outputs JSON \texttt{\{domain, constraints\}}, and
 queries the database).
 \paragraph{Generators.} Claude 3.5 Sonnet \citep{anthropic2024claude} via the
-\texttt{claude} CLI, and Llama 3 8B \citep{grattafiori2024llama3} (dolphin-llama3:8b
-via Ollama). A--C have no database; D and E have the rows REPAIR selects.
+\texttt{claude} CLI, and two 8B small models via Ollama: Llama 3 8B (dolphin-llama3:8b) and official
+instruction-tuned Llama 3.1 8B \citep[llama3.1:8b;][]{grattafiori2024llama3}. A--C have no database; D--G
+query the same MultiWOZ database.
 \paragraph{Evaluation.} Two judge models from different families (Claude 3 Opus and Gemini 2.5
 \citep{geminiteam2024gemini}) independently see
 the dialogue and the five replies in random order, and score each reply: \emph{resolves} (0 does not, 1
@@ -317,7 +318,13 @@ the re-grounding policy (restate the need in one line, deliver the best option, 
 significantly beats both F and G: on Llama 8B ($n=100$), plain D scores \textbf{1.44} vs.\ F 1.06 (D$-$F
 $+0.38$ [0.18, 0.58]) and G 0.97 (D$-$G $+0.47$ [0.27, 0.67], give-ups 16\% vs.\ 38\%), and fact-checked D
 scores \textbf{1.44} vs.\ F 0.85 (D$-$F $+0.59$ [0.37, 0.80]) and G 0.78 (D$-$G $+0.66$ [0.46, 0.87], give-ups
-15\% vs.\ 39\%). On Claude Sonnet ($n=90$), re-grounding eliminates the plain-judge gap --- D leads under
+15\% vs.\ 39\%). Replicating all seven conditions on official instruction-tuned Llama 3.1 8B
+(\texttt{runs/final\_llama31}, $n=100$) yields an even sharper separation: prompt-only reading again hurts the
+small model (plain C 0.51 vs.\ B 0.81, C$-$B $-0.30$ [$-0.43$, $-0.17$], give-ups 36\% vs.\ 9\%), while D
+achieves \textbf{63.2\%} objective valid entities (8.0\% invalid, vs.\ 41.4\%/25.3\% for F and 34.5\%/31.0\%
+for G), scores \textbf{1.60} plain and \textbf{1.54} fact-checked (give-ups \textbf{5\%}, vs.\ 9\% for E and
+20--23\% for F/G), and significantly outperforms both F (plain $+0.51$ [0.32, 0.69]; fact-checked $+0.68$
+[0.49, 0.87]) and G (plain $+0.53$ [0.33, 0.71]; fact-checked $+0.82$ [0.64, 0.99]). On Claude Sonnet ($n=90$), re-grounding eliminates the plain-judge gap --- D leads under
 both plain judging (\textbf{1.81}, give-ups \textbf{2.2\%}, vs.\ G 1.77, C 1.72, B 1.53 [D$-$B $+0.28$], F
 1.28 [D$-$F $+0.53$]) and fact-checked judging (\textbf{1.92}, give-ups \textbf{1.1\%}, vs.\ G 1.58 [D$-$G
 $+0.34$ [0.21, 0.49]] and F 1.21 [D$-$F $+0.71$ [0.52, 0.90]]). When users are frustrated, their last turn is

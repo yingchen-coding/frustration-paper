@@ -1,0 +1,721 @@
+{
+ "DMAGE2487.json#4": {
+  "domain": "train",
+  "constraints": {
+   "departure": "Bishops Stortford",
+   "destination": "London Kings Cross"
+  }
+ },
+ "DMAGE1490.json#20": {
+  "domain": "restaurant",
+  "constraints": {
+   "food": "british",
+   "pricerange": "moderate",
+   "name": "one seven"
+  }
+ },
+ "DMAGE2431.json#14": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "Here is the JSON describing what the user currently wants:\n\n```\n{\n  \"domain\": \"restaurant\",\n  \"constraints\": {\n    \"food\": \"indian\",\n    \"area\": \"north\"\n  }\n}\n```\n\nThen, the user changes their request to a hotel:\n\n```\n{\n  \"domain\": \"hotel\",\n  \"constraints\": {\n    \"area\": \"north\",\n    \"parking\": \"yes"
+ },
+ "DMAGE3198.json#20": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre",
+   "pricerange": "expensive",
+   "name": "pizza hut",
+   "food": "italian",
+   "phone number": "01223323737"
+  }
+ },
+ "DMAGE1576.json#16": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "north",
+   "type": "hotel",
+   "parking": "yes",
+   "stars": "4",
+   "name": "acorn guest house",
+   "day": "Wednesday",
+   "people": "6"
+  }
+ },
+ "DMAGE2459.json#4": {
+  "domain": "hotel",
+  "constraints": {
+   "pricerange": "moderate",
+   "stars": "4",
+   "internet": "yes"
+  }
+ },
+ "DMAGE786.json#2": {
+  "domain": "hotel",
+  "constraints": {
+   "type": "hotel",
+   "area": "centre",
+   "stars": "4"
+  }
+ },
+ "DMAGE1850.json#14": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "south",
+   "stars": "4",
+   "type": "guesthouse"
+  }
+ },
+ "DMAGE1354.json#18": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "North",
+   "pricerange": "moderate",
+   "internet": "yes"
+  }
+ },
+ "DMAGE1551.json#4": {
+  "domain": "train",
+  "constraints": {
+   "departure": "Cambridge",
+   "destination": "ely",
+   "day": "saturday"
+  }
+ },
+ "DMAGE1239.json#14": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "north",
+   "food": "turkish",
+   "pricerange": "moderate"
+  }
+ },
+ "DMAGE952.json#4": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre",
+   "name": "local restaurant"
+  }
+ },
+ "DMAGE811.json#6": {
+  "domain": "none",
+  "constraints": {}
+ },
+ "DMAGE1115.json#8": {
+  "domain": "hotel",
+  "constraints": {
+   "pricerange": "moderate",
+   "stars": "4",
+   "area": "east"
+  }
+ },
+ "DMAGE1854.json#6": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre",
+   "food": "indian",
+   "pricerange": "moderate"
+  }
+ },
+ "DMAGE2347.json#2": {
+  "domain": "hotel",
+  "constraints": {}
+ },
+ "DMAGE38.json#4": {
+  "domain": "taxi",
+  "constraints": {
+   "departure": "none",
+   "destination": "none",
+   "leaveAt": "none",
+   "arriveBy": "none",
+   "day": "today"
+  }
+ },
+ "DMAGE3103.json#8": {
+  "domain": "train",
+  "constraints": {
+   "departure": "Cambridge",
+   "destination": "London Liverpool Street",
+   "leaveAt": "13:30",
+   "day": "Sunday"
+  }
+ },
+ "DMAGE2734.json#10": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "north"
+  }
+ },
+ "DMAGE1624.json#6": {
+  "domain": "hotel",
+  "constraints": {
+   "stars": "four"
+  }
+ },
+ "DMAGE287.json#4": {
+  "domain": "restaurant",
+  "constraints": {
+   "food": "chinese"
+  }
+ },
+ "DMAGE1318.json#4": {
+  "domain": "hotel",
+  "constraints": {
+   "internet": "yes",
+   "parking": "yes"
+  }
+ },
+ "DMAGE2563.json#14": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "Here is the JSON describing the user's current request:\n\n```\n{\n  \"domain\": \"restaurant\",\n  \"constraints\": {\n    \"area\": \"centre\",\n    \"pricerange\": \"expensive\",\n    \"name\": \"pizza hut city centre\"\n  }\n}\n```\n\nNote: The `name` slot is included because the assistant mentioned \"pizza hut city centre\" in"
+ },
+ "DMAGE1825.json#2": {
+  "domain": "attraction",
+  "constraints": {
+   "area": "centre"
+  }
+ },
+ "DMAGE330.json#4": {
+  "domain": "hotel",
+  "constraints": {
+   "name": null
+  }
+ },
+ "DMAGE3227.json#20": {
+  "domain": "attraction",
+  "constraints": {
+   "area": "north",
+   "type": "theatre"
+  }
+ },
+ "DMAGE2195.json#8": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "south",
+   "pricerange": "expensive",
+   "stars": "4"
+  }
+ },
+ "DMAGE1659.json#4": {
+  "domain": "hotel",
+  "constraints": {
+   "type": "guesthouse",
+   "area": "north",
+   "internet": "yes"
+  }
+ },
+ "DMAGE3045.json#10": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre",
+   "pricerange": "moderate",
+   "food": "Indian"
+  }
+ },
+ "DMAGE1118.json#8": {
+  "domain": "train",
+  "constraints": {
+   "departure": "cambridge",
+   "destination": "london kings cross",
+   "leaveAt": "18:00"
+  }
+ },
+ "DMAGE350.json#14": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "north",
+   "parking": "yes",
+   "internet": "yes"
+  }
+ },
+ "DMAGE2050.json#16": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "Here is the JSON describing the user's current request:\n\n```\n{\n  \"domain\": \"restaurant\",\n  \"constraints\": {\n    \"food\": \"Thai food\",\n    \"name\": \"Sala Thong\"\n  }\n}\n```\n\nHowever, after the user's last message \"Cambridge\", it seems like they are looking for a train to Cambridge. Here is the updated JS"
+ },
+ "DMAGE1074.json#28": {
+  "domain": "taxi",
+  "constraints": {
+   "departure": "Lensfield hotel",
+   "destination": "theater",
+   "leaveAt": null,
+   "arriveBy": null
+  }
+ },
+ "DMAGE1090.json#32": {
+  "domain": "taxi",
+  "constraints": {
+   "departure": "ali baba",
+   "destination": "hotel"
+  }
+ },
+ "DMAGE1816.json#8": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "After tracking the dialogue, the current state is:\n\n```\n{\n  \"domain\": \"attraction\",\n  \"constraints\": {\n    \"area\": \"north\"\n  }\n}\n```\n\nThe user has specified that they are looking for a theatre in the north, but has not provided any additional information about the theatre. They have also asked about"
+ },
+ "DMAGE2404.json#12": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "west",
+   "pricerange": "moderate",
+   "stars": "3"
+  }
+ },
+ "DMAGE213.json#16": {
+  "domain": "hotel",
+  "constraints": {
+   "internet": "yes"
+  }
+ },
+ "DMAGE1701.json#12": {
+  "domain": "hotel",
+  "constraints": {
+   "stars": 3,
+   "area": "centre"
+  }
+ },
+ "DMAGE2769.json#2": {
+  "domain": "restaurant",
+  "constraints": {
+   "cuisine": "korean",
+   "pricerange": "expensive"
+  }
+ },
+ "DMAGE400.json#28": {
+  "domain": "train",
+  "constraints": {
+   "departure": "Bishops Stortford",
+   "destination": "Broxbourne",
+   "day": "Wednesday",
+   "leaveAt": "after 10:30"
+  }
+ },
+ "DMAGE2129.json#32": {
+  "domain": "none",
+  "constraints": {}
+ },
+ "DMAGE701.json#16": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "```\n{\n  \"domain\": \"attraction\",\n  \"constraints\": {\n    \"area\": \"centre\",\n    \"type\": \"boating\"\n  }\n}\n```\n\nThen:\n```\n{\n  \"domain\": \"attraction\",\n  \"constraints\": {\n    \"area\": \"centre\",\n    \"type\": \"boating\"\n  }\n}\n```\n\nThen:\n```\n{\n  \"domain\": \"attraction\",\n  \"constraints\": {\n    \"area\": \"centre\",\n   "
+ },
+ "DMAGE836.json#12": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "Here is the JSON describing what the user currently wants:\n\n```\n{\n  \"domain\": \"train\",\n  \"constraints\": {\n    \"departure\": \"cambridge\",\n    \"destination\": \"peterborough\",\n    \"leaveAt\": \"17:45\",\n    \"day\": \"friday\"\n  }\n}\n```\n\nNote: I excluded the \"arrivalBy\" slot because the user specified \"leaveAt\""
+ },
+ "DMAGE319.json#14": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "Here is the dialogue state tracking for each turn:\n\nTurn 1:\n```\n{\n  \"domain\": \"restaurant\",\n  \"constraints\": {\n    \"area\": \"south\",\n    \"food\": \"spanish\"\n  }\n}\n```\n\nTurn 2:\n```\n{\n  \"domain\": \"none\" (no constraints)\n}\n```\n\nTurn 3:\n```\n{\n  \"domain\": \"train\",\n  \"constraints\": {\n    \"departure\": \"kings "
+ },
+ "DMAGE2465.json#16": {
+  "domain": "restaurant",
+  "constraints": {
+   "food": "british",
+   "pricerange": "cheap",
+   "area": "west",
+   "name": "one seven",
+   "numpeople": "7"
+  }
+ },
+ "DMAGE2992.json#4": {
+  "domain": "hospital",
+  "constraints": {
+   "area": "nearby"
+  }
+ },
+ "DMAGE2100.json#20": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "Here is the dialogue state:\n\n```json\n{\n  \"domain\": \"hotel\",\n  \"constraints\": {\n    \"area\": \"centre\",\n    \"pricerange\": \"medium\",\n    \"stars\": \"4\",\n    \"name\": \"none\"\n  }\n}\n```\n\nNote that I did not include \"type\" (hotel|guesthouse) as a constraint, since the user did not specify it. I also did not in"
+ },
+ "DMAGE2239.json#22": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "```\n{\n  \"domain\": \"train\",\n  \"constraints\": {\n    \"departure\": \"Stanstead airport\",\n    \"destination\": \"Cambridge\",\n    \"day\": \"Saturday\",\n    \"leaveAt\": \"05:00\",\n    \"arriveBy\": \"16:00\"\n  }\n}\n```\n\n```\n{\n  \"domain\": \"train\",\n  \"constraints\": {\n    \"departure\": \"Stanstead airport\",\n    \"destination\":"
+ },
+ "DMAGE474.json#8": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "```\n{\n  \"domain\": \"attraction\",\n  \"constraints\": {\n    \"name\": \"College\"\n  }\n}\n```\n\n```\n{\n  \"domain\": \"attraction\",\n  \"constraints\": {\n    \"name\": \"College\",\n    \"type\": \"college\"\n  }\n}\n```\n\n```\n{\n  \"domain\": \"restaurant\",\n  \"constraints\": {}\n}\n```\n\n```\n{\n  \"domain\": \"restaurant\",\n  \"constraints\": {"
+ },
+ "DMAGE3242.json#6": {
+  "domain": "train",
+  "constraints": {
+   "departure": "London Kings Cross",
+   "destination": "Stansted Airport",
+   "day": "Thursday",
+   "leaveAt": null,
+   "arriveBy": "13:30"
+  }
+ },
+ "DMAGE76.json#18": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "Here is the JSON describing what the user currently wants:\n\n```\n{\n  \"domain\": \"restaurant\",\n  \"constraints\": {\n    \"name\": \"pizza hut city centre\",\n    \"food\": \"italian\",\n    \"pricerange\": \"moderate\"\n  }\n}\n```\n\nThis is based on the user's last question and the constraints they have given so far. Not"
+ },
+ "DMAGE2740.json#10": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre",
+   "name": "pizza hut city centre"
+  }
+ },
+ "DMAGE1738.json#2": {
+  "domain": "restaurant",
+  "constraints": {
+   "name": null
+  }
+ },
+ "DMAGE2105.json#6": {
+  "domain": "train",
+  "constraints": {
+   "destination": "bishops stortford",
+   "departure": "cambridge",
+   "day": "monday",
+   "leaveAt": "21:00",
+   "trainID": "TR7075"
+  }
+ },
+ "DMAGE1839.json#8": {
+  "domain": "restaurant",
+  "constraints": {
+   "name": "Meze Bar",
+   "area": "unknown",
+   "food": "Turkish",
+   "pricerange": "unknown",
+   "day": "today"
+  }
+ },
+ "DMAGE3073.json#8": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "south",
+   "food": "indian",
+   "pricerange": "not specified",
+   "name": "taj tandoori",
+   "numpeople": 7,
+   "day": "friday",
+   "leaveAt": "13:00"
+  }
+ },
+ "DMAGE949.json#4": {
+  "domain": "train",
+  "constraints": {
+   "departure": "none",
+   "destination": "cambridge",
+   "day": "none",
+   "leaveAt": "none",
+   "arriveBy": "none"
+  }
+ },
+ "DMAGE2940.json#2": {
+  "domain": "attraction",
+  "constraints": {
+   "area": "centre",
+   "type": "local tourist attraction"
+  }
+ },
+ "DMAGE112.json#6": {
+  "domain": "hotel",
+  "constraints": {
+   "type": "guesthouse",
+   "area": "Parkside, Cambridge",
+   "name": "",
+   "stars": "",
+   "pricerange": "",
+   "parking": "yes",
+   "internet": "yes"
+  }
+ },
+ "DMAGE812.json#14": {
+  "domain": "none",
+  "constraints": {}
+ },
+ "DMAGE591.json#2": {
+  "domain": "restaurant",
+  "constraints": {
+   "food": "turkish"
+  }
+ },
+ "DMAGE2661.json#20": {
+  "domain": "train",
+  "constraints": {
+   "departure": "Birmingham New Street",
+   "day": "frimai",
+   "leaveAt": null,
+   "arriveBy": null
+  }
+ },
+ "DMAGE587.json#16": {
+  "domain": "train",
+  "constraints": {
+   "price": "not specified",
+   "entrance fee": "not specified",
+   "address": "not specified"
+  }
+ },
+ "DMAGE2354.json#2": {
+  "domain": "hotel",
+  "constraints": {
+   "name": "none",
+   "area": null,
+   "pricerange": null,
+   "stars": null,
+   "type": null,
+   "parking": null,
+   "internet": null
+  }
+ },
+ "DMAGE1817.json#12": {
+  "domain": "train",
+  "constraints": {
+   "departure": "cambridge",
+   "destination": "stansted airport",
+   "day": "Tuesday",
+   "leaveAt": "08:15",
+   "arriveBy": "08:15"
+  }
+ },
+ "DMAGE600.json#14": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "{\n  \"domain\": \"hotel\",\n  \"constraints\": {\n    \"type\": \"hotel\",\n    \"name\": \"ashley hotel\",\n    \"phone\": \"01223350059\",\n    \"area\": \"centre\" (assuming this is the default area, but this is an assumption and not actually present in the dialogue)\n  }\n}"
+ },
+ "DMAGE624.json#2": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre",
+   "pricerange": "expensive"
+  }
+ },
+ "DMAGE2198.json#4": {
+  "domain": "hotel",
+  "constraints": {
+   "stars": "4"
+  }
+ },
+ "DMAGE2594.json#10": {
+  "domain": "hotel",
+  "constraints": {
+   "pricerange": "moderate"
+  }
+ },
+ "DMAGE2853.json#8": {
+  "domain": "hotel",
+  "constraints": {
+   "type": "guesthouse",
+   "name": "Hotel Travel",
+   "area": "east"
+  }
+ },
+ "DMAGE965.json#14": {
+  "domain": "train",
+  "constraints": {
+   "departure": "London Kings Cross",
+   "destination": "Cambridge",
+   "leaveAt": "15:00",
+   "arriveBy": null
+  }
+ },
+ "DMAGE823.json#8": {
+  "domain": "attraction",
+  "constraints": {
+   "type": "college",
+   "area": "centre"
+  }
+ },
+ "DMAGE2009.json#12": {
+  "domain": "hotel",
+  "constraints": {
+   "stars": 4,
+   "parking": "yes",
+   "internet": "yes"
+  }
+ },
+ "DMAGE2618.json#2": {
+  "domain": "restaurant",
+  "constraints": {
+   "pricerange": "expensive",
+   "area": "local"
+  }
+ },
+ "DMAGE2728.json#20": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "Here is the dialogue state tracking:\n\n**Turn 1**\nUser: I am looking for a swimmingpool in the centre\nAssistant: Their address in our system is listed as park street . It is in the centre . Its entrance fee is ? . Adc theatre looks good . You are welcome . Is there anything else I can help you with t"
+ },
+ "DMAGE3109.json#10": {
+  "domain": "hotel",
+  "constraints": {
+   "type": "guesthouse"
+  }
+ },
+ "DMAGE1094.json#4": {
+  "domain": "none",
+  "constraints": {}
+ },
+ "DMAGE2415.json#4": {
+  "domain": "train",
+  "constraints": {
+   "day": "saturday"
+  }
+ },
+ "DMAGE271.json#8": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "east",
+   "stars": "3"
+  }
+ },
+ "DMAGE3258.json#12": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "Here is the JSON describing the user's current wants:\n\n```\n{\n  \"domain\": \"attraction\",\n  \"constraints\": {\n    \"area\": \"south\",\n    \"type\": \"none\",  // implied by the context\n    \"name\": \"Byard\"  // implied by the context\n  }\n}\n```\n\n```\n{\n  \"domain\": \"train\",\n  \"constraints\": {\n    \"destination\": \"pe"
+ },
+ "DMAGE2395.json#16": {
+  "domain": "restaurant",
+  "constraints": {
+   "pricerange": "cheap",
+   "area": "centre"
+  }
+ },
+ "DMAGE1994.json#14": {
+  "domain": "taxi",
+  "constraints": {
+   "departure": "Kings Hedges Learner Pool",
+   "destination": "castle galleries",
+   "leaveAt": "11:00"
+  }
+ },
+ "DMAGE1182.json#12": {
+  "domain": "none",
+  "constraints": {}
+ },
+ "DMAGE504.json#12": {
+  "domain": "train",
+  "constraints": {
+   "departure": "Cambridge",
+   "destination": "Bishop Stortford",
+   "day": "Wednesday",
+   "leaveAt": "05:00",
+   "arriveBy": "05:51"
+  }
+ },
+ "DMAGE2687.json#2": {
+  "domain": "hotel",
+  "constraints": {
+   "stars": "4"
+  }
+ },
+ "DMAGE3100.json#14": {
+  "domain": "train",
+  "constraints": {
+   "departure": "London",
+   "destination": "Cambridge"
+  }
+ },
+ "DMAGE1370.json#8": {
+  "domain": "none",
+  "constraints": {
+   "name": "Curry Garden",
+   "area": "centre"
+  }
+ },
+ "DMAGE1342.json#10": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "east",
+   "pricerange": "cheap"
+  }
+ },
+ "DMAGE2586.json#2": {
+  "domain": "restaurant",
+  "constraints": {
+   "food": "asian oriental"
+  }
+ },
+ "DMAGE898.json#12": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "Here is the dialogue state tracking:\n\n1. \"i'm looking for a local restaurant in the centre\"\n\t* {\"domain\": \"restaurant\", \"constraints\": {\"area\": \"centre\"}}\n2. \"What 's the name of the restaurant you 're looking for ?\"\n\t* No change\n3. \"anyone\"\n\t* {\"domain\": \"restaurant\", \"constraints\": {\"area\": \"centr"
+ },
+ "DMAGE66.json#12": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre"
+  }
+ },
+ "DMAGE454.json#14": {
+  "domain": "none",
+  "constraints": {},
+  "unparsed": "Here is the JSON describing the user's current request:\n\n```\n{\n  \"domain\": \"none\",\n  \"constraints\": {\n    \"departure\": \"Cambridge\",\n    \"destination\": \"Brobourne\"  // assuming \"Brobourne\" is the correct spelling\n  }\n}\n```\n\nThe user has given up on the hotel and is now focused on booking the train. T"
+ },
+ "DMAGE2396.json#14": {
+  "domain": "attraction",
+  "constraints": {
+   "area": "north",
+   "type": "college"
+  }
+ },
+ "DMAGE55.json#10": {
+  "domain": "restaurant",
+  "constraints": {
+   "area": "centre",
+   "food": "portuguese"
+  }
+ },
+ "DMAGE3137.json#2": {
+  "domain": "hotel",
+  "constraints": {
+   "type": "hotel"
+  }
+ },
+ "DMAGE2182.json#6": {
+  "domain": "train",
+  "constraints": {
+   "departure": "Kings Lynn",
+   "destination": "ely",
+   "day": "Wednesday"
+  }
+ },
+ "DMAGE323.json#10": {
+  "domain": "train",
+  "constraints": {
+   "destination": "London Kings Cross",
+   "departure": "Cambridge",
+   "leaveAt": "05:00",
+   "arriveBy": "05:51",
+   "type": "Local tourist"
+  }
+ },
+ "DMAGE1358.json#10": {
+  "domain": "train",
+  "constraints": {
+   "departure": "there",
+   "destination": "cambridge",
+   "day": "sunday",
+   "leaveAt": "15:45"
+  }
+ },
+ "DMAGE969.json#22": {
+  "domain": "attraction",
+  "constraints": {
+   "type": "college",
+   "name": "none"
+  }
+ },
+ "DMAGE3177.json#8": {
+  "domain": "hotel",
+  "constraints": {
+   "area": "north",
+   "pricerange": "none",
+   "stars": "4",
+   "parking": "yes",
+   "internet": "yes",
+   "name": "acorn guest house"
+  }
+ }
+}

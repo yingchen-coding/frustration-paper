@@ -146,4 +146,14 @@ Files: `runs/final_llama_fg/{objective,summary_gemini*}.json`, `runs/final_claud
     - Fact-checked judge (`ref`): A 0.92, B 1.01, C 1.12, F_lastdb 1.21 (give-up 23.3%), G_llmdst 1.58 (3.3%),
       **D_repair 1.92** (give-up **1.1%**), E 1.88 (2.2%).
       Paired diffs: **D - F +0.71 [0.52, 0.90]**, **D - G +0.34 [0.21, 0.49]**, **D - C +0.80 [0.64, 0.96]**, **D - B +0.91 [0.74, 1.07]**.
-- **In progress**: `runs/final_llama31` (`llama3.1:8b` official instruct) and `runs/final_qwen` (`qwen2.5:7b`) running in background; Opus judge on `*_fg` + last 10 Sonnet G cases queued for when `claude` CLI 5-hour window resets at 2:40pm.
+  - **Official Llama 3.1 8B Instruct (`final_llama31`, n=100)**:
+    - Objective check (`objective.py`, n=87): A 24.1% valid (19.5% invalid), B 21.8% (17.2%), C 18.4% (13.8%),
+      **F_lastdb 41.4% valid (25.3% invalid)**, **G_llmdst 34.5% valid (31.0% invalid)**, **D_repair (v4) 63.2% valid
+      (8.0% invalid)**, E 62.1% (13.8%).
+    - Plain Gemini judge: A 0.83 (give-up 13%), B 0.81 (9%), C 0.51 (36%; **C - B -0.30 [-0.43, -0.17]**),
+      F_lastdb 1.09 (20%), G_llmdst 1.07 (22%), **D_repair 1.60** [1.48, 1.71] (give-up **5%**), E 1.56 (9%).
+      Paired diffs: **D - F +0.51 [0.32, 0.69]**, **D - G +0.53 [0.33, 0.71]**, **D - B +0.79 [0.61, 0.95]**, **D - C +1.09 [0.93, 1.24]**.
+    - Fact-checked Gemini judge (`ref`): A 0.24 (14%), B 0.25 (11%), C 0.15 (36%; **C - B -0.10 [-0.18, -0.02]**),
+      F_lastdb 0.86 (20%), G_llmdst 0.72 (23%), **D_repair 1.54** [1.40, 1.66] (give-up **5%**), E 1.45 (9%).
+      Paired diffs: **D - F +0.68 [0.49, 0.87]**, **D - G +0.82 [0.64, 0.99]**, **D - B +1.29 [1.11, 1.44]**, **D - C +1.39 [1.23, 1.53]**.
+- **In progress**: `runs/final_qwen` (`qwen2.5:7b`) running in background; Opus judge on `*_fg` + last 10 Sonnet G cases queued for when `claude` CLI 5-hour window resets at 2:40pm.

@@ -535,10 +535,11 @@ where the generator itself reads the full dialogue, outputs JSON
 <h4 id="generators.">Generators.</h4>
 <p>Claude 3.5 Sonnet <span class="citation"
 data-cites="anthropic2024claude">(Anthropic 2024)</span> via the
-<code>claude</code> CLI, and Llama 3 8B <span class="citation"
-data-cites="grattafiori2024llama3">(<span class="nocase">Grattafiori et
-al.</span> 2024)</span> (dolphin-llama3:8b via Ollama). A–C have no
-database; D and E have the rows REPAIR selects.</p>
+<code>claude</code> CLI, and two 8B small models via Ollama: Llama 3 8B
+(dolphin-llama3:8b) and official instruction-tuned Llama 3.1 8B <span
+class="citation" data-cites="grattafiori2024llama3">(llama3.1:8b; <span
+class="nocase">Grattafiori et al.</span> 2024)</span>. A–C have no
+database; D–G query the same MultiWOZ database.</p>
 <h4 id="evaluation.">Evaluation.</h4>
 <p>Two judge models from different families (Claude 3 Opus and Gemini
 2.5 <span class="citation" data-cites="geminiteam2024gemini">(<span
@@ -870,7 +871,24 @@ class="math inline">−</span>G <span class="math inline">+0.47</span>
 <strong>1.44</strong> vs. F 0.85 (D<span class="math inline">−</span>F
 <span class="math inline">+0.59</span> [0.37, 0.80]) and G 0.78 (D<span
 class="math inline">−</span>G <span class="math inline">+0.66</span>
-[0.46, 0.87], give-ups 15% vs. 39%). On Claude Sonnet (<span
+[0.46, 0.87], give-ups 15% vs. 39%). Replicating all seven conditions on
+official instruction-tuned Llama 3.1 8B
+(<code>runs/final_llama31</code>, <span
+class="math inline"><em>n</em> = 100</span>) yields an even sharper
+separation: prompt-only reading again hurts the small model (plain C
+0.51 vs. B 0.81, C<span class="math inline">−</span>B <span
+class="math inline">−0.30</span> [<span
+class="math inline">−0.43</span>, <span
+class="math inline">−0.17</span>], give-ups 36% vs. 9%), while D
+achieves <strong>63.2%</strong> objective valid entities (8.0% invalid,
+vs. 41.4%/25.3% for F and 34.5%/31.0% for G), scores
+<strong>1.60</strong> plain and <strong>1.54</strong> fact-checked
+(give-ups <strong>5%</strong>, vs. 9% for E and 20–23% for F/G), and
+significantly outperforms both F (plain <span
+class="math inline">+0.51</span> [0.32, 0.69]; fact-checked <span
+class="math inline">+0.68</span> [0.49, 0.87]) and G (plain <span
+class="math inline">+0.53</span> [0.33, 0.71]; fact-checked <span
+class="math inline">+0.82</span> [0.64, 0.99]). On Claude Sonnet (<span
 class="math inline"><em>n</em> = 90</span>), re-grounding eliminates the
 plain-judge gap — D leads under both plain judging
 (<strong>1.81</strong>, give-ups <strong>2.2%</strong>, vs. G 1.77, C
