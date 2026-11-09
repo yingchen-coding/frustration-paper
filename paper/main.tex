@@ -1,10 +1,13 @@
 \documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage[margin=1in]{geometry}
 \usepackage{booktabs}
 \usepackage{amsmath}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{natbib}
 \usepackage{xcolor}
+\usepackage{microtype}
 \title{Understand the User, Don't Repeat:\\
 Linguistic Cues of Unmet Needs and Explicit Repair in Task-Oriented Dialogue}
 \author{Ying Chen}
@@ -91,7 +94,11 @@ wizards 20.3\% [17.7, 22.7] vs.\ 5.4\%; machine 5.0\% [4.2, 5.8] vs.\ 5.6\% [5.0
 whether it contains a complaint or negation word, and whether it repeats an earlier request of the same user
 (token Jaccard $\ge 0.5$).
 
-\begin{table}[h]
+When the machine repeats its own previous reply (Jaccard $\ge 0.8$) after a negative turn, the
+next user turn is still negative 88.3\% [80.0, 95.7] of the time, against 54.6\% [52.7, 56.6] otherwise
+($n=71$ repeats).
+
+\begin{table}[t]
 \centering
 \begin{tabular}{lrrrr}
 \toprule
@@ -106,10 +113,6 @@ DialMAGE, neutral turns & 7,230 & 3.0\% & 13.2\% & 84.2\% \\
 they repeat themselves.}
 \label{tab:cues}
 \end{table}
-
-When the machine repeats its own previous reply (Jaccard $\ge 0.8$) after a negative turn, the next user
-turn is still negative 88.3\% [80.0, 95.7] of the time, against 54.6\% [52.7, 56.6] otherwise ($n=71$
-repeats).
 
 \paragraph{Is repetition specific to task dialogue, and does the finding hold on other task corpora?} In the
 DBDC3 chat-oriented corpus \citep{higashinaka2016dbdc} (415 dialogues, no task goals), users repeat after a

@@ -1,0 +1,116 @@
+\begin{thebibliography}{14}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Anthropic}(2024)]{anthropic2024claude}
+{Anthropic}.
+\newblock The {C}laude model family.
+\newblock \url{https://www.anthropic.com/claude}, 2024.
+
+\bibitem[Budzianowski et~al.(2018)Budzianowski, Wen, Tseng, Casanueva, Ultes,
+  Ramadan, and Ga{\v{s}}i{\'c}]{budzianowski2018multiwoz}
+Pawe{\l} Budzianowski, Tsung-Hsien Wen, Bo-Hsiang Tseng, I{\~n}igo Casanueva,
+  Stefan Ultes, Osman Ramadan, and Milica Ga{\v{s}}i{\'c}.
+\newblock {MultiWOZ} -- a large-scale multi-domain {W}izard-of-{O}z dataset for
+  task-oriented dialogue modelling.
+\newblock In \emph{Proceedings of the 2018 Conference on Empirical Methods in
+  Natural Language Processing}, pages 5016--5026, 2018.
+
+\bibitem[Chen et~al.(2012)Chen, Zhou, Zhu, and Xu]{chen2012offensive}
+Ying Chen, Yilu Zhou, Sencun Zhu, and Heng Xu.
+\newblock Detecting offensive language in social media to protect adolescent
+  online safety.
+\newblock In \emph{2012 International Conference on Privacy, Security, Risk and
+  Trust and 2012 International Conference on Social Computing}, pages 71--80,
+  2012.
+
+\bibitem[Clark and Brennan(1991)]{clark1991grounding}
+Herbert~H. Clark and Susan~E. Brennan.
+\newblock Grounding in communication.
+\newblock In Lauren~B. Resnick, John~M. Levine, and Stephanie~D. Teasley,
+  editors, \emph{Perspectives on Socially Shared Cognition}, pages 127--149.
+  American Psychological Association, 1991.
+
+\bibitem[Feng et~al.(2022)Feng, Lubis, Geishauser, Lin, Heck, van Niekerk, and
+  Gasic]{feng2022emowoz}
+Shutong Feng, Nurul Lubis, Christian Geishauser, Hsien-chin Lin, Michael Heck,
+  Carel van Niekerk, and Milica Gasic.
+\newblock {EmoWOZ}: A large-scale corpus and labelling scheme for emotion
+  recognition in task-oriented dialogue systems.
+\newblock In \emph{Proceedings of the Thirteenth Language Resources and
+  Evaluation Conference}, pages 4096--4113, Marseille, France, 2022.
+
+\bibitem[{Gemini Team} et~al.(2024){Gemini Team}, Anil, Borgeaud,
+  et~al.]{geminiteam2024gemini}
+{Gemini Team}, Rohan Anil, Sebastian Borgeaud, et~al.
+\newblock Gemini: A family of highly capable multimodal models.
+\newblock arXiv preprint arXiv:2312.11805, 2024.
+
+\bibitem[Grattafiori et~al.(2024)Grattafiori, Dubey, Jauhri,
+  et~al.]{grattafiori2024llama3}
+Aaron Grattafiori, Abhimanyu Dubey, Abhinav Jauhri, et~al.
+\newblock The {L}lama 3 herd of models.
+\newblock arXiv preprint arXiv:2407.21783, 2024.
+
+\bibitem[Hernandez~Caralt et~al.(2024)Hernandez~Caralt, Sekuli{\'c},
+  Carevi{\'c}, Khau, Popa, Guedes, Guimar{\~a}es, Yang, Manso, Reddy, Rosso,
+  and Mathis]{frustration2024stupidrobot}
+Mireia Hernandez~Caralt, Ivan Sekuli{\'c}, Filip Carevi{\'c}, Nghia Khau,
+  Diana~Nicoleta Popa, Bruna Guedes, Victor Guimar{\~a}es, Zeyu Yang, Andre
+  Manso, Meghana Reddy, Paolo Rosso, and Roland Mathis.
+\newblock {``Stupid Robot, I Want to Speak to a Human!''} {U}ser frustration
+  detection in task-oriented dialog systems.
+\newblock arXiv preprint arXiv:2411.17437, 2024.
+
+\bibitem[Higashinaka et~al.(2016)Higashinaka, Funakoshi, Kobayashi, and
+  Inaba]{higashinaka2016dbdc}
+Ryuichiro Higashinaka, Kotaro Funakoshi, Yuka Kobayashi, and Michimasa Inaba.
+\newblock The dialogue breakdown detection challenge: Task description,
+  datasets, and evaluation metrics.
+\newblock In \emph{Proceedings of the Tenth International Conference on
+  Language Resources and Evaluation}, pages 3146--3150, 2016.
+
+\bibitem[Labat et~al.(2025)Labat, Demeester, and Hoste]{emowozcs2025}
+Sofie Labat, Thomas Demeester, and V{\'e}ronique Hoste.
+\newblock A customer journey in the land of {O}z: Leveraging the wizard of {O}z
+  technique to model emotions in customer service interactions.
+\newblock arXiv preprint arXiv:2511.21909, 2025.
+
+\bibitem[Rastogi et~al.(2020)Rastogi, Zang, Sunkara, Gupta, and
+  Khaitan]{rastogi2020sgd}
+Abhinav Rastogi, Xiaoxue Zang, Srinivas Sunkara, Raghav Gupta, and Pranav
+  Khaitan.
+\newblock Towards scalable multi-domain conversational agents: The
+  schema-guided dialogue dataset.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, volume~34, pages 8689--8696, 2020.
+
+\bibitem[Schegloff et~al.(1977)Schegloff, Jefferson, and
+  Sacks]{schegloff1977repair}
+Emanuel~A. Schegloff, Gail Jefferson, and Harvey Sacks.
+\newblock The preference for self-correction in the organization of repair in
+  conversation.
+\newblock \emph{Language}, 53\penalty0 (2):\penalty0 361--382, 1977.
+
+\bibitem[Sun et~al.(2021)Sun, Zhang, Krisztian, Ren, Ren, Chen, and
+  de~Rijke]{sun2021uss}
+Weiwei Sun, Shuo Zhang, Balog Krisztian, Zhaochun Ren, Pengjie Ren, Zhumin
+  Chen, and Maarten de~Rijke.
+\newblock Simulating user satisfaction for the evaluation of task-oriented
+  dialogue systems.
+\newblock In \emph{Proceedings of the 44th International ACM SIGIR Conference
+  on Research and Development in Information Retrieval}, pages 2499--2506,
+  2021.
+
+\bibitem[Zheng et~al.(2023)Zheng, Chiang, Sheng, Zhuang, Wu, Zhuang, Lin, Li,
+  Li, Xing, Zhang, Gonzalez, and Stoica]{zheng2023judging}
+Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao
+  Zhuang, Zi~Lin, Zhuohan Li, Dacheng Li, Eric~P. Xing, Hao Zhang, Joseph~E.
+  Gonzalez, and Ion Stoica.
+\newblock Judging {LLM}-as-a-judge with {MT}-bench and chatbot arena.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2023.
+
+\end{thebibliography}
