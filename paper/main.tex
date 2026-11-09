@@ -46,13 +46,15 @@ lexical and syntactic structure, together with a user's writing style, carried m
 \citep{chen2012offensive}.
 
 This paper makes three contributions.
-(1) A corpus study on EmoWOZ \citep{feng2022emowoz} showing that a machine system does not react to
-dissatisfaction, and that users express dissatisfaction to it mainly by repeating requests.
+(1) A corpus study on EmoWOZ \citep{feng2022emowoz} and DBDC3 \citep{higashinaka2016dbdc} showing that a
+machine system does not react to dissatisfaction, that users express dissatisfaction in task dialogue mainly
+by climbing a repair ladder (dissatisfaction rises from 16.3\% at stage~0 to 79.3\% at stage~3+, capturing
+81.7\% of negative turns vs.\ 7.7\% for complaint words), and that repetition is task-specific.
 (2) A negative result: telling a model to infer the user's state from the dialogue helps a strong model and
 hurts a small one.
 (3) REPAIR, an explicit reading of repair cues and pending needs, grounded in the task database, which makes
-a small model resolve the user's need far more often on unseen dialogues. We release code, prompts and all
-model outputs.
+a small model resolve the user's need far more often on unseen dialogues and outperforms ledger-only grounding
+on high-escalation turns. We release code, prompts and all model outputs.
 
 \section{Related Work}
 \paragraph{Emotion in task-oriented dialogue.} EmoWOZ labels every user turn of MultiWOZ
@@ -140,6 +142,33 @@ The reading is appended to the dialogue, together with the system's last turns m
 Any generator can use it. Among REPAIR's four components, the repair reader and the escalation policy are
 domain-agnostic; adapting to a new task domain requires only specifying its slot vocabulary and database table
 for the ledger.
+
+\paragraph{The repair ladder tracks emotion across the corpus.} Applying REPAIR's stage reader and grounding
+ledger to all 12,093 annotated user turns in DialMAGE (\texttt{analyze\_ladder.py}), user dissatisfaction
+rises monotonically up the repair ladder (Table~\ref{tab:ladder}): from 16.3\% at stage~0 (no repair cues) to
+34.3\% at stage~1 (rephrasing, negation or shortening), 60.3\% at stage~2 (repeating an earlier request or
+other-initiated repair), and 79.3\% at stage~3+ (repeated repair or meta-complaint), capturing 81.7\% of all
+negative turns at stage~$\ge 1$ (vs.\ 7.7\% for complaint words). Next-turn dissatisfaction likewise climbs
+from 32.7\% after stage~0 to 57.1\% after stage~3+. Independently, turns where the grounding ledger shows an
+undelivered request from an earlier turn are negative 40.5\% [38.9, 42.1] of the time ($n=7{,}919$) versus
+25.3\% [23.3, 27.3] otherwise ($n=4{,}174$).
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lrrr}
+\toprule
+Repair ladder stage & $n$ & current turn negative & next user turn negative \\
+\midrule
+Stage 0 (no repair cues) & 4,767 & 16.3\% [15.0, 17.7] & 32.7\% [31.1, 34.2] \\
+Stage 1 (rephrase, negation, shorter) & 4,242 & 34.3\% [32.5, 36.1] & 37.9\% [36.0, 39.7] \\
+Stage 2 (repeat $1\times$, \emph{what?}, meta) & 2,177 & 60.3\% [58.0, 62.5] & 45.3\% [42.8, 47.8] \\
+Stage 3+ (repeat $\ge 2\times$ or repeat + OIR/meta) & 907 & \textbf{79.3\%} [75.7, 82.7] & \textbf{57.1\%} [52.8, 61.4] \\
+\bottomrule
+\end{tabular}
+\caption{User dissatisfaction by repair escalation stage across all 12,093 DialMAGE user turns (95\% bootstrap
+CIs over dialogues). The emotion label follows the repair ladder rather than emotional vocabulary.}
+\label{tab:ladder}
+\end{table}
 
 \section{Experiments}
 \paragraph{Cases.} From DialMAGE we take every dialogue at the first user turn that is negative and repeats

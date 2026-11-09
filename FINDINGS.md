@@ -250,3 +250,16 @@ escalation stage (88 cases at stage 2, 12 cases at stage 3):
   - Gemini plain: D 1.92 vs E 1.25, **D - E +0.67 [0.25, 1.17]**; give-up D 0% vs E 33% (-33 pts [-58, -8]).
   - Fact-checked judges: Opus D 1.50 vs E 1.25 (+0.25); Gemini D 1.67 vs E 1.33 (+0.33); give-up D 0% vs E 25%.
 The repair reader and escalation policy show a clear, significant gain specifically on higher-escalation turns.
+
+## 15. Repair escalation ladder & grounding ledger across all 12,093 DialMAGE user turns (`analyze_ladder.py`)
+Evaluating REPAIR's deterministic stage reader and grounding ledger across the full DialMAGE corpus (995 dialogues,
+12,093 annotated user turns; 95% bootstrap CIs over dialogues):
+| Repair stage | n | Current turn negative | Next user turn negative |
+|---|---|---|---|
+| Stage 0 (no repair cues) | 4,767 | 16.3% [15.0, 17.7] | 32.7% [31.1, 34.2] |
+| Stage 1 (rephrase, negation, shorter) | 4,242 | 34.3% [32.5, 36.1] | 37.9% [36.0, 39.7] |
+| Stage 2 (repeat 1x, OIR, meta) | 2,177 | 60.3% [58.0, 62.5] | 45.3% [42.8, 47.8] |
+| Stage 3+ (repeat >=2x or repeat + OIR/meta) | 907 | **79.3%** [75.7, 82.7] | **57.1%** [52.8, 61.4] |
+- Stage >= 1 captures 3,485 / 4,264 = **81.7%** of all negative turns (vs 7.7% for complaint words).
+- Turns where the grounding ledger shows an undelivered pending request from an earlier turn are negative **40.5%**
+  [38.9, 42.1] (n=7,919) vs **25.3%** [23.3, 27.3] otherwise (n=4,174).
