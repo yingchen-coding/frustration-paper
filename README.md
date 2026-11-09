@@ -1,6 +1,7 @@
 # Understand the User, Don't Repeat: Linguistic Cues of Unmet Needs and Explicit Repair in Task-Oriented Dialogue
 
 [![Version](https://img.shields.io/github/v/tag/yingchen-coding/frustration-paper?sort=semver&label=version)](https://github.com/yingchen-coding/frustration-paper/releases)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24077786.svg)](https://doi.org/10.5281/zenodo.24077786)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 When a dialogue system fails, users rarely say so with complaint words. They repeat or rephrase the request,
@@ -12,9 +13,11 @@ still waiting for instead of answering only the last message.
 
 The preprint source is in [`paper/main.tex`](paper/main.tex); rendered artifacts are
 [`paper/frustration-paper.pdf`](paper/frustration-paper.pdf) ([`paper/main.pdf`](paper/main.pdf)),
-[`paper/frustration-paper.html`](paper/frustration-paper.html),
+[`paper/frustration-paper.html`](paper/frustration-paper.html) ([live GitHub Pages](https://yingchen-coding.github.io/frustration-paper/)),
 [`paper/frustration-paper.docx`](paper/frustration-paper.docx), and the arXiv source bundle
 [`paper/arxiv-upload.zip`](paper/arxiv-upload.zip).
+
+Citable artifact DOI: [10.5281/zenodo.24077786](https://doi.org/10.5281/zenodo.24077786).
 
 The resulting brief is given to any generator. Paper PDF: [`paper/main.pdf`](paper/main.pdf) (`paper/main.tex`).
 

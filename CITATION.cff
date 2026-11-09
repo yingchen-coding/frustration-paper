@@ -6,5 +6,7 @@ authors:
     given-names: Ying
 date-released: "2026-11-09"
 version: "0.1.0"
+doi: "10.5281/zenodo.24077786"
 repository-code: "https://github.com/yingchen-coding/frustration-paper"
+url: "https://doi.org/10.5281/zenodo.24077786"
 license: "MIT"
