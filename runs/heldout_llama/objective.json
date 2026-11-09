@@ -1,33 +1,33 @@
 {
  "n": 81,
- "n_with_db_domain_pending": 74,
+ "n_with_db_domain_pending": 76,
  "A_baseline": {
-  "delivered_valid": 0.108,
-  "named_invalid": 0.135,
+  "delivered_valid": 0.118,
+  "named_invalid": 0.145,
   "phones_real": 0,
   "phones_fake": 0
  },
  "B_direct": {
-  "delivered_valid": 0.176,
-  "named_invalid": 0.108,
+  "delivered_valid": 0.184,
+  "named_invalid": 0.105,
   "phones_real": 0,
   "phones_fake": 0
  },
  "C_diagnose": {
-  "delivered_valid": 0.135,
-  "named_invalid": 0.095,
+  "delivered_valid": 0.145,
+  "named_invalid": 0.092,
   "phones_real": 1,
   "phones_fake": 0
  },
  "D_repair": {
-  "delivered_valid": 0.595,
-  "named_invalid": 0.122,
+  "delivered_valid": 0.566,
+  "named_invalid": 0.118,
   "phones_real": 10,
   "phones_fake": 0
  },
  "E_ledger_db": {
-  "delivered_valid": 0.649,
-  "named_invalid": 0.122,
+  "delivered_valid": 0.632,
+  "named_invalid": 0.132,
   "phones_real": 23,
   "phones_fake": 1
  }
