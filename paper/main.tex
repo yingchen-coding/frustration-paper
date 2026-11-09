@@ -311,11 +311,13 @@ the 8B model, B falls from 0.45 to 0.17 (Opus) and from 0.98 to 0.26 (Gemini), w
 Evaluation uses two LLM judge families (Claude Opus and Gemini) plus an objective entity check; we do not
 include a separate human rating study on the generated replies, relying instead on EmoWOZ's human emotion
 annotations, DBDC3's 30-annotator breakdown labels, and exact database matching. The complaint-word list is
-lexical: on 200 sampled negative turns, 7.0\% matched with 92.9\% precision (1 false positive from task
-language ``no, I need a train...''); the low recall confirms our claim that word-level sentiment misses most
-dissatisfaction. The repeat threshold (Jaccard $\ge 0.5$, yielding 46.8\%) is robust: 0.4 gives 53.7\%, 0.6
-gives 37.0\%. The REPAIR reader identified the pending request in 19/20 spot-checked cases and provided
-database rows in 13/20. Our corpus findings replicate across four datasets (EmoWOZ-MultiWOZ, EmoWOZ-DialMAGE,
+lexical: on 200 sampled negative turns it matched 7.0\%; a simple rule flags 1 of the 14 matches as task
+language (``no, I need a train...''), but we have not yet hand-labelled the matches, so we report no precision
+figure. The low match rate supports our claim that word-level sentiment misses most dissatisfaction. The
+repeat threshold (Jaccard $\ge 0.5$, yielding 46.8\%) is not sensitive to the exact value: 0.4 gives 53.7\%,
+0.6 gives 37.0\%. On 20 sampled cases the REPAIR reader named a pending domain in 19 and returned database
+rows in 13; whether those readings are correct has not yet been checked against hand labels (sheets in
+\texttt{validation/}). Our corpus findings replicate across four datasets (EmoWOZ-MultiWOZ, EmoWOZ-DialMAGE,
 USS-SGD across 20 domains, and USS-ReDial), with DBDC3 as a chat-oriented contrast; the database-grounded
 intervention is evaluated on DialMAGE using the static MultiWOZ database and simulated booking. The objective
 check depends on the reader's own reading of the pending request.

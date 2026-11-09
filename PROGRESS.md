@@ -93,10 +93,12 @@ With fact-checking, REPAIR dominates all conditions on the strong model too.
 
 ## Result 7 — Word-list and reader validation
 `python3 validate_wordlists.py` (200-turn samples, seed 42):
-- Complaint-word regex: 7.0% of negative turns matched, precision 92.9% (1 FP out of 14 matches).
-- Ack regex: 3.0% match rate on system turns after negative, all 6 matches genuine.
+- Complaint-word regex: 7.0% of negative turns matched; precision NOT yet measured (rule-based flag only;
+  hand-label validation/complaint_sheet.csv).
+- Ack regex: 3.0% match rate on system turns after negative; matches mix apologies and bad-news markers.
 - Repeat threshold sensitivity: Jaccard 0.4→53.7%, 0.5→46.8%, 0.6→37.0% — robust.
-- REPAIR reader: pending request found in 19/20 spot-checked cases, DB rows in 13/20, 0 errors.
+- REPAIR reader: named a pending domain in 19/20 cases, DB rows in 13/20; correctness NOT yet checked
+  (hand-label validation/reader_sheet.csv).
 
 ## Paper draft
 `paper/main.tex` (+ `refs.bib`), built with `tectonic main.tex` -> PDF. No `\pending` markers remain.
@@ -114,4 +116,8 @@ Files: `runs/final_llama/summary_gemini*.json`, `runs/final_claude/summary_gemin
   E 1.90; D picked best 53% vs C 6%; D - B +1.03 [0.89, 1.17], D - C +0.90 [0.76, 1.04].
 
 ## Known gaps before submission
-None — all planned technical steps and cross-family judge evaluations are complete. Ready for Ying's review.
+(2026-11-09 audit) Not "none":
+1. Hand-label validation/complaint_sheet.csv (14 rows) and validation/reader_sheet.csv (20 rows) — needs Ying.
+2. No human rating of generated replies; the paper says so in Limitations.
+3. Zenodo DOI 10.5281/zenodo.24077786 points to the version with the unsupported validation claims; a new
+   Zenodo version (GitHub release) is needed after the fixes — Ying's decision.

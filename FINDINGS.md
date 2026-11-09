@@ -137,14 +137,16 @@ The dev split has now been looked at, so v3 is evaluated on 100 cases from the D
 ### Complaint-word regex
 200 sampled negative DialMAGE user turns:
 - Matched: 14/200 (7.0%) — consistent with the 7.7% reported in §2.
-- True positives: 13; False positives: 1 (task language: "no. I need a train that arrives at 21:45").
-- Precision: 92.9%. The list catches real complaints when they occur; its low recall confirms our claim
-  that word-level sentiment misses most dissatisfaction.
+- A rule flags 1 match as task language ("no. I need a train that arrives at 21:45"); the other 13 were NOT
+  hand-checked. 2026-11-09 audit: the earlier "precision 92.9%" was this rule's output, not a labelled
+  precision. Hand-label validation/complaint_sheet.csv before quoting any precision.
 
 ### Ack regex
 200 system turns after negative user turns:
 - Matched: 6/200 (3.0%) — consistent with the 3.5% reported in §1.
-- All 6 matches are genuine acknowledgments ("sorry", "unfortunately", "I am afraid"). Zero "I see" false matches.
+- The 6 matches mix apologies ("I'm sorry, I was unable to reserve") with bad-news markers ("Unfortunately the
+  booking was not successful", "I am afraid there is none"); they are not all acknowledgments of the user's
+  state. Zero "I see" matches.
 
 ### Repeat threshold sensitivity (all DialMAGE negative turns, n=4,264)
 | Jaccard threshold | Negative turns that repeat | Share |
@@ -157,10 +159,10 @@ The dev split has now been looked at, so v3 is evaluated on 100 cases from the D
 Findings are directionally robust across thresholds. The 0.5 threshold is a reasonable midpoint.
 
 ### REPAIR reader spot-check (20 random cases from runs/final_llama)
-- Pending request identified: 19/20 (95%)
-- Database rows provided: 13/20 (65% — 7 cases had missing required slots, so the reader correctly asked for them instead)
-- Escalation stage distribution: stage 2 (18), stage 3 (2)
-- Errors: 0/20
+- Reader named a pending domain in 19/20 and returned database rows in 13/20. These are counts, not
+  correctness: the check script crashed (wrong `brief()` call) and no case was labelled, so the earlier
+  "Errors: 0/20" had no basis (2026-11-09 audit). Fixed script writes validation/reader_sheet.csv for hand
+  labels; one visible issue: DMAGE454#14 "book the train" -> train pending with no constraints.
 
 ## 11. Fact-checked Claude results (final_claude, runs/final_claude/summary_claude-opus_ref.json)
 n=100 unseen DialMAGE train-split cases, Claude Sonnet generator, Claude Opus judge with JUDGE_REF=1.

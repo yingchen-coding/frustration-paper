@@ -25,7 +25,7 @@ The resulting brief is given to any generator. Paper PDF: [`paper/main.pdf`](pap
 1. **Machines do not react to dissatisfaction.** In EmoWOZ, human wizards acknowledge or apologize after a
    dissatisfied user turn 17.8% of the time (3.9% after neutral turns); the machine system: 3.5% vs 3.7%.
 2. **Dissatisfaction follows a repair escalation ladder, not complaint words.** Toward the machine, 46.8% of
-   dissatisfied turns repeat an earlier request while only 7.7% contain a complaint word (precision 92.9%).
+   dissatisfied turns repeat an earlier request while only 7.7% contain a complaint word.
    Across all 12,093 DialMAGE user turns (`analyze_ladder.py`), dissatisfaction rises monotonically with
    repair stage: **16.3%** (stage 0) → **34.3%** (stage 1) → **60.3%** (stage 2) → **79.3%** (stage 3+),
    capturing **81.7%** of all negative turns at stage ≥ 1. In chat-oriented dialogue without task goals
@@ -55,7 +55,7 @@ for d in attraction hospital hotel police restaurant taxi train; do
 python3 analyze.py data > results.json                      # corpus study (Table 1)
 python3 analyze_ladder.py data                              # repair ladder across 12,093 turns (Table 2)
 python3 analyze_dbdc3.py                                    # DBDC3 chat contrast corpus
-python3 validate_wordlists.py                               # word-list precision & reader spot-check
+python3 validate_wordlists.py                               # word-list match rates, threshold sensitivity, labelling sheets
 SPLIT=train JUDGER=claude:opus GEN=ollama:dolphin-llama3:8b \
   python3 intervene.py data runs/final_llama 100            # generate A-E replies and judge them
 python3 second_judge.py data runs/final_llama gemini        # second judge family (plain + JUDGE_REF=1)

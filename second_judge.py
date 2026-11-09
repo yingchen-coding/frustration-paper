@@ -10,9 +10,11 @@ Usage:
   # With Claude (default, same family as existing judge — for testing only):
   python3 second_judge.py runs/final_llama claude:haiku
 """
-import json, subprocess, sys, random, re
+import json
+import subprocess
+import sys
+import re
 from pathlib import Path
-from collections import Counter
 
 JUDGE_PROMPT = """You are evaluating system replies in a task-oriented dialogue where the user is frustrated
 because their request was not resolved. The user has repeated themselves or shown signs of dissatisfaction.
@@ -66,7 +68,7 @@ def parse_json(text):
     if match:
         try:
             return json.loads(match.group())
-        except:
+        except json.JSONDecodeError:
             pass
     return None
 

@@ -4,8 +4,11 @@ Dialogue Breakdown Detection Challenge 3 (Higashinaka et al., LREC 2016).
 Chat-oriented human-machine dialogues with breakdown annotations.
 Usage: python3 analyze_dbdc3.py
 """
-import json, re, zipfile, random
-from collections import Counter
+import shutil
+import json
+import re
+import zipfile
+import random
 from pathlib import Path
 
 WORD = re.compile(r"[a-z0-9']+")
@@ -28,7 +31,7 @@ for jf in sorted(tmp.rglob("*.json")):
     with open(jf) as f:
         try:
             d = json.load(f)
-        except:
+        except json.JSONDecodeError:
             continue
     turns = d.get("turns", [])
     if turns:
@@ -135,5 +138,4 @@ print("The small difference (vs DialMAGE's 46.8% vs 13.2%) supports the paper's 
 print("repetition-as-frustration is specific to task-oriented dialogue where there IS an unmet need.")
 
 # Cleanup
-import shutil
 shutil.rmtree(tmp)

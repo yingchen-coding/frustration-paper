@@ -1,9 +1,13 @@
 """Validate the word lists and thresholds used in analyze.py.
 Outputs a validation report for FINDINGS.md / paper Limitations.
 """
-import json, re, random
-from collections import Counter
+import csv
+import json
+import random
+import re
 from pathlib import Path
+
+import repair
 
 NEG = {2, 4}
 
@@ -82,14 +86,21 @@ for s in s200:
             tp += 1
             tp_examples.append(f"  [{word}] {s['text'][:130]}")
 
+Path("validation").mkdir(exist_ok=True)
+with open(Path("validation") / "complaint_sheet.csv", "w") as f:
+    f.write("matched_word,heuristic_flag,text,LABEL_real_complaint(y/n)\n")
+    for flag, rows in (("task_language", fp_examples), ("complaint", tp_examples)):
+        for line in rows:
+            word, text = line.strip()[1:].split("] ", 1)
+            f.write(f'"{word}",{flag},"{text.replace(chr(34), chr(39))}",\n')
 no_match = 200 - tp - fp
-print(f"\n=== COMPLAINT WORD VALIDATION (200 negative turns) ===")
+print("\n=== COMPLAINT WORD VALIDATION (200 negative turns) ===")
 print(f"Matched: {tp + fp} / 200 ({(tp + fp) / 200 * 100:.1f}%)")
-print(f"  True positives: {tp}")
-print(f"  False positives (task language): {fp}")
+print(f"  Not flagged: {tp}")
+print(f"  Flagged by heuristic as task language: {fp}")
 print(f"  Not matched: {no_match}")
 if tp + fp > 0:
-    print(f"  Precision: {tp / (tp + fp) * 100:.1f}%")
+    print(f"  Heuristic precision (NOT hand-labelled; see validation/complaint_sheet.csv): {tp / (tp + fp) * 100:.1f}%")
 print(f"  Recall (of complaint-word turns): {(tp + fp) / 200 * 100:.1f}% of negative turns matched")
 
 if fp_examples:
@@ -106,7 +117,7 @@ random.shuffle(sys_after_neg)
 sys200 = sys_after_neg[:200]
 
 ack_matched = sum(1 for t in sys200 if ACK.search(t))
-print(f"\n=== ACK REGEX VALIDATION (200 system turns after negative user turns) ===")
+print("\n=== ACK REGEX VALIDATION (200 system turns after negative user turns) ===")
 print(f"Ack matched: {ack_matched} / 200 ({ack_matched / 200 * 100:.1f}%)")
 
 ack_examples = [(t[:130], ACK.search(t).group(0)) for t in sys200 if ACK.search(t)][:8]
@@ -120,7 +131,7 @@ false_ack = sum(1 for t in sys200 if ACK.search(t) and ACK.search(t).group(0).lo
 print(f"\n'I see' matches (potential false acks): {false_ack}")
 
 # --- 3. Repeat threshold sensitivity ---
-print(f"\n=== REPEAT THRESHOLD SENSITIVITY (all DialMAGE negative turns) ===")
+print("\n=== REPEAT THRESHOLD SENSITIVITY (all DialMAGE negative turns) ===")
 for threshold in [0.3, 0.4, 0.5, 0.6, 0.7]:
     repeat_count = 0
     total_neg = 0
@@ -141,38 +152,32 @@ for threshold in [0.3, 0.4, 0.5, 0.6, 0.7]:
                 user_texts.append(turn["text"])
     print(f"  Jaccard >= {threshold}: {repeat_count}/{total_neg} ({repeat_count / total_neg * 100:.1f}%)")
 
-# --- 4. Reader accuracy: check repair.py on 20 sampled cases from final_llama ---
-print(f"\n=== REPAIR READER SPOT-CHECK (20 cases from final_llama) ===")
-try:
-    import repair
-    with open("runs/final_llama/cases.json") as f:
-        cases = json.load(f)
-    random.shuffle(cases)
-    check_cases = cases[:20]
-
-    stage_dist = Counter()
-    has_pending = 0
-    has_db_rows = 0
-    for c in check_cases:
-        brief = repair.brief(c["dialogue"])
-        # Count stages
-        if "ESCALATION STAGE" in brief:
-            for line in brief.split("\n"):
-                if "ESCALATION STAGE" in line:
-                    try:
-                        stage = int(line.strip()[-1])
-                        stage_dist[stage] += 1
-                    except:
-                        pass
-        if "PENDING" in brief.upper() or "NOT YET" in brief.upper():
-            has_pending += 1
-        if "DATABASE" in brief.upper() or "ROWS" in brief.upper():
-            has_db_rows += 1
-
-    print(f"  Stage distribution: {dict(sorted(stage_dist.items()))}")
-    print(f"  Cases with pending items identified: {has_pending}/20")
-    print(f"  Cases with database rows: {has_db_rows}/20")
-except Exception as e:
-    print(f"  Could not run reader check: {e}")
+# --- 4. Reader output sheet for hand labelling (20 cases from final_llama) ---
+print("\n=== REPAIR READER SHEET (20 cases from final_llama) ===")
+dm = json.load(open(Path("data") / "emowoz-dialmage.json"))
+with open("runs/final_llama/cases.json") as f:
+    reader_cases = json.load(f)
+rng = random.Random(42)
+rng.shuffle(reader_cases)
+out_dir = Path("validation")
+out_dir.mkdir(exist_ok=True)
+found = with_rows = 0
+with open(out_dir / "reader_sheet.csv", "w", newline="") as f:
+    w = csv.writer(f)
+    w.writerow(["case_id", "last_user_turns", "stage", "pending", "constraints", "missing", "has_db_rows",
+                "LABEL_pending_domain_correct(y/n)", "LABEL_constraints_correct(y/n)", "notes"])
+    for c in reader_cases[:20]:
+        log, i = repair.log_for(c["id"], dm)
+        text, r = repair.brief(log, i)
+        dom = r["pending"][0] if r["pending"] else ""
+        e2 = r["ledger"].get(dom, {})
+        rows = "Database:" in text
+        found += bool(dom)
+        with_rows += rows
+        users = [log[k]["text"] for k in range(0, i + 1, 2)][-3:]
+        w.writerow([c["id"], " || ".join(users), r["stage"], dom, json.dumps(e2.get("constraints", {})),
+                    ",".join(e2.get("missing", [])), rows, "", "", ""])
+print(f"  Reader named a pending domain: {found}/20; gave database rows: {with_rows}/20")
+print("  Correctness is NOT checked here; label validation/reader_sheet.csv by hand.")
 
 print("\n=== DONE ===")
