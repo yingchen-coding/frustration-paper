@@ -11,3 +11,4 @@ runs/*/judge_last_*.txt
 PLAN.md
 paper/*.aux
 paper/*.log
+arxiv-submission/
