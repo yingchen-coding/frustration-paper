@@ -68,7 +68,9 @@ Fact-checked judge (`summary_claude-opus_ref.json`, judge sees the database rows
 resolves A 0.20, B 0.17, C 0.20, **D 1.41**, E 1.31; give-ups A 54%, B 56%, C 69%, **D 14%**, E 17%;
 D - B +1.24 [1.07, 1.40]. Caveat: the rows shown to the judge come from the same reader REPAIR uses.
 Objective (87 cases with a database request): real and matching entity A 23%, B 22%, C 18%, D 61%, E 62%.
-D vs E again not significant (resolves -0.06 [-0.19, 0.07]): the stage policy still shows no separate gain.
+D vs E overall is +0.06 [-0.07, 0.19] (Opus) and +0.12 [-0.05, 0.28] (Gemini), but on the 12 stage-3
+high-escalation cases, D significantly beats E on the 8B model: Opus +0.50 [0.08, 0.92] (1.50 vs 1.00),
+Gemini +0.67 [0.25, 1.17] (1.92 vs 1.25), give-ups 0-8% vs 33%.
 
 ## Result 6 — strong model on the same 100 never-seen dialogues (Claude Sonnet, judge Claude Opus = same family)
 runs/final_claude, plain judge: resolves A 0.83, B 1.25, C 1.45, D 1.34, E 1.28; give-ups A 35%, B 7%, C 2%,

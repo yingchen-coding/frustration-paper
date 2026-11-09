@@ -238,3 +238,15 @@ Fact-checked judge (`summary_gemini_ref.json`):
 - D - B: resolves +1.03 [0.89, 1.17]; D - C: +0.90 [0.76, 1.04].
 - Cross-family judge confirms: once hallucinated facts are checked against the database, REPAIR dominates on
   the strong model too.
+
+## 14. Stage-stratified ablation: where the escalation policy helps (2026-11-08)
+Across all 100 unseen cases on the 8B model, D_repair and E_ledger_db do not differ significantly overall
+(D - E resolves: Opus +0.06 [-0.07, 0.19], Gemini +0.12 [-0.05, 0.28]). Stratifying by the repair reader's
+escalation stage (88 cases at stage 2, 12 cases at stage 3):
+- **Stage 2 (n=88)**: Opus D 1.18 vs E 1.18 (+0.00); Gemini D 1.45 vs E 1.41 (+0.05). The ledger and database
+  carry the entire gain.
+- **Stage 3 (n=12, stronger repair escalation)**:
+  - Opus plain: D 1.50 vs E 1.00, **D - E +0.50 [0.08, 0.92]**; give-up D 8% vs E 33%.
+  - Gemini plain: D 1.92 vs E 1.25, **D - E +0.67 [0.25, 1.17]**; give-up D 0% vs E 33% (-33 pts [-58, -8]).
+  - Fact-checked judges: Opus D 1.50 vs E 1.25 (+0.25); Gemini D 1.67 vs E 1.33 (+0.33); give-up D 0% vs E 25%.
+The repair reader and escalation policy show a clear, significant gain specifically on higher-escalation turns.

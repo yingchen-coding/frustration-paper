@@ -215,9 +215,11 @@ C prompt-only reading & 1.45 & 2\% & 1.85 & 0\% & 52.9\% \\
 D REPAIR & 1.34 & 18\% & 1.55 & 14\% & 67.8\% \\
 E ledger + database & 1.28 & 19\% & 1.49 & 14\% & 65.5\% \\
 \midrule
-D, fact-checked judge & \textbf{1.64} & \textbf{3\%} & \textbf{1.94} & \textbf{1\%} & \\
+A, fact-checked judge & 0.68 & 38\% & 0.89 & 24\% & \\
 B, fact-checked judge & 0.76 & 19\% & 0.91 & 8\% & \\
 C, fact-checked judge & 0.82 & 12\% & 1.04 & 0\% & \\
+D, fact-checked judge & \textbf{1.64} & \textbf{3\%} & \textbf{1.94} & \textbf{1\%} & \\
+E, fact-checked judge & 1.65 & 3\% & 1.90 & 1\% & \\
 \bottomrule
 \end{tabular}
 \caption{Same 100 cases, Claude Sonnet generator. Plain judges reward invented bookings; fact-checked judges
@@ -229,9 +231,12 @@ penalise them. Gemini is a cross-family judge for both generator and first judge
 to Claude Sonnet told to be concrete under both judges (Opus: 1.22 vs.\ 1.25; Gemini: 1.51 vs.\ 1.62) and
 above Claude answering the last message (Opus: 0.83; Gemini: 1.19).
 
-\paragraph{What carries the gain.} D and E do not differ significantly on the 8B model (D$-$E resolves:
-Opus $-0.06$ [$-0.19$, 0.07]; Gemini $+0.12$ [$-0.05$, 0.28]): the explicit ledger and the database account
-for the main improvement, though D has slightly fewer give-ups than E under Gemini (14\% vs.\ 22\%).
+\paragraph{What carries the gain.} D and E do not differ significantly on the 8B model overall (D$-$E
+resolves: Opus $+0.06$ [$-0.07$, 0.19]; Gemini $+0.12$ [$-0.05$, 0.28]): on the 88 stage-2 cases the
+explicit ledger and the database account for the entire gain. However, on the 12 stage-3 cases --- where the
+user shows stronger repair escalation --- D significantly outperforms E on the 8B model: Opus D$-$E $+0.50$
+[0.08, 0.92] (D 1.50 vs.\ E 1.00), Gemini $+0.67$ [0.25, 1.17] (D 1.92 vs.\ E 1.25), and give-ups drop from
+33\% (E) to 0--8\% (D). The escalation-aware policy helps precisely where users are most frustrated.
 
 \paragraph{Judges reward invented bookings.} Without the database, both judges gave full marks to a reply that
 ``booked'' train TR0899 for a Leicester--Cambridge request; in the database TR0899 runs Cambridge--London.
