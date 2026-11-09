@@ -9,3 +9,6 @@ err.txt
 runs/*/judge_last_*.txt
 # Internal working notes stay local.
 PLAN.md
+paper/*.pdf
+paper/*.aux
+paper/*.log

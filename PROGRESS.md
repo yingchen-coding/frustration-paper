@@ -68,8 +68,18 @@ D - B +1.24 [1.07, 1.40]. Caveat: the rows shown to the judge come from the same
 Objective (87 cases with a database request): real and matching entity A 23%, B 22%, C 18%, D 61%, E 62%.
 D vs E again not significant (resolves -0.06 [-0.19, 0.07]): the stage policy still shows no separate gain.
 
-## In progress
-runs/final_claude (strong model, same 100 cases, reader v3) — generating; add its table here when done.
+## Result 6 — strong model on the same 100 never-seen dialogues (Claude Sonnet, judge Claude Opus = same family)
+runs/final_claude, plain judge: resolves A 0.83, B 1.25, C 1.45, D 1.34, E 1.28; give-ups A 35%, B 7%, C 2%,
+D 18%, E 19%. D - C resolves -0.11 [-0.28, 0.05]; D - A +0.51 [0.29, 0.72].
+Objective (87 cases): real & matching A 31%, B 43.7%, C 52.9%, D 67.8%, E 65.5%; entity that violates the
+user's constraints A 18.4%, B 42.5%, C 33.3%, D 13.8%.
+Cross-model: Llama 8B + REPAIR (1.22) ~ Claude Sonnet "be concrete" (1.25) on the same cases and judge
+(separate judging passes). Fact-checked judging of the Claude run is still running.
+
+## Paper draft
+`paper/main.tex` (+ `refs.bib`), built with `tectonic main.tex` -> 5 pages. Red [PENDING] marks the missing
+human evaluation, second judge family, reader validation, and the Claude fact-checked numbers. Two arXiv
+references need their author lists confirmed. Not pushed to the public repo yet.
 
 ## Known gaps before writing
 Human check of 30-50 cases; second judge family (Gemini/Codex — Codex quota resets 2026-12-08);

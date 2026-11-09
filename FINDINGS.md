@@ -112,7 +112,7 @@ raises give-ups on the strong model — next step is to read those cases.
 ## 9. Why REPAIR lost to the prompt on the strong model (13 held-out cases where D gave up and C did not)
 - The judge rewards confident invented bookings. Example DMAGE3464: user wants 8 tickets Leicester -> Cambridge
   on Saturday; C "booked" TR0899 05:00-05:51, which in the database is Cambridge -> London Kings Cross. Judge gave
-  C resolves 2 and D (real Leicester trains, no booking) 0. => judging must check facts against the database.
+  C resolves 2 and D (real Leicester trains, no booking) 1, with give_up. => judging must check facts against the database.
 - REPAIR could not book: the brief had no booking step, so D listed options when the user said "book".
 - Reader errors: "tourist attractions" (plural) not matched -> wrong topic; "does not need wifi" became wifi=yes;
   a generic "hotel" type blocked 3-star guesthouses in the north.
