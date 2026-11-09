@@ -1,0 +1,242 @@
+[
+ {
+  "id": "DMAGE3777.json#14",
+  "dialogue": "User: Hi\nAssistant: The name is none . The phone is 01223358966 . The postcode is none .\nUser: What?\nAssistant: The postcode is none .\nUser: i i'm not ok\nAssistant: The phone is 01223358966 .\nUser: can you help me?\nAssistant: The phone is 01223358966 . The postcode is none .\nUser: Ok\nAssistant: The address is Parkside, Cambridge .\nUser: Nice\nAssistant: How many days will you be staying ?\nUser: Number??\nAssistant: Is there anything else I can help you with today ?\nUser: whatts number?"
+ },
+ {
+  "id": "DMAGE3643.json#10",
+  "dialogue": "User: I'm  looking forward to trying local restaurants. The restaurant should be in the expensive price range. The restaurant should serve gastropub food.\nAssistant: Would you like me to book it ? It is located in the centre . How about backstreet bistro ? They are expensive.\nUser: Can i get address ?\nAssistant: It is at 2 Sturton Street City Centre.\nUser: I'm  seeing local tourist attractions. The attraction should be in the centre.\nAssistant: The phone number is 01223306306 .\nUser: can get entrance fee, address, postcode ?\nAssistant: They are located at park street . Adc theatre is popular among visitors . Its postcode is cb58as . The park is ? . Is there anything else I can help you with today ?\nUser: I  want to book a taxi to commute between the two places. The taxi should leave from the attraction to the restaurant after 19:30.\nAssistant: Have a good day .\nUser: I'm also  want to book a taxi to commute between the two places. The taxi should leave from the attraction to the restaurant after 19:30."
+ },
+ {
+  "id": "DMAGE3865.json#14",
+  "dialogue": "User: Hi i need a Taxi\nAssistant: The phone is 01223358966 .\nUser: Need Taxi going to the oak bistro\nUser: I need a Taxi going to the oak bistro and departing from saint John's college\nAssistant: Where are you departing from , please ?\nUser: the oak bistro\nAssistant: What day will you be arriving ? For how many people ?\nUser: Today and 1 person\nAssistant: For how many people ?\nUser: 1\nAssistant: Where are you departing from ? And where will you be going ?\nUser: Departing from saint John's college and going to the oak bistro\nAssistant: Where are you leaving from ? What time would you like the taxi to pick you up ?\nUser: the oak bistro"
+ },
+ {
+  "id": "DMAGE3833.json#8",
+  "dialogue": "User: hi i am looking for a local restaurant in the south\nAssistant: Is there a certain kind of food you would like ?\nUser: yes\nAssistant: Do you have a specific area in mind ? What cuisine are you interested in ?\nUser: it doesn't matter\nAssistant: I am sorry but there are no restaurants that fit that criteria in the none . There are no none restaurants unfortunately .\nUser: hi i am looking for a local restaurant in the south\nAssistant: There are none in none of town . I do not have anything in that price range for none . Another criteria perhaps ?\nUser: hi i am looking for a good local restaurant in the south"
+ },
+ {
+  "id": "DMAGE3574.json#18",
+  "dialogue": "User: is there any local reataurant\nAssistant: Can I make a reservation for you ? Did you need any further assistance today ?\nUser: the restaurant should be in the centre\nAssistant: I have 69 options for you !. Do you have a price range in mind ?\nUser: cheap price range\nAssistant: Excellent . pizza hut city centre is just your thing .\nUser: phone number\nAssistant: Okay , how about pizza hut city centre ? Their phone number is 01223323737 .\nUser: okay\nAssistant: What time would you like the reservation for ?\nUser: anytime\nAssistant: What time would you like me to make your reservation ?\nUser: 18:00\nAssistant: Let 's decide on none . Unfortunately , that appears to already be booked . Do you want to try one of the others ? I am sorry they do not have a table at none , perhaps another restaurant ?\nUser: no thank u\nAssistant: Booking was successful . Reference number is : 00000000 .\nUser: ok\nUser: okay"
+ },
+ {
+  "id": "DMAGE3799.json#20",
+  "dialogue": "User: I want to try a local restaurant.\nUser: Where is it?\nAssistant: Is there anything else I can help you with today ?\nUser: What is the address?\nAssistant: The phone is 01223358966 .\nUser: Address?\nAssistant: The address is Parkside, Cambridge .\nUser: Thanks, is it considered entertainment?\nUser: Is it moderately priced?\nAssistant: What area of town would you prefer ?\nUser: It doesn't matter.\nAssistant: I will book it for you and get a reference number ? Did you need any further assistance today ?\nUser: Is there a taxi?\nAssistant: Have a good day .\nUser: What kind of car?\nAssistant: Do you have a specific area in mind ?\nUser: What's the phone number for the taxi?\nAssistant: I am unable to book this for you . Do you have any other preferences ?\nUser: A taxi"
+ },
+ {
+  "id": "DMAGE3659.json#20",
+  "dialogue": "User: i am looking for local restaurant in north\nAssistant: What cuisine are you interested in ?\nUser: anything expensive category\nAssistant: It is in the north area . They serve italian . Would you like to try da vinci pizzeria ?\nUser: i need address\nAssistant: They are located at 20 Milton Road Chesterton. Did you need any further assistance today ?\nUser: i need to book a table for 6 people  at 13:15 on monday\nAssistant: I have also reserved for monday. I have booked you da vinci pizzeria. Would 13:15 be a convenient time for you ?\nUser: yeah\nAssistant: What cuisine are you interested in ?\nUser: i also needs park in centre\nAssistant: That one is located in the centre . How about cambridge university botanic gardens ? It 's a park attraction . We need some more information . Where are looking to eat ?\nUser: ok i need postcode address phone number\nAssistant: It is on bateman street . Here is the phone number , 01223336265 . Their postcode is cb21jf . Okay , how about da vinci pizzeria ? Is there anything else I can help you with ?\nUser: i need a taxi to be arrived restaurant by 19:00\nAssistant: I have successfully booked you a volvo . Did you need any further assistance today ?\nUser: i need the phone number\nAssistant: It is in the north area . The post code is cb41jy .\nUser: no no phone number\nAssistant: Excellent . da vinci pizzeria is just your thing .\nUser: i need taxi phone number"
+ },
+ {
+  "id": "DMAGE3792.json#8",
+  "dialogue": "User: I need to catch a train from Cambridge after 15:30 to go to Stansted Airport Friday, can you help me?\nAssistant: Where would you like to go to ?\nUser: Stansted Airport\nAssistant: What time do you want to arrive by ? What time would you like to depart ?\nUser: I would like to leave after 15:30\nAssistant: TR5767 would be your perfect fit . How about 05:00 will that work for you ? Great , I have a train that meets your criteria . Would you like me to book it for you ?\nUser: No, It must be after 15:30\nAssistant: I have a train arriving at 05:51 . Would that do ? Okay the trainID is TR5767. Would you like me to book you on the 05:00 train ?\nUser: No, I need a train to leave after 15:30"
+ },
+ {
+  "id": "DMAGE3848.json#6",
+  "dialogue": "User: Hi , I need a nightclub in the west\nAssistant: Sorry , i could n't find anything in the none . No , I ' m sorry , I am not finding anything with none .      Perhaps another type of attraction would interest you ?\nUser: How about a nightclub in centre\nAssistant: That is in the centre . There are 44 . Would you like me to recommend one for you ? Please specify the type of attraction you 're interested in .\nUser: a nightclub\nAssistant: Unfortunately there are no none venues in that location .\nUser: i need a hotel in the south"
+ },
+ {
+  "id": "DMAGE3828.json#10",
+  "dialogue": "User: hi i am looking for a expensive local restaurant that serve indian food\nAssistant: It is located in the centre . Would you like to try curry garden ?\nUser: yes please give me the phone number\nAssistant: The number there is 01223302330 .\nUser: thanks\nUser: i also looking for a 2 star hotel in the type of guesthouse in the south\nAssistant: It is a none . There were no matches found .\nUser: how about 3 stars that include free parking\nAssistant: Sorry , my search did n't bring back any results .\nUser: i also looking for a 2 or 3 star hotel in the type of guesthouse in the south that invlude free parking"
+ },
+ {
+  "id": "DMAGE3871.json#8",
+  "dialogue": "User: i am looking for a place to stay include free wifi\nAssistant: Would you like for me to try and make a reservation ? The address is 124 tenison road . It is a moderate place . The name is none .\nUser: is there any free wifi?\nAssistant: Did you need any further assistance today ?\nUser: what is the price range\nAssistant: The price range is moderate . Is there anything else I can help you with today ?\nUser: i am looking for a train\nAssistant: Thank you for contacting the help desk . Have a great day . Is there anything else I can help you with today ?\nUser: i am looking for a train"
+ },
+ {
+  "id": "DMAGE2560.json#14",
+  "dialogue": "User: how are you\nAssistant: The name is none .\nUser: Humdy\nAssistant: The phone is 01223358966 .\nUser: I need a hotel\nAssistant: Is there anything else I can help you with today ?\nUser: for 3 stars\nUser: ok\nAssistant: What time would you like the reservation for ?\nUser: you fucked up?\nAssistant: The name is none .\nUser: how is that gonna work/\nAssistant: Thank you and goodbye .\nUser: ok"
+ },
+ {
+  "id": "DMAGE1084.json#4",
+  "dialogue": "User: museum\nAssistant: What about broughton house gallery ? Is there anything else I can help you with ?\nUser: in the centre\nAssistant: What type of attraction are you interested in ?\nUser: museum in centre"
+ },
+ {
+  "id": "DMAGE3868.json#14",
+  "dialogue": "User: I am  looking forward to trying local restaurants. The restaurant should serve modern european food. The restaurant should be in the moderate price range. The restaurant should be in the west.\nAssistant: There are no matching records found for that request . Is there anything else I can help you with today ?\nUser: The restaurant should be in the center area.\nAssistant: How about de luca cucina and bar ? I recommend de luca cucina and bar.\nUser: OKay give me postcode and adress.\nAssistant: It is 01223356666 . The postcode is cb21aw .\nUser: Book for 7 people at 16:00 on tuesday.\nAssistant: For what time ? It is located in the centre . De luca cucina and bar looks like a good place .\nUser: Tuesday\nAssistant: How many people will be ? For what time ?\nUser: seven people. At 16:00\nAssistant: I ' m sorry those are not available . Ok , what day would you like to make the reservation on ? What time would you like the reservation for ?\nUser: Wednesday\nAssistant: This is a moderate one .\nUser: Book for 7 people at 16:00 on wednesday."
+ },
+ {
+  "id": "DMAGE3847.json#10",
+  "dialogue": "User: I need to find a restuarant thats expensive\nAssistant: Would you like for me to try and make a reservation ?\nUser: what is the name of it\nAssistant: Is there anything else I can help you with today ?\nUser: I need a restaurant nearby\nAssistant: They serve italian food .\nUser: is it expensive\nAssistant: You are welcome . Is there anything else I can help you with today ?\nUser: i need an expensive restaurant\nAssistant: Shall I try to start and book you into one ? This is a cheap one .\nUser: no I need an expensive restaurant"
+ },
+ {
+  "id": "DMAGE1159.json#2",
+  "dialogue": "User: TRAIN LEAVING ON WED\nUser: TRAIN ON WED"
+ },
+ {
+  "id": "DMAGE3595.json#26",
+  "dialogue": "User: i am looking for a train, the train should leave after 15:45\nAssistant: Your reference number is 00000000.\nUser: thank you\nAssistant: Did you need any further assistance today ?\nUser: yes\nAssistant: Is there anything else I can help you with ?\nUser: the train should leave on monday\nAssistant: Where are you headed ?\nUser: london liverpool street\nAssistant: It arrives at 05:51 . I have 404 trains that meet your criteria . The train is for monday you are all set. The booking is for arriving in london kings cross .\nUser: the train should depart from cambridge\nAssistant: I have 404 trains that meet your criteria . What time would you like to leave ?\nUser: 15:45\nAssistant: It should arrive by 05:51. The train stop is london kings cross . Their ID is TR7075 . I have a train leaving at 05:00 would that be okay ? Great , I have a train that meets your criteria . Would you like me to book it for you ?\nUser: yes\nAssistant: Is there anything else I can help you with ?\nUser: i need train id\nAssistant: There are 404 total trips available to you. That train leaves on monday . The train stop is london kings cross . Where are you departing from ?\nUser: i excited local tourist\nAssistant: The arrival time is 05:51 . It departs from cambridge . The train stop is london kings cross . There is a train that leaves at 05:00 .\nUser: thank you\nAssistant: You are welcome . Is there anything else I can help you with today ?\nUser: then make sure i get the entrance fee and post code\nAssistant: The train stop is london kings cross . Is there anything else I can help you with ?\nUser: nothing\nAssistant: On what day will you be traveling ?\nUser: thank you"
+ },
+ {
+  "id": "DMAGE3766.json#28",
+  "dialogue": "User: i'm looking for some architecture\nAssistant: Where in town would you like to go ?\nUser: east\nAssistant: I ' m sorry but I have not found any matches . You are welcome . Is there anything else I can help you with today ?\nUser: try boat\nAssistant: It will be located in the east . The entry fee is ? .\nUser: wich is the phone and address?\nAssistant: Their address in our system is listed as the plough, green end, fen ditton, . Camboats is available , would that work for you ? Here is the phone number , 01223902112 . You are welcome . Is there anything else I can help you with today ?\nUser: Thank you, now search for a hotel\nAssistant: Remind me of the area you need that in . Yes do you have a price range preference ?\nUser: moderate\nAssistant: Can I make a reservation for you ? They are located at 74 chesterton road. How about ashley hotel ? It has all the attributes you requested and a great name !. Of course , would a hotel be OK ?\nUser: on the north\nAssistant: Want me to book ashley hotel ? How many people will be with you ? How many days will you be staying ?\nUser: how many stars does it have?\nAssistant: They have a 2 Star rating.\nUser: i need 4 stars\nAssistant: I ' m sorry , no , none in the none . I am sorry , but that hotel does not have a none star rating , would you like another option ? What area of town would you like to be in ? How many stars would you like ?\nUser: book ashley hotel\nAssistant: Would you like for me to try and make a reservation ? They are located in the none . None is available would you like to try that ? Their phone number is none . It has none stars .\nUser: yes\nAssistant: Can I make a reservation for you ? What day would you like to book ? What time would you like me to make your reservation ?\nUser: Yes, on sunday, for 3 people and 2 nights\nAssistant: It is listed as boat . I ' m sorry those are not available .\nUser: search for hotel\nAssistant: There are none in the none . Perhaps another criteria change ? Sorry , I ' m not finding anything . What area are you looking to stay in ? Is there a price range you prefer ? How many stars are you looking for ?\nUser: i need a hotel\nAssistant: Sorry there are none in the none . I am sorry I have no listings for any with none stars . I ' m sorry , I ' m afraid I do n't see any none matching that description . Do you want to try a different price range or star rating ? Do you have a preference of star rating ?\nUser: i need a hotel"
+ },
+ {
+  "id": "DMAGE3852.json#6",
+  "dialogue": "User: I am looking for a restaurant that serves international food in a cheap price range\nAssistant: I will book it for you and get a reference number ? There 's a place called the missing sock.\nUser: What is the price range of the missing sock?\nAssistant: This restaurant is in the cheap price range .\nUser: Can you book me a table for 7 people at 17:30 on wednesday at the missing sock?\nAssistant: I am unable to book this for you . Do you have any other preferences ? What day would you like to book ? What time would you like the reservation for ?\nUser: When can you book me a table at the missing sock?"
+ },
+ {
+  "id": "DMAGE3606.json#4",
+  "dialogue": "User: I am looking for local tourist attractions\nAssistant: The address is Parkside, Cambridge .\nUser: It should be in the west\nUser: It should be in y"
+ },
+ {
+  "id": "DMAGE3863.json#2",
+  "dialogue": "User: I am  looking for a taxi. The taxi should go to stevenage train station. The taxi should arrive by 02:45.\nAssistant: Is there anything else I can help you with ?\nUser: looking for a taxi. The taxi should go to stevenage train station. The taxi should arrive by 02:45."
+ },
+ {
+  "id": "DMAGE3877.json#4",
+  "dialogue": "User: I AM EXCITED TO SEE LOCAL TOURIST ATTRACTION\nAssistant: The phone is 01223358966 .\nUser: SUGGEST ME ANY LOCAL TOURIST ATTRACTION\nUser: SUGGEST ME ANY LOCAL TOURIST ATTRACTION"
+ },
+ {
+  "id": "DMAGE3703.json#4",
+  "dialogue": "User: looking for a train\nAssistant: The address is Parkside, Cambridge .\nUser: The train should depart from leicester. The train should go to cambridge.\nUser: The train should depart from leicester. The train should go to cambridge."
+ },
+ {
+  "id": "DMAGE3872.json#22",
+  "dialogue": "User: I am looking for a place to stay. The hotel should be in the type of guesthouse. The hotel should include free wifi.\nAssistant: Do you have an idea on the location ?\nUser: south\nAssistant: There are 3 of those . Sorry about that ! how about aylesbray lodge guest house ? It is moderate . The hotel is 4 stars .\nUser: Okay. What is address?\nAssistant: The address is 5 mowbray road . Aylesbray lodge guest house is a great place. You are welcome . Is there anything else I can help you with today ?\nUser: Does hotel have free parking?\nAssistant: We have 3 such places . It has wifi . The parking is free . It is a guesthouse .\nUser: okay\nAssistant: Shall I try to start and book you into one ?\nUser: No\nAssistant: How about aylesbray lodge guest house ? It has all the attributes you requested and a great name !.\nUser: I am excited about seeing local tourist attractions. The attraction should be in the type of theatre.\nAssistant: You might want to try the adc theatre . The phone number is 01223300085 . What part of town would you like it.\nUser: south\nAssistant: That is in the south . Sorry about that , there are actually 1 . The entry fee is ? . What about the junction ?\nUser: okay\nAssistant: Would you like for me to try and make a reservation ? They are located in the south . How about aylesbray lodge guest house ?\nUser: No\nAssistant: Sorry about that ! how about aylesbray lodge guest house ?\nUser: Book me a taxi\nAssistant: Is there anything else I can help you with ?\nUser: Book me a taxi"
+ },
+ {
+  "id": "DMAGE3841.json#4",
+  "dialogue": "User: I am looking for a place to stay\nUser: I need a 4 star hotel with free wifi\nUser: I need a 4 star hotel with free wifi"
+ },
+ {
+  "id": "DMAGE3782.json#26",
+  "dialogue": "User: hi\nAssistant: The phone is 01223358966 .\nUser: looking for hotel in center of the city, i wish to book hotel like guesthouse\nUser: i wish the hotel should provide free parking and free wifi\nAssistant: I have 21 different options for you !. Do you prefer guesthouse type ?\nUser: yes\nAssistant: We have 21 such places . It is a guesthouse .\nUser: can you book in a 4 star hotel\nAssistant: Shall I try to start and book you into one ? I have 16 different options for you !. It is in the moderate price range . The hotel is 4 stars .\nUser: yes book a hotel for 6 people on tuesday for 2 nights\nAssistant: What day would you like that reservation ?\nUser: tuesday\nAssistant: You are welcome . Is there anything else I can help you with today ?\nUser: i need details of train that ;eaves after 9:15\nAssistant: You 're welcome ! I hope you have a wonderful trip !.\nUser: whether train is available for london king cross\nAssistant: Is there anything else I can help you with today ?\nUser: find a train id\nAssistant: Where will you be departing from ? Where are you headed ?\nUser: cambridge to london king cross\nAssistant: I have 2828 trains that meet your criteria . What time do you want to arrive by ?\nUser: after 9:15\nAssistant: There are 16 of those .\nUser: on thursday\nAssistant: Where will you be traveling from ? Where are you heading to ?\nUser: cambridge to london king cross"
+ },
+ {
+  "id": "DMAGE3661.json#6",
+  "dialogue": "User: museum in the center\nAssistant: Sure , there are 11 options for you. Broughton house gallery looks good . It is listed as museum .\nUser: is there an entrance fee\nAssistant: They are located at 98 king street . The entry fee is free . I think a fun place to visit is broughton house gallery . Is there anything else I can help you with today ?\nUser: train from cambridge to bishops strotford on sunday\nUser: train to bishops strotord on sunday"
+ },
+ {
+  "id": "DMAGE3635.json#8",
+  "dialogue": "User: i am looking for taxi to go to nandos\nAssistant: The address is Parkside, Cambridge .\nUser: can you give me the car type and phone number\nAssistant: I was able to book a lexus for you !.\nUser: thank you . i want the phone number\nUser: i want mobile number\nAssistant: You are welcome . Is there anything else I can help you with today ?\nUser: i want mobile number"
+ },
+ {
+  "id": "DMAGE2565.json#12",
+  "dialogue": "User: i need a restaurant in west serving indian food\nAssistant: There are 6 restaurants in that area that fit that criteria . They serve indian food . Do you have a location preference ? Is there a price range that you prefer ?\nUser: 87213\nAssistant: The address is Parkside, Cambridge . What is the price range you are looking for ?\nUser: 25 per meal\nAssistant: Is there anything else I can help you with today ?\nUser: i need to be there by 5 pm\nAssistant: Let 's decide on none . Unfortunately , that appears to already be booked . Do you want to try one of the others ? You are welcome . Is there anything else I can help you with today ?\nUser: yes\nAssistant: It is at 68 Histon Road Chesterton.\nUser: book a taxi\nAssistant: Is there anything else I can help you with ?\nUser: yes"
+ },
+ {
+  "id": "DMAGE3580.json#6",
+  "dialogue": "User: hello I am looking for a taxi from archway house\nAssistant: And where will you be going ?\nUser: funky fun house\nAssistant: Their address in our system is listed as 8 mercers row, mercers row industrial estate . The park is ? . Here is the phone number , 01223304705 .\nUser: I need a taxi from archway house to funky fun house leaving at 13:00\nAssistant: What is your destination please.\nUser: funky fun house"
+ },
+ {
+  "id": "DMAGE3812.json#6",
+  "dialogue": "User: looking for a place to stay. The hotel should be in the type of guesthouse. The hotel should be in the centre. The hotel should include free parking.\nAssistant: There are 2 of those . The parking is free .\nUser: The hotel should have a star of 4. The hotel should include free wifi.\nAssistant: Would you like me to book it ? Alexander bed and breakfast is a great place.\nUser: book it for 6 people on tuesday for 2 nights.\nAssistant: I ' m sorry , I was unable to reserve rooms . Would you like to try anything else ? Is there anything else I can help you with ?\nUser: book it for 6 people on tuesday for 2 nights."
+ },
+ {
+  "id": "DMAGE3780.json#26",
+  "dialogue": "User: looking for a train\nAssistant: The postcode is none .\nUser: train should depart from london liverpool street\nAssistant: It should arrive by 05:51. The train will be departing from cambridge . The booking is for arriving in london kings cross . I would say you should leave by 05:00.\nUser: the train should g to cambgridge\nAssistant: The phone is 01223358966 .\nUser: cambridge\nAssistant: The train will be departing from cambridge . The train stop is london kings cross . Can you confirm your desired travel day ? Where will you be leaving from ?\nUser: no should go to cambridge\nAssistant: There are 2828 trains available . Well , I can book it for YOU if you would like . Would you like me to ?\nUser: price\nUser: arrival time\nAssistant: The arrival time is 05:51 .\nUser: price\nAssistant: Is there a certain time you are wanting to leave ?\nUser: price of tickets\nAssistant: The cost of the one way journey is 23.60 pounds .\nUser: okay thank you\nAssistant: Did you need any further assistance today ?\nUser: seeing tourist attractions\nAssistant: Thank you for contacting us and have a nice day .\nUser: the attractions should be in the centre\nAssistant: It is a theatre . Its entrance fee is ? . Ok . You should be set . The booking was successful . The train number is TR7075 .\nUser: attractions postcode\nAssistant: Is there anything else I can help you with today ?\nUser: the attractions should be in the centre"
+ },
+ {
+  "id": "DMAGE3808.json#16",
+  "dialogue": "User: i am excited about seeing local tourist attractions. The attraction should be in the type of college.\nAssistant: Any particular area ?\nUser: it shouldbe the type of college\nAssistant: Is there a specific area you are looking for ?\nUser: no anything will be fine\nAssistant: Did you need any further assistance today ?\nUser: i want the address and postcode\nAssistant: It 's located at saint andrew's street . It is located in the centre . Its postcode is cb23bu . You are welcome . Is there anything else I can help you with today ?\nUser: i am looking for a local restaurants. the restaurant should be in moderate price range\nAssistant: Would you like for me to try and make a reservation ? I would suggest pizza hut city centre .\nUser: yes\nUser: can you reserve it for me\nAssistant: I have 110 options for you !.\nUser: the restaurant should be in center area\nAssistant: Is there anything else I can help you with today ?\nUser: i want address"
+ },
+ {
+  "id": "DMAGE1076.json#18",
+  "dialogue": "User: need a train departing from cambridge\nAssistant: Where are you heading to ?\nUser: cambridge\nAssistant: There are 2828 . The train stop is london kings cross .\nUser: leave at 1830\nAssistant: There is a train that leaves at 05:00 .\nUser: i neeed to leave at 630\nAssistant: Is there anything else I can help you with ?\nUser: i need to leave at 6:30 not5\nAssistant: What day will you be staying ?\nUser: tuesday\nAssistant: Booking was unsuccessful do you have any other preference ? Is there anything else I can help you with today ?\nUser: book me a train\nAssistant: Can you confirm your desired travel day ? What time do you want to depart ?\nUser: tuesday at 18:30\nAssistant: Your booking was successful . Your reference number is 00000000 .\nUser: train ID\nUser: train ID"
+ },
+ {
+  "id": "DMAGE3772.json#4",
+  "dialogue": "User: i need to book a train\nUser: what\nAssistant: Did you need any further assistance today ?\nUser: yes, i need to book a train please"
+ },
+ {
+  "id": "DMAGE3870.json#12",
+  "dialogue": "User: I am excited about seeing local tourist attractions. The attraction should be in the centre.\nAssistant: They are located within the centre . What attraction are you thinking about ? What type of attraction are you looking for ?\nUser: college\nAssistant: It 's a college attraction . Did you need any further assistance today ?\nUser: What is  postcode and address?\nAssistant: It 's located at saint andrew's street . Its postcode is cb23bu . Is there anything else I can help you with ?\nUser: I am looking for a place to stay. The hotel should be in the north. The hotel should include free wifi. The hotel should be in the type of guesthouse. The hotel should be in the moderate price range.\nUser: I am  looking for a place to stay.\nAssistant: What is the name of the hotel you 'd like to book ?\nUser: The hotel should be in the north. The hotel should include free wifi.\nAssistant: What area would you like the hotel in ? Do you need free internet ? Do you have a preference for a hotel versus a guesthouse ?\nUser: The hotel should be in the north. The hotel should include free wifi. The hotel should be in the type of guesthouse. The hotel should be in the moderate price range."
+ },
+ {
+  "id": "DMAGE3620.json#4",
+  "dialogue": "User: i am looking for a local restaurant with expensive price range\nAssistant: How does the pizza hut city centre sound ? The phone number is 01223323737 . They are cheap.\nUser: i am looking for a local restaurant with expensive price range\nAssistant: Can I make a reservation for you ? Pizza hut city centre sounds like it might be what you are looking for .\nUser: i am looking for a local restaurant with expensive price range"
+ },
+ {
+  "id": "DMAGE1948.json#6",
+  "dialogue": "User: Hi can you help me find a tourist attraction in the cetnre\nAssistant: The address is Parkside, Cambridge . The phone is 01223358966 .\nUser: Ok cool is it a park\nUser: is parkside of type park\nAssistant: The phone is 01223358966 .\nUser: Can you help me find a tourist park in the centre"
+ },
+ {
+  "id": "DMAGE3861.json#6",
+  "dialogue": "User: I am excited about seeing local tourist attractions. The attraction should be in the type of museum. The attraction should be in the centre.\nAssistant: We have broughton house gallery .\nUser: What is entrance fee, address, postcode, phone number?\nAssistant: It is located in 98 king street. What about broughton house gallery ? Here is the phone number , 01223314960 . Their postcode is cb11ln .\nUser: entrance fee?\nAssistant: Is there anything else I can help you with today ?\nUser: entrance fee?"
+ },
+ {
+  "id": "DMAGE3729.json#14",
+  "dialogue": "User: I am looking for a nightclub\nAssistant: The phone is 01223358966 .\nUser: looking fro attractions\nAssistant: The name is none .\nUser: I would like to find a nightclub\nAssistant: The name is none . Is there anything else I can help you with today ?\nUser: yes\nAssistant: The phone is 01223358966 .\nUser: why are you giving me a phone number\nUser: please assist me in looking for a tourist attraction\nAssistant: The phone is 01223358966 .\nUser: what is the phone number to\nAssistant: You are welcome . Is there anything else I can help you with today ?\nUser: yes I am looking for a local tourist attraction"
+ },
+ {
+  "id": "DMAGE3628.json#4",
+  "dialogue": "User: I am looking for hotel\nUser: To stay\nAssistant: The name is none .\nUser: I am looking for hotel including free wifi and parking"
+ },
+ {
+  "id": "DMAGE3736.json#6",
+  "dialogue": "User: I'm looking for a train. The train should go to cambridge. The train should leave on friday. The train should leave after 13:15. The train should depart from peterborough.\nAssistant: It arrives at 05:51 . I have 404 trains that meet your criteria . The booking is for arriving in london kings cross . Their ID is TR5767 . It leaves at 05:00. I will book that for you now .\nUser: Yes, I  want to make a booking for 8 people.\nAssistant: Is there anything else I can help you with today ?\nUser: I want to make a booking for 8 people\nAssistant: Is there a time you would like to arrive by ?\nUser: Okay , i want to make a booking for 8 people."
+ },
+ {
+  "id": "DMAGE3683.json#8",
+  "dialogue": "User: Hello, do you know of any local restaurants?\nUser: Restaurants?\nAssistant: Shall I try to start and book you into one ? Is there anything else I can help you with ?\nUser: Are there any restaurants near by?\nAssistant: The name is none . Did you need any further assistance today ?\nUser: I need a restaurant to try\nAssistant: The phone is 01223358966 .\nUser: I am looking forward to trying local restaurants, do you know of any?"
+ },
+ {
+  "id": "DMAGE3895.json#16",
+  "dialogue": "User: i am looking for an attraction.\nAssistant: Ok , thank you . Have a good day .\nUser: The attraction should be in the type of college.\nAssistant: I have various attractions all over town . Is there a specific area you are wanting to find something to do ?\nUser: west area.\nAssistant: What about churchill college ? Here is the phone number , 01223336233 . Glad to have been of help . Thank you for using the Cambridge TownInfo centre . Enjoy the rest of your day !.\nUser: also looking forward to trying local restaurants. The restaurant should be in the east.\nAssistant: We have 5 of those ! Anything specific you need or just a recommendation ? Do you have any specific type of food you would like ?\nUser: get me address.\nAssistant: It is located in the west . Churchill college is available , would that work for you ?\nUser: in want to book a table for 7 people at 13:00 on wednesday.\nAssistant: I was able to book you for wednesday . Your reservation is at the missing sock . Your reference number is 00000001 . Is there anything else I can help you with ?\nUser: i  want to book a taxi.\nAssistant: Where in town would you like to go ?\nUser: to attraction from the restaurant by 13:00.\nAssistant: I need to know where you 'd like picked up at . Where will you be going to ?\nUser: The taxi should arrive at the attraction from the restaurant by 13:00."
+ },
+ {
+  "id": "DMAGE3845.json#30",
+  "dialogue": "User: I am looking for a train that leaves on friday\nAssistant: The phone is 01223358966 .\nUser: I need a train that departs from cambridge and arrives at stansted airport\nAssistant: Can you confirm your desired travel day ?\nUser: Friday\nAssistant: There is a train meeting your criteria and is leaving at 05:00 . Ok great . Would you like for me to go ahead and book the train for you ?\nUser: I need the train to leave at 19:00\nAssistant: Is there a time you would prefer to arrive ?\nUser: After 19:00\nAssistant: How many tickets would you like ?\nUser: 1\nAssistant: The train ID is TR5767 . I would say you should leave by 05:00. It arrives at 05:51 .\nUser: Book it\nAssistant: Would you like me to book this train for you ?\nUser: Yes\nUser: I also want to find a tourist attraction\nAssistant: I have a train leaving at 05:00 would that be okay ? Is there anything else I can help you with ?\nUser: Are there any tourist attractions in the centre?\nAssistant: Would you like for me to try and make a reservation ?\nUser: I would like to know about the local tourist attractions in the centre\nAssistant: I ' m sorry there 's no entertainment in the none . Where in town would you like to go ? What type of attraction are you interested in ?\nUser: The centre\nAssistant: They are located within the centre . We have 44 options , can i reccomend for you ? Would you be interested in visiting a theatre ? Did you need any further assistance today ?\nUser: What is the phone number for the theatre?\nAssistant: There are 4 . Would you like me to recommend one for you ? Their entrance fee is ? by our system currently . Do you prefer theatre type ?\nUser: Which is the lowest priced theatre?\nAssistant: I would say you should leave by 05:00.\nUser: What is the theatre's postcode?\nAssistant: It 's located in the centre . The train is for friday you are all set. That train is departing from cambridge .\nUser: What is the postcode?"
+ },
+ {
+  "id": "DMAGE3707.json#18",
+  "dialogue": "User: looking for a hotel. You are looking for a place to stay. The hotel should be in the cheap price range. The hotel should include free parking.\nAssistant: What area of town would you like to be in ?\nUser: The hotel should be in the north.\nAssistant: I have 11 options for you. You are welcome . Is there anything else I can help you with today ?\nUser: The hotel should be in the north. The hotel should have a star of 3.\nAssistant: There are 1 of those . Hamilton lodge is a great place. You are welcome . Is there anything else I can help you with today ?\nUser: address please\nAssistant: The address is 156 chesterton road . How about hamilton lodge ? The price range is moderate .\nUser: i want to book it for 2 people on wednesday for 3 nights.\nAssistant: I have also reserved for wednesday. I have booked for 2 people . You are welcome . Is there anything else I can help you with today ?\nUser: i also want to book a taxi to commute between the two places. The taxi should leave from the hotel to the attraction after 24:30.\nAssistant: What time would you like to arrive there by ? Where are you going ?\nUser: hotel\nAssistant: Is there anything else I can help you with ?\nUser: book a taxi\nAssistant: Where are you departing from , please ? I need to know what time you need to leave .\nUser: hotel. after 24:30\nAssistant: Where will you leave from ?\nUser: hotel"
+ },
+ {
+  "id": "DMAGE3801.json#8",
+  "dialogue": "User: i need a hospital please\nAssistant: The address is Parkside, Cambridge .\nUser: it have haematology?\nAssistant: The phone is 01223216297 .\nUser: i need haematology day unit\nAssistant: The department is neurosciences critical care unit .\nUser: it has haematology day unit?\nAssistant: The department is neurosciences critical care unit .\nUser: i need haematology"
+ },
+ {
+  "id": "DMAGE3565.json#10",
+  "dialogue": "User: Expensive Korean restaurant\nAssistant: It is located in the centre .\nUser: Nice\nAssistant: The name is none . Did you need any further assistance today ?\nUser: Yes, book a table for 7 people on thursday\nAssistant: I ' m sorry but i ' m unable to make the reservation on none . What time are you looking for a reservation at ?\nUser: 18:30\nAssistant: I am sorry they do not have a table at none , perhaps another restaurant ?\nUser: Yes\nUser: Korean restaurant"
+ },
+ {
+  "id": "DMAGE3816.json#2",
+  "dialogue": "User: I am looking for recommendations for a local museum in the centre of the city.\nAssistant: There are 11 . Would you like me to recommend one for you ? It 's a museum attraction . What is the name of the attraction ? Is there anything else I can help you with today ?\nUser: Please suggest a local museum in the centre of the city."
+ },
+ {
+  "id": "DMAGE208.json#2",
+  "dialogue": "User: Looking for hotel\nUser: looking for a hotel"
+ },
+ {
+  "id": "DMAGE3874.json#8",
+  "dialogue": "User: I am looking for local restaurants that serve british food\nAssistant: It 's in the moderate price range .\nUser: What is the name of the restaurant?\nAssistant: We have 11 such places . What type of food would you like ?\nUser: British food\nAssistant: The restaurant one seven is a nice place would you like to try that one ?\nUser: Could you book me a table for 4 people at 14:30 on wednesday at One Seven?\nAssistant: Your reference number is 00000013 .\nUser: Could you book me a table for 4 people on wednesday at 14:30 at the restaurant One Seven?"
+ },
+ {
+  "id": "DMAGE3578.json#4",
+  "dialogue": "User: is there any local restaurant\nUser: the restaurant should serve french food\nAssistant: I will go ahead and book that now . It is at 22 Chesterton Road Chesterton. How about restaurant two two ?\nUser: the restaurant should serve french food"
+ },
+ {
+  "id": "DMAGE3555.json#2",
+  "dialogue": "User: Cheap restaurant\nAssistant: The phone is 01223358966 .\nUser: Cheap restaurant address"
+ },
+ {
+  "id": "DMAGE3657.json#6",
+  "dialogue": "User: I'm looking for a mediterranean food restaurant, can you help me?\nAssistant: Shall I try to start and book you into one ? How does the the gardenia sound ?\nUser: what is the price range of gardenia?\nAssistant: I will book it for you and get a reference number ? This is a cheap one .\nUser: I'm looking for an expesive restaurant\nUser: I'm looking for an expesive restaurant"
+ },
+ {
+  "id": "DMAGE3890.json#14",
+  "dialogue": "User: looking forward to local tourist attractions. The attraction should be in the centre.\nAssistant: What type of attraction are you interested in ?\nUser: The attraction should be in the type of college.\nAssistant: Sure , there are 13 options for you. It is listed as college . Which part of town would you prefer ?\nUser: get me address, phone number.\nAssistant: Saint andrew's street is the address. What about christ's college ? Here is the phone number , 01223334900 .\nUser: looking forward to trying local restaurants. The restaurant should be in the same area as the attraction. The restaurant should serve british food.\nAssistant: I am sorry there is none even in the none. There are no none restaurants unfortunately . Did you have a specific kind of cuisine in mind ?\nUser: The restaurant should serve british food.\nAssistant: I am afraid there is none .\nUser: i am also looking forward to trying local restaurants\nAssistant: The none seems appropriate . i have booked it for you . This is a none one .\nUser: The restaurant should serve british food.\nAssistant: I did not find any restaurants in none . I do not have anything in that price range for none . Another criteria perhaps ? Do you have a preference in food type ?\nUser: The restaurant should serve british food."
+ },
+ {
+  "id": "DMAGE3629.json#4",
+  "dialogue": "User: i am looking for a place to stay\nAssistant: All set . Your reference number is 1 .\nUser: the hotel should be in guest house typee\nUser: i am looking for a place to stay"
+ },
+ {
+  "id": "DMAGE1419.json#8",
+  "dialogue": "User: hello, i'm looking for a local international food restaurant in the centre\nAssistant: The the varsity restaurant is a nice place would you like to try that one ?\nUser: can i get the phone number?\nAssistant: Would you like to try the varsity restaurant ? Their phone number is 01223356060.\nUser: what is the price range?\nAssistant: Do you prefer the varsity restaurant name ?\nUser: what is the price range of the varsity restaurant?\nAssistant: The phone number is 01223356060 .\nUser: what is the price range of the varsity restaurant?"
+ },
+ {
+  "id": "DMAGE3721.json#2",
+  "dialogue": "User: looking for a place to stay. The hotel should have a star of 3.\nUser: looking for a place to stay. The hotel should have a star of 3."
+ },
+ {
+  "id": "DMAGE3564.json#30",
+  "dialogue": "User: i am excited about seeing local tourist attractions, the attraction should be in type of museum\nUser: the attraction should be in the east\nAssistant: That one is located in the east . Sure , there are 4 options for you. Would you be interested in visiting a museum ?\nUser: once i find an attraction, make sure you get address, postcode, phone number\nAssistant: They are located at 5 greens road . I think a fun place to visit is cambridge artworks . The phone number is 01223902168 . The post code is cb13ef .\nUser: thank you\nAssistant: Is there anything else I can help you with today ?\nUser: i am looking forward to trying local restaurants. the restaurant should be in the moderate price range\nAssistant: It will be located in the east . Would a museum work for you ? Is there anything else I can help you with ?\nUser: yes\nAssistant: It is located in the east . Cambridge artworks looks good .\nUser: thank you\nAssistant: I ' m happy to help , and I hope you enjoy your stay !.\nUser: yes thank you\nAssistant: I ' m happy to have been able to help you today .\nUser: once i find a restaurant, make sure i get phone number\nAssistant: Shall I try to start and book you into one ? I would suggest pizza hut city centre .\nUser: ok\nAssistant: Do you have a time preference ?\nUser: no\nAssistant: It 's in the cheap price range .\nUser: yes\nAssistant: I ' m happy to have been able to help you today .\nUser: i am also happy to ask help you today\nAssistant: You are welcome . Is there anything else I can help you with today ?\nUser: thank you\nAssistant: Is there anything else I can help you with ?\nUser: nothing\nAssistant: It is listed as museum .\nUser: thank you very much"
+ },
+ {
+  "id": "DMAGE3546.json#6",
+  "dialogue": "User: I want to visit the great saint mary's church\nUser: great saint mary's church\nAssistant: Their address in our system is listed as market square . The phone number is 01223350914 . Its postcode is cb23pq . You are welcome . Is there anything else I can help you with today ?\nUser: Entrance fee\nAssistant: Is there anything else I can help you with today ?\nUser: great saint mary's church Entrance fee"
+ }
+]

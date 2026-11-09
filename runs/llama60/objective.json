@@ -1,0 +1,22 @@
+{
+ "n": 60,
+ "n_with_db_domain_pending": 53,
+ "A_baseline": {
+  "delivered_valid": 0.189,
+  "named_invalid": 0.075,
+  "phones_real": 1,
+  "phones_fake": 4
+ },
+ "B_direct": {
+  "delivered_valid": 0.208,
+  "named_invalid": 0.075,
+  "phones_real": 0,
+  "phones_fake": 2
+ },
+ "C_diagnose": {
+  "delivered_valid": 0.189,
+  "named_invalid": 0.151,
+  "phones_real": 1,
+  "phones_fake": 2
+ }
+}

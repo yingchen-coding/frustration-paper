@@ -1,0 +1,52 @@
+{
+ "DMAGE3777.json#14": {
+  "X": "B_direct",
+  "Y": "C_diagnose",
+  "Z": "A_baseline"
+ },
+ "DMAGE3643.json#10": {
+  "X": "C_diagnose",
+  "Y": "A_baseline",
+  "Z": "B_direct"
+ },
+ "DMAGE3865.json#14": {
+  "X": "A_baseline",
+  "Y": "C_diagnose",
+  "Z": "B_direct"
+ },
+ "DMAGE3833.json#8": {
+  "X": "A_baseline",
+  "Y": "C_diagnose",
+  "Z": "B_direct"
+ },
+ "DMAGE3574.json#18": {
+  "X": "B_direct",
+  "Y": "C_diagnose",
+  "Z": "A_baseline"
+ },
+ "DMAGE3799.json#20": {
+  "X": "C_diagnose",
+  "Y": "A_baseline",
+  "Z": "B_direct"
+ },
+ "DMAGE3659.json#20": {
+  "X": "A_baseline",
+  "Y": "C_diagnose",
+  "Z": "B_direct"
+ },
+ "DMAGE3792.json#8": {
+  "X": "B_direct",
+  "Y": "A_baseline",
+  "Z": "C_diagnose"
+ },
+ "DMAGE3848.json#6": {
+  "X": "A_baseline",
+  "Y": "B_direct",
+  "Z": "C_diagnose"
+ },
+ "DMAGE3828.json#10": {
+  "X": "C_diagnose",
+  "Y": "A_baseline",
+  "Z": "B_direct"
+ }
+}

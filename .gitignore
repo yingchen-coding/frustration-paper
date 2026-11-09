@@ -1,0 +1,11 @@
+# EmoWOZ is CC BY-NC 4.0 and MultiWOZ db is downloaded; fetch them, do not redistribute.
+data/
+# Skills stay local.
+.claude/
+__pycache__/
+*.log
+*.log2
+err.txt
+runs/*/judge_last_*.txt
+# Internal working notes stay local.
+PLAN.md

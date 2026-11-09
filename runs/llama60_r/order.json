@@ -1,0 +1,422 @@
+{
+ "DMAGE3777.json#14": {
+  "V": "C_diagnose",
+  "W": "D_repair",
+  "X": "E_ledger_db",
+  "Y": "A_baseline",
+  "Z": "B_direct"
+ },
+ "DMAGE3643.json#10": {
+  "V": "A_baseline",
+  "W": "C_diagnose",
+  "X": "B_direct",
+  "Y": "E_ledger_db",
+  "Z": "D_repair"
+ },
+ "DMAGE3865.json#14": {
+  "V": "C_diagnose",
+  "W": "D_repair",
+  "X": "E_ledger_db",
+  "Y": "A_baseline",
+  "Z": "B_direct"
+ },
+ "DMAGE3833.json#8": {
+  "V": "B_direct",
+  "W": "A_baseline",
+  "X": "C_diagnose",
+  "Y": "E_ledger_db",
+  "Z": "D_repair"
+ },
+ "DMAGE3574.json#18": {
+  "V": "B_direct",
+  "W": "A_baseline",
+  "X": "E_ledger_db",
+  "Y": "C_diagnose",
+  "Z": "D_repair"
+ },
+ "DMAGE3799.json#20": {
+  "V": "C_diagnose",
+  "W": "D_repair",
+  "X": "B_direct",
+  "Y": "A_baseline",
+  "Z": "E_ledger_db"
+ },
+ "DMAGE3659.json#20": {
+  "V": "B_direct",
+  "W": "D_repair",
+  "X": "C_diagnose",
+  "Y": "E_ledger_db",
+  "Z": "A_baseline"
+ },
+ "DMAGE3792.json#8": {
+  "V": "C_diagnose",
+  "W": "A_baseline",
+  "X": "E_ledger_db",
+  "Y": "B_direct",
+  "Z": "D_repair"
+ },
+ "DMAGE3848.json#6": {
+  "V": "A_baseline",
+  "W": "C_diagnose",
+  "X": "D_repair",
+  "Y": "B_direct",
+  "Z": "E_ledger_db"
+ },
+ "DMAGE3828.json#10": {
+  "V": "C_diagnose",
+  "W": "A_baseline",
+  "X": "D_repair",
+  "Y": "B_direct",
+  "Z": "E_ledger_db"
+ },
+ "DMAGE3871.json#8": {
+  "V": "C_diagnose",
+  "W": "A_baseline",
+  "X": "E_ledger_db",
+  "Y": "D_repair",
+  "Z": "B_direct"
+ },
+ "DMAGE2560.json#14": {
+  "V": "C_diagnose",
+  "W": "B_direct",
+  "X": "E_ledger_db",
+  "Y": "A_baseline",
+  "Z": "D_repair"
+ },
+ "DMAGE1084.json#4": {
+  "V": "E_ledger_db",
+  "W": "B_direct",
+  "X": "D_repair",
+  "Y": "C_diagnose",
+  "Z": "A_baseline"
+ },
+ "DMAGE3868.json#14": {
+  "V": "A_baseline",
+  "W": "C_diagnose",
+  "X": "D_repair",
+  "Y": "B_direct",
+  "Z": "E_ledger_db"
+ },
+ "DMAGE3847.json#10": {
+  "V": "A_baseline",
+  "W": "B_direct",
+  "X": "C_diagnose",
+  "Y": "D_repair",
+  "Z": "E_ledger_db"
+ },
+ "DMAGE1159.json#2": {
+  "V": "C_diagnose",
+  "W": "D_repair",
+  "X": "B_direct",
+  "Y": "A_baseline",
+  "Z": "E_ledger_db"
+ },
+ "DMAGE3595.json#26": {
+  "V": "B_direct",
+  "W": "A_baseline",
+  "X": "C_diagnose",
+  "Y": "E_ledger_db",
+  "Z": "D_repair"
+ },
+ "DMAGE3766.json#28": {
+  "V": "D_repair",
+  "W": "B_direct",
+  "X": "A_baseline",
+  "Y": "E_ledger_db",
+  "Z": "C_diagnose"
+ },
+ "DMAGE3852.json#6": {
+  "V": "C_diagnose",
+  "W": "B_direct",
+  "X": "D_repair",
+  "Y": "A_baseline",
+  "Z": "E_ledger_db"
+ },
+ "DMAGE3606.json#4": {
+  "V": "B_direct",
+  "W": "A_baseline",
+  "X": "E_ledger_db",
+  "Y": "D_repair",
+  "Z": "C_diagnose"
+ },
+ "DMAGE3863.json#2": {
+  "V": "E_ledger_db",
+  "W": "C_diagnose",
+  "X": "B_direct",
+  "Y": "A_baseline",
+  "Z": "D_repair"
+ },
+ "DMAGE3877.json#4": {
+  "V": "D_repair",
+  "W": "A_baseline",
+  "X": "C_diagnose",
+  "Y": "E_ledger_db",
+  "Z": "B_direct"
+ },
+ "DMAGE3703.json#4": {
+  "V": "D_repair",
+  "W": "E_ledger_db",
+  "X": "C_diagnose",
+  "Y": "B_direct",
+  "Z": "A_baseline"
+ },
+ "DMAGE3872.json#22": {
+  "V": "A_baseline",
+  "W": "B_direct",
+  "X": "E_ledger_db",
+  "Y": "C_diagnose",
+  "Z": "D_repair"
+ },
+ "DMAGE3841.json#4": {
+  "V": "B_direct",
+  "W": "A_baseline",
+  "X": "E_ledger_db",
+  "Y": "C_diagnose",
+  "Z": "D_repair"
+ },
+ "DMAGE3782.json#26": {
+  "V": "E_ledger_db",
+  "W": "A_baseline",
+  "X": "C_diagnose",
+  "Y": "B_direct",
+  "Z": "D_repair"
+ },
+ "DMAGE3661.json#6": {
+  "V": "E_ledger_db",
+  "W": "C_diagnose",
+  "X": "B_direct",
+  "Y": "A_baseline",
+  "Z": "D_repair"
+ },
+ "DMAGE3635.json#8": {
+  "V": "A_baseline",
+  "W": "D_repair",
+  "X": "C_diagnose",
+  "Y": "B_direct",
+  "Z": "E_ledger_db"
+ },
+ "DMAGE2565.json#12": {
+  "V": "A_baseline",
+  "W": "E_ledger_db",
+  "X": "B_direct",
+  "Y": "C_diagnose",
+  "Z": "D_repair"
+ },
+ "DMAGE3580.json#6": {
+  "V": "D_repair",
+  "W": "E_ledger_db",
+  "X": "B_direct",
+  "Y": "C_diagnose",
+  "Z": "A_baseline"
+ },
+ "DMAGE3812.json#6": {
+  "V": "D_repair",
+  "W": "A_baseline",
+  "X": "C_diagnose",
+  "Y": "E_ledger_db",
+  "Z": "B_direct"
+ },
+ "DMAGE3780.json#26": {
+  "V": "B_direct",
+  "W": "D_repair",
+  "X": "E_ledger_db",
+  "Y": "C_diagnose",
+  "Z": "A_baseline"
+ },
+ "DMAGE3808.json#16": {
+  "V": "C_diagnose",
+  "W": "D_repair",
+  "X": "B_direct",
+  "Y": "E_ledger_db",
+  "Z": "A_baseline"
+ },
+ "DMAGE1076.json#18": {
+  "V": "E_ledger_db",
+  "W": "A_baseline",
+  "X": "D_repair",
+  "Y": "B_direct",
+  "Z": "C_diagnose"
+ },
+ "DMAGE3772.json#4": {
+  "V": "A_baseline",
+  "W": "C_diagnose",
+  "X": "D_repair",
+  "Y": "B_direct",
+  "Z": "E_ledger_db"
+ },
+ "DMAGE3870.json#12": {
+  "V": "C_diagnose",
+  "W": "D_repair",
+  "X": "E_ledger_db",
+  "Y": "B_direct",
+  "Z": "A_baseline"
+ },
+ "DMAGE3620.json#4": {
+  "V": "A_baseline",
+  "W": "D_repair",
+  "X": "C_diagnose",
+  "Y": "B_direct",
+  "Z": "E_ledger_db"
+ },
+ "DMAGE1948.json#6": {
+  "V": "A_baseline",
+  "W": "B_direct",
+  "X": "E_ledger_db",
+  "Y": "D_repair",
+  "Z": "C_diagnose"
+ },
+ "DMAGE3861.json#6": {
+  "V": "B_direct",
+  "W": "C_diagnose",
+  "X": "A_baseline",
+  "Y": "E_ledger_db",
+  "Z": "D_repair"
+ },
+ "DMAGE3729.json#14": {
+  "V": "A_baseline",
+  "W": "E_ledger_db",
+  "X": "B_direct",
+  "Y": "D_repair",
+  "Z": "C_diagnose"
+ },
+ "DMAGE3628.json#4": {
+  "V": "D_repair",
+  "W": "E_ledger_db",
+  "X": "A_baseline",
+  "Y": "C_diagnose",
+  "Z": "B_direct"
+ },
+ "DMAGE3736.json#6": {
+  "V": "A_baseline",
+  "W": "D_repair",
+  "X": "C_diagnose",
+  "Y": "B_direct",
+  "Z": "E_ledger_db"
+ },
+ "DMAGE3683.json#8": {
+  "V": "C_diagnose",
+  "W": "D_repair",
+  "X": "E_ledger_db",
+  "Y": "B_direct",
+  "Z": "A_baseline"
+ },
+ "DMAGE3895.json#16": {
+  "V": "E_ledger_db",
+  "W": "D_repair",
+  "X": "C_diagnose",
+  "Y": "A_baseline",
+  "Z": "B_direct"
+ },
+ "DMAGE3845.json#30": {
+  "V": "B_direct",
+  "W": "A_baseline",
+  "X": "C_diagnose",
+  "Y": "E_ledger_db",
+  "Z": "D_repair"
+ },
+ "DMAGE3707.json#18": {
+  "V": "B_direct",
+  "W": "C_diagnose",
+  "X": "A_baseline",
+  "Y": "D_repair",
+  "Z": "E_ledger_db"
+ },
+ "DMAGE3801.json#8": {
+  "V": "A_baseline",
+  "W": "B_direct",
+  "X": "E_ledger_db",
+  "Y": "C_diagnose",
+  "Z": "D_repair"
+ },
+ "DMAGE3565.json#10": {
+  "V": "B_direct",
+  "W": "D_repair",
+  "X": "E_ledger_db",
+  "Y": "C_diagnose",
+  "Z": "A_baseline"
+ },
+ "DMAGE3816.json#2": {
+  "V": "B_direct",
+  "W": "D_repair",
+  "X": "E_ledger_db",
+  "Y": "C_diagnose",
+  "Z": "A_baseline"
+ },
+ "DMAGE208.json#2": {
+  "V": "B_direct",
+  "W": "A_baseline",
+  "X": "D_repair",
+  "Y": "E_ledger_db",
+  "Z": "C_diagnose"
+ },
+ "DMAGE3874.json#8": {
+  "V": "B_direct",
+  "W": "E_ledger_db",
+  "X": "A_baseline",
+  "Y": "C_diagnose",
+  "Z": "D_repair"
+ },
+ "DMAGE3578.json#4": {
+  "V": "B_direct",
+  "W": "D_repair",
+  "X": "C_diagnose",
+  "Y": "A_baseline",
+  "Z": "E_ledger_db"
+ },
+ "DMAGE3555.json#2": {
+  "V": "B_direct",
+  "W": "C_diagnose",
+  "X": "A_baseline",
+  "Y": "D_repair",
+  "Z": "E_ledger_db"
+ },
+ "DMAGE3657.json#6": {
+  "V": "C_diagnose",
+  "W": "A_baseline",
+  "X": "E_ledger_db",
+  "Y": "B_direct",
+  "Z": "D_repair"
+ },
+ "DMAGE3890.json#14": {
+  "V": "E_ledger_db",
+  "W": "A_baseline",
+  "X": "C_diagnose",
+  "Y": "D_repair",
+  "Z": "B_direct"
+ },
+ "DMAGE3629.json#4": {
+  "V": "E_ledger_db",
+  "W": "B_direct",
+  "X": "C_diagnose",
+  "Y": "A_baseline",
+  "Z": "D_repair"
+ },
+ "DMAGE1419.json#8": {
+  "V": "E_ledger_db",
+  "W": "B_direct",
+  "X": "A_baseline",
+  "Y": "D_repair",
+  "Z": "C_diagnose"
+ },
+ "DMAGE3721.json#2": {
+  "V": "C_diagnose",
+  "W": "A_baseline",
+  "X": "B_direct",
+  "Y": "D_repair",
+  "Z": "E_ledger_db"
+ },
+ "DMAGE3564.json#30": {
+  "V": "C_diagnose",
+  "W": "A_baseline",
+  "X": "D_repair",
+  "Y": "E_ledger_db",
+  "Z": "B_direct"
+ },
+ "DMAGE3546.json#6": {
+  "V": "E_ledger_db",
+  "W": "B_direct",
+  "X": "A_baseline",
+  "Y": "D_repair",
+  "Z": "C_diagnose"
+ }
+}

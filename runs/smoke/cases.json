@@ -1,0 +1,42 @@
+[
+ {
+  "id": "DMAGE3777.json#14",
+  "dialogue": "User: Hi\nAssistant: The name is none . The phone is 01223358966 . The postcode is none .\nUser: What?\nAssistant: The postcode is none .\nUser: i i'm not ok\nAssistant: The phone is 01223358966 .\nUser: can you help me?\nAssistant: The phone is 01223358966 . The postcode is none .\nUser: Ok\nAssistant: The address is Parkside, Cambridge .\nUser: Nice\nAssistant: How many days will you be staying ?\nUser: Number??\nAssistant: Is there anything else I can help you with today ?\nUser: whatts number?"
+ },
+ {
+  "id": "DMAGE3643.json#10",
+  "dialogue": "User: I'm  looking forward to trying local restaurants. The restaurant should be in the expensive price range. The restaurant should serve gastropub food.\nAssistant: Would you like me to book it ? It is located in the centre . How about backstreet bistro ? They are expensive.\nUser: Can i get address ?\nAssistant: It is at 2 Sturton Street City Centre.\nUser: I'm  seeing local tourist attractions. The attraction should be in the centre.\nAssistant: The phone number is 01223306306 .\nUser: can get entrance fee, address, postcode ?\nAssistant: They are located at park street . Adc theatre is popular among visitors . Its postcode is cb58as . The park is ? . Is there anything else I can help you with today ?\nUser: I  want to book a taxi to commute between the two places. The taxi should leave from the attraction to the restaurant after 19:30.\nAssistant: Have a good day .\nUser: I'm also  want to book a taxi to commute between the two places. The taxi should leave from the attraction to the restaurant after 19:30."
+ },
+ {
+  "id": "DMAGE3865.json#14",
+  "dialogue": "User: Hi i need a Taxi\nAssistant: The phone is 01223358966 .\nUser: Need Taxi going to the oak bistro\nUser: I need a Taxi going to the oak bistro and departing from saint John's college\nAssistant: Where are you departing from , please ?\nUser: the oak bistro\nAssistant: What day will you be arriving ? For how many people ?\nUser: Today and 1 person\nAssistant: For how many people ?\nUser: 1\nAssistant: Where are you departing from ? And where will you be going ?\nUser: Departing from saint John's college and going to the oak bistro\nAssistant: Where are you leaving from ? What time would you like the taxi to pick you up ?\nUser: the oak bistro"
+ },
+ {
+  "id": "DMAGE3833.json#8",
+  "dialogue": "User: hi i am looking for a local restaurant in the south\nAssistant: Is there a certain kind of food you would like ?\nUser: yes\nAssistant: Do you have a specific area in mind ? What cuisine are you interested in ?\nUser: it doesn't matter\nAssistant: I am sorry but there are no restaurants that fit that criteria in the none . There are no none restaurants unfortunately .\nUser: hi i am looking for a local restaurant in the south\nAssistant: There are none in none of town . I do not have anything in that price range for none . Another criteria perhaps ?\nUser: hi i am looking for a good local restaurant in the south"
+ },
+ {
+  "id": "DMAGE3574.json#18",
+  "dialogue": "User: is there any local reataurant\nAssistant: Can I make a reservation for you ? Did you need any further assistance today ?\nUser: the restaurant should be in the centre\nAssistant: I have 69 options for you !. Do you have a price range in mind ?\nUser: cheap price range\nAssistant: Excellent . pizza hut city centre is just your thing .\nUser: phone number\nAssistant: Okay , how about pizza hut city centre ? Their phone number is 01223323737 .\nUser: okay\nAssistant: What time would you like the reservation for ?\nUser: anytime\nAssistant: What time would you like me to make your reservation ?\nUser: 18:00\nAssistant: Let 's decide on none . Unfortunately , that appears to already be booked . Do you want to try one of the others ? I am sorry they do not have a table at none , perhaps another restaurant ?\nUser: no thank u\nAssistant: Booking was successful . Reference number is : 00000000 .\nUser: ok\nUser: okay"
+ },
+ {
+  "id": "DMAGE3799.json#20",
+  "dialogue": "User: I want to try a local restaurant.\nUser: Where is it?\nAssistant: Is there anything else I can help you with today ?\nUser: What is the address?\nAssistant: The phone is 01223358966 .\nUser: Address?\nAssistant: The address is Parkside, Cambridge .\nUser: Thanks, is it considered entertainment?\nUser: Is it moderately priced?\nAssistant: What area of town would you prefer ?\nUser: It doesn't matter.\nAssistant: I will book it for you and get a reference number ? Did you need any further assistance today ?\nUser: Is there a taxi?\nAssistant: Have a good day .\nUser: What kind of car?\nAssistant: Do you have a specific area in mind ?\nUser: What's the phone number for the taxi?\nAssistant: I am unable to book this for you . Do you have any other preferences ?\nUser: A taxi"
+ },
+ {
+  "id": "DMAGE3659.json#20",
+  "dialogue": "User: i am looking for local restaurant in north\nAssistant: What cuisine are you interested in ?\nUser: anything expensive category\nAssistant: It is in the north area . They serve italian . Would you like to try da vinci pizzeria ?\nUser: i need address\nAssistant: They are located at 20 Milton Road Chesterton. Did you need any further assistance today ?\nUser: i need to book a table for 6 people  at 13:15 on monday\nAssistant: I have also reserved for monday. I have booked you da vinci pizzeria. Would 13:15 be a convenient time for you ?\nUser: yeah\nAssistant: What cuisine are you interested in ?\nUser: i also needs park in centre\nAssistant: That one is located in the centre . How about cambridge university botanic gardens ? It 's a park attraction . We need some more information . Where are looking to eat ?\nUser: ok i need postcode address phone number\nAssistant: It is on bateman street . Here is the phone number , 01223336265 . Their postcode is cb21jf . Okay , how about da vinci pizzeria ? Is there anything else I can help you with ?\nUser: i need a taxi to be arrived restaurant by 19:00\nAssistant: I have successfully booked you a volvo . Did you need any further assistance today ?\nUser: i need the phone number\nAssistant: It is in the north area . The post code is cb41jy .\nUser: no no phone number\nAssistant: Excellent . da vinci pizzeria is just your thing .\nUser: i need taxi phone number"
+ },
+ {
+  "id": "DMAGE3792.json#8",
+  "dialogue": "User: I need to catch a train from Cambridge after 15:30 to go to Stansted Airport Friday, can you help me?\nAssistant: Where would you like to go to ?\nUser: Stansted Airport\nAssistant: What time do you want to arrive by ? What time would you like to depart ?\nUser: I would like to leave after 15:30\nAssistant: TR5767 would be your perfect fit . How about 05:00 will that work for you ? Great , I have a train that meets your criteria . Would you like me to book it for you ?\nUser: No, It must be after 15:30\nAssistant: I have a train arriving at 05:51 . Would that do ? Okay the trainID is TR5767. Would you like me to book you on the 05:00 train ?\nUser: No, I need a train to leave after 15:30"
+ },
+ {
+  "id": "DMAGE3848.json#6",
+  "dialogue": "User: Hi , I need a nightclub in the west\nAssistant: Sorry , i could n't find anything in the none . No , I ' m sorry , I am not finding anything with none .      Perhaps another type of attraction would interest you ?\nUser: How about a nightclub in centre\nAssistant: That is in the centre . There are 44 . Would you like me to recommend one for you ? Please specify the type of attraction you 're interested in .\nUser: a nightclub\nAssistant: Unfortunately there are no none venues in that location .\nUser: i need a hotel in the south"
+ },
+ {
+  "id": "DMAGE3828.json#10",
+  "dialogue": "User: hi i am looking for a expensive local restaurant that serve indian food\nAssistant: It is located in the centre . Would you like to try curry garden ?\nUser: yes please give me the phone number\nAssistant: The number there is 01223302330 .\nUser: thanks\nUser: i also looking for a 2 star hotel in the type of guesthouse in the south\nAssistant: It is a none . There were no matches found .\nUser: how about 3 stars that include free parking\nAssistant: Sorry , my search did n't bring back any results .\nUser: i also looking for a 2 or 3 star hotel in the type of guesthouse in the south that invlude free parking"
+ }
+]
