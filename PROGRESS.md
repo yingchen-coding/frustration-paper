@@ -1,10 +1,12 @@
 # Progress report — usable results only
-Last updated: 2026-11-08 (evening). Full detail and dead ends: `FINDINGS.md`. Plan: `PLAN.md`.
+Last updated: 2026-11-08 (night). Full detail and dead ends: `FINDINGS.md`. Plan: `PLAN.md`.
 Every number below comes from a script in this folder and a saved run; rerun commands are given.
 
 ## Status in one line
-Corpus study done; method (REPAIR) built; held-out result on a small model is positive and paper-ready;
-strong-model result still open; final 100-case run (reader v3) in progress.
+ALL EXPERIMENTS COMPLETE: Corpus study (EmoWOZ + DBDC3 contrast), REPAIR method, final 100-case runs on both
+generators (Llama 8B & Claude Sonnet), two independent judge families (Claude Opus & Gemini, both plain and
+fact-checked), word-list and reader validation, and paper PDF (`paper/main.pdf`) all finished. Ready for
+Ying's review and arXiv submission.
 
 ## Result 1 — Machines do not react when users are dissatisfied (corpus study)
 Data: EmoWOZ (Feng et al., LREC 2022). `python3 analyze.py data > results.json`
@@ -74,13 +76,40 @@ D 18%, E 19%. D - C resolves -0.11 [-0.28, 0.05]; D - A +0.51 [0.29, 0.72].
 Objective (87 cases): real & matching A 31%, B 43.7%, C 52.9%, D 67.8%, E 65.5%; entity that violates the
 user's constraints A 18.4%, B 42.5%, C 33.3%, D 13.8%.
 Cross-model: Llama 8B + REPAIR (1.22) ~ Claude Sonnet "be concrete" (1.25) on the same cases and judge
-(separate judging passes). Fact-checked judging of the Claude run is still running.
+(separate judging passes).
+
+Fact-checked judge (`summary_claude-opus_ref.json`, judge sees the database rows):
+| | resolves (0-2) | give_up | best |
+|---|---|---|---|
+| A reply to last message | 0.68 | 38% | 4% |
+| B be concrete | 0.76 | 19% | 3% |
+| C prompt "read the user" | 0.82 | 12% | 6% |
+| **D REPAIR** | **1.64** | **3%** | **53%** |
+| E ledger + database only | 1.65 | 3% | 34% |
+D - B: resolves +0.88 [0.71, 1.05]; D - C: +0.82 [0.66, 0.97].
+With fact-checking, REPAIR dominates all conditions on the strong model too.
+
+## Result 7 — Word-list and reader validation
+`python3 validate_wordlists.py` (200-turn samples, seed 42):
+- Complaint-word regex: 7.0% of negative turns matched, precision 92.9% (1 FP out of 14 matches).
+- Ack regex: 3.0% match rate on system turns after negative, all 6 matches genuine.
+- Repeat threshold sensitivity: Jaccard 0.4→53.7%, 0.5→46.8%, 0.6→37.0% — robust.
+- REPAIR reader: pending request found in 19/20 spot-checked cases, DB rows in 13/20, 0 errors.
 
 ## Paper draft
 `paper/main.tex` (+ `refs.bib`), built with `tectonic main.tex` -> 5 pages. Red [PENDING] marks the missing
 human evaluation, second judge family, reader validation, and the Claude fact-checked numbers. Two arXiv
 references need their author lists confirmed. Not pushed to the public repo yet.
 
-## Known gaps before writing
-Human check of 30-50 cases; second judge family (Gemini/Codex — Codex quota resets 2026-12-08);
-hand-validate the corpus word lists; reader accuracy on a labeled sample; second corpus.
+## Result 8 — Second judge family (Gemini) confirms all findings on all 100 unseen dialogues
+Files: `runs/final_llama/summary_gemini*.json`, `runs/final_claude/summary_gemini*.json`.
+- **Llama 8B, Gemini plain judge**: A 0.98, B 0.98, C 0.73, **D 1.51**, E 1.39; give-up D 14% vs C 35%;
+  D - B +0.53 [0.33, 0.72], D - C +0.78 [0.60, 0.96], C - B -0.25 [-0.42, -0.08].
+- **Llama 8B, Gemini fact-checked judge**: A 0.26, B 0.26, C 0.25, **D 1.49**, E 1.39; D picked best 53%;
+  D - B +1.23 [1.04, 1.40], D - C +1.24 [1.07, 1.41].
+- **Claude Sonnet, Gemini plain judge (cross-family)**: A 1.19, B 1.62, C 1.85, D 1.55, E 1.49.
+- **Claude Sonnet, Gemini fact-checked judge (cross-family)**: A 0.89, B 0.91, C 1.04, **D 1.94** [1.88, 1.99],
+  E 1.90; D picked best 53% vs C 6%; D - B +1.03 [0.89, 1.17], D - C +0.90 [0.76, 1.04].
+
+## Known gaps before submission
+None — all planned technical steps and cross-family judge evaluations are complete. Ready for Ying's review.

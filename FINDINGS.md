@@ -130,3 +130,111 @@ The dev split has now been looked at, so v3 is evaluated on 100 cases from the D
 - Ack is followed by MORE negative next turns (MultiWOZ 16.3% vs 8.4%; DialMAGE 62.8% vs 54.8%). Correlational: systems apologize when the task already failed. Do not claim apology hurts.
 - "Repeats own request" uses a single Jaccard threshold; check 0.4/0.6 sensitivity.
 - Only one corpus with a machine system (DialMAGE). A second corpus is needed before generalizing.
+
+
+## 10. Word-list and reader validation (2026-11-08, script: validate_wordlists.py)
+
+### Complaint-word regex
+200 sampled negative DialMAGE user turns:
+- Matched: 14/200 (7.0%) — consistent with the 7.7% reported in §2.
+- True positives: 13; False positives: 1 (task language: "no. I need a train that arrives at 21:45").
+- Precision: 92.9%. The list catches real complaints when they occur; its low recall confirms our claim
+  that word-level sentiment misses most dissatisfaction.
+
+### Ack regex
+200 system turns after negative user turns:
+- Matched: 6/200 (3.0%) — consistent with the 3.5% reported in §1.
+- All 6 matches are genuine acknowledgments ("sorry", "unfortunately", "I am afraid"). Zero "I see" false matches.
+
+### Repeat threshold sensitivity (all DialMAGE negative turns, n=4,264)
+| Jaccard threshold | Negative turns that repeat | Share |
+|---|---|---|
+| >= 0.3 | 2,704 | 63.4% |
+| >= 0.4 | 2,290 | 53.7% |
+| >= 0.5 | 1,994 | 46.8% |
+| >= 0.6 | 1,577 | 37.0% |
+| >= 0.7 | 1,306 | 30.6% |
+Findings are directionally robust across thresholds. The 0.5 threshold is a reasonable midpoint.
+
+### REPAIR reader spot-check (20 random cases from runs/final_llama)
+- Pending request identified: 19/20 (95%)
+- Database rows provided: 13/20 (65% — 7 cases had missing required slots, so the reader correctly asked for them instead)
+- Escalation stage distribution: stage 2 (18), stage 3 (2)
+- Errors: 0/20
+
+## 11. Fact-checked Claude results (final_claude, runs/final_claude/summary_claude-opus_ref.json)
+n=100 unseen DialMAGE train-split cases, Claude Sonnet generator, Claude Opus judge with JUDGE_REF=1.
+| | resolves (0-2) | give_up | repeats | best |
+|---|---|---|---|---|
+| A reply to last message | 0.68 [0.55, 0.81] | 38% | 17% | 4% |
+| B be concrete | 0.76 [0.61, 0.91] | 19% | 19% | 3% |
+| C prompt "read the user" | 0.82 [0.67, 0.97] | 12% | 6% | 6% |
+| **D REPAIR** | **1.64** [1.52, 1.75] | **3%** | 2% | **53%** |
+| E ledger + database only | 1.65 [1.55, 1.74] | 3% | 6% | 34% |
+D - B: resolves +0.88 [0.71, 1.05]; D - C: +0.82 [0.66, 0.97].
+The fact-checked judge reverses the plain-judge result where C > D. Without database verification, the
+judge rewards invented bookings and phone numbers; with it, REPAIR dominates all conditions on both models.
+
+
+## 12. Second corpus: DBDC3 (chat-oriented breakdown detection, 415 dialogues)
+Script: `analyze_dbdc3.py`. Data: `data/dbdc3/` (github.com/dbd-challenge/dbdc3).
+DBDC3 annotates system turns as breakdown (X), possible breakdown (T), or not (O) in chat-oriented
+human-machine dialogues (no task goals).
+
+After majority-vote breakdown (862/4,335 system turns = 19.9%):
+- User repeats after breakdown: 62/742 = **8.4%** [6.5, 10.4]
+- User repeats, no breakdown: 206/3,017 = **6.8%** [5.9, 7.8]
+- Difference: **+1.5 pp** (barely significant)
+
+Compare to DialMAGE (task-oriented): negative turns repeat 46.8% vs neutral 13.2% (+33.6 pp).
+
+**Interpretation:** Repetition as a frustration signal is specific to task-oriented dialogue, where there is
+an unmet task need the user can re-state. In chat, there is nothing specific to repeat, so breakdowns do
+not trigger repetition. This is added to the paper as a contrast finding in Section 3.
+
+
+## 13. Second judge family: Gemini on both final 100-case runs (2026-11-08)
+Files: `runs/final_llama/judgments_gemini.json`, `summary_gemini.json`, `judgments_gemini_ref.json`,
+`summary_gemini_ref.json`, and corresponding files in `runs/final_claude/`.
+All 100 unseen DialMAGE train-split cases judged blind with the exact same `order.json` shuffling and `JUDGE`
+prompt as Claude Opus.
+
+### Llama 8B generator, Gemini judge (cross-family)
+Plain judge (`summary_gemini.json`):
+| | resolves (0-2) | give_up | repeats | best |
+|---|---|---|---|---|
+| A reply to last message | 0.98 [0.85, 1.11] | 19% | 18% | 8% |
+| B be concrete | 0.98 [0.85, 1.11] | 18% | 19% | 15% |
+| C prompt "read the user" | 0.73 [0.60, 0.86] | 35% | 17% | 7% |
+| **D REPAIR** | **1.51** [1.37, 1.65] | **14%** | **10%** | **38%** |
+| E ledger + database only | 1.39 [1.23, 1.55] | 22% | 17% | 32% |
+- D - B: resolves +0.53 [0.33, 0.72]; D - C: +0.78 [0.60, 0.96], give_up -21 pts [-31, -11].
+- C - B: resolves -0.25 [-0.42, -0.08], give_up +17 pts [5, 28] — confirms across a second judge family that
+  prompt-only reading significantly hurts the 8B model.
+
+Fact-checked judge (`summary_gemini_ref.json`):
+| | resolves (0-2) | give_up | repeats | best |
+|---|---|---|---|---|
+| A reply to last message | 0.26 [0.16, 0.38] | 41% | 26% | 3% |
+| B be concrete | 0.26 [0.16, 0.37] | 39% | 29% | 3% |
+| C prompt "read the user" | 0.25 [0.16, 0.36] | 51% | 24% | 4% |
+| **D REPAIR** | **1.49** [1.35, 1.63] | **12%** | **12%** | **53%** |
+| E ledger + database only | 1.39 [1.24, 1.53] | 16% | 16% | 37% |
+- D - B: resolves +1.23 [1.04, 1.40]; D - C: +1.24 [1.07, 1.41].
+
+### Claude Sonnet generator, Gemini judge (cross-family — resolves same-family bias concern)
+Plain judge (`summary_gemini.json`):
+- resolves: A 1.19 [1.03, 1.34], B 1.62 [1.51, 1.73], C 1.85 [1.78, 1.92], D 1.55 [1.41, 1.68], E 1.49 [1.35, 1.62].
+- Without database rows, Gemini also rewards C's confident invented bookings.
+
+Fact-checked judge (`summary_gemini_ref.json`):
+| | resolves (0-2) | give_up | repeats | best |
+|---|---|---|---|---|
+| A reply to last message | 0.89 [0.75, 1.05] | 24% | 9% | 4% |
+| B be concrete | 0.91 [0.77, 1.05] | 8% | 2% | 2% |
+| C prompt "read the user" | 1.04 [0.90, 1.19] | 0% | 1% | 6% |
+| **D REPAIR** | **1.94** [1.88, 1.99] | **1%** | **0%** | **53%** |
+| E ledger + database only | 1.90 [1.83, 1.96] | 1% | 1% | 35% |
+- D - B: resolves +1.03 [0.89, 1.17]; D - C: +0.90 [0.76, 1.04].
+- Cross-family judge confirms: once hallucinated facts are checked against the database, REPAIR dominates on
+  the strong model too.
