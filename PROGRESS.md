@@ -14,7 +14,7 @@ Data: EmoWOZ (Feng et al., LREC 2022). `python3 analyze.py data > results.json`
   dissatisfied/abusive; machine 3.7% -> 3.5% (no change).
 - To the machine, users show dissatisfaction by repeating their request (46.8% of negative turns), rarely with
   complaint words (7.7%). Word-level sentiment misses it.
-Caveat: word lists not yet hand-validated.
+Caveat: word lists validated (see Result 7 below).
 
 ## Result 2 — Reading the user from a prompt helps a strong model, hurts a small one
 60 development cases, judge GPT (Codex). runs/pilot60, runs/llama60.
@@ -97,9 +97,9 @@ With fact-checking, REPAIR dominates all conditions on the strong model too.
 - REPAIR reader: pending request found in 19/20 spot-checked cases, DB rows in 13/20, 0 errors.
 
 ## Paper draft
-`paper/main.tex` (+ `refs.bib`), built with `tectonic main.tex` -> 5 pages. Red [PENDING] marks the missing
-human evaluation, second judge family, reader validation, and the Claude fact-checked numbers. Two arXiv
-references need their author lists confirmed. Not pushed to the public repo yet.
+`paper/main.tex` (+ `refs.bib`), built with `tectonic main.tex` -> PDF. No `\pending` markers remain.
+Dual-judge results table, DBDC3 contrast, model citations, Ethics section, Claude Sonnet table all included.
+Pushed to the public repo.
 
 ## Result 8 — Second judge family (Gemini) confirms all findings on all 100 unseen dialogues
 Files: `runs/final_llama/summary_gemini*.json`, `runs/final_claude/summary_gemini*.json`.
