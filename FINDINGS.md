@@ -263,3 +263,22 @@ Evaluating REPAIR's deterministic stage reader and grounding ledger across the f
 - Stage >= 1 captures 3,485 / 4,264 = **81.7%** of all negative turns (vs 7.7% for complaint words).
 - Turns where the grounding ledger shows an undelivered pending request from an earlier turn are negative **40.5%**
   [38.9, 42.1] (n=7,919) vs **25.3%** [23.3, 27.3] otherwise (n=4,174).
+
+## 16. External task-oriented corpora validation: USS-SGD (20 domains) & USS-ReDial (`analyze_uss.py`)
+To verify that the linguistic repair findings generalize beyond MultiWOZ/EmoWOZ, we run the exact same zero-shot
+repair reader (`repair.stage_of`) on two external goal-oriented datasets from the User Satisfaction Simulation (USS)
+benchmark (Sun et al., SIGIR 2021):
+1. **USS-SGD** (Schema-Guided Dialogue, Rastogi et al., AAAI 2020; 1,000 dialogues across 20 domains including banks,
+   flights, media, doctors, events; 9,833 user turns, 2,194 dissatisfied turns):
+   - Explicit emotion/frustration words appear in only **0.3%** [0.1, 0.5] of dissatisfied turns.
+   - Surface repair cues (stage >= 1) capture **63.6%** [61.4, 65.8] of dissatisfied turns.
+   - Dissatisfaction rate doubles from **15.2%** [13.9, 16.4] at stage 0 to **30.5%** [28.9, 32.0] at stage >= 1.
+2. **USS-ReDial** (conversational movie recommendation; 999 dialogues, 7,619 user turns, 1,793 dissatisfied turns):
+   - Explicit emotion words appear in only **2.7%** [1.9, 3.6] of dissatisfied turns.
+   - Surface repair cues (stage >= 1) capture **51.2%** [48.9, 53.8] of dissatisfied turns.
+   - Dissatisfaction rate rises from **18.8%** [17.2, 20.4] at stage 0 to **31.1%** [28.9, 33.4] at stage >= 1.
+
+## 17. Aggregate objective delivery across all 241 evaluated cases (train + dev + test splits)
+Combining all three DialMAGE splits (60 test + 81 dev + 100 train = 241 cases; 213–214 with a database request):
+- **Llama 3 8B**: A 18.3%, B 20.6%, C 17.4%, **D_repair 62.9%**, E 65.8%.
+- **Claude Sonnet**: A 29.0%, B 41.6%, C 45.8%, **D_repair 74.3%**, E 71.5%.

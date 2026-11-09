@@ -111,10 +111,19 @@ When the machine repeats its own previous reply (Jaccard $\ge 0.8$) after a nega
 turn is still negative 88.3\% [80.0, 95.7] of the time, against 54.6\% [52.7, 56.6] otherwise ($n=71$
 repeats).
 
-\paragraph{Is repetition specific to task dialogue?} In the DBDC3 chat-oriented corpus
-\citep{higashinaka2016dbdc} (415 dialogues, no task goals), users repeat after a system breakdown only 8.4\%
-[6.5, 10.4] of the time, barely above the 6.8\% [5.9, 7.8] baseline ($+1.5$ pp). In DialMAGE the gap is
-$+33.6$ pp. Users repeat when they have an unmet \emph{task} need, not simply when the system is incoherent.
+\paragraph{Is repetition specific to task dialogue, and does the finding hold on other task corpora?} In the
+DBDC3 chat-oriented corpus \citep{higashinaka2016dbdc} (415 dialogues, no task goals), users repeat after a
+system breakdown only 8.4\% [6.5, 10.4] of the time, barely above the 6.8\% [5.9, 7.8] baseline ($+1.5$ pp).
+In DialMAGE the gap is $+33.6$ pp: users repeat when they have an unmet \emph{task} need, not simply when the
+system is incoherent. To verify that our cue findings are not specific to MultiWOZ domains, we apply the same
+zero-shot repair reader (\texttt{analyze\_uss.py}) to two external goal-oriented benchmarks annotated with
+turn-level user satisfaction \citep{sun2021uss}: Schema-Guided Dialogue \citep[SGD;][]{rastogi2020sgd} (1,000
+dialogues across 20 domains such as banks, flights, media and doctors; 9,833 user turns, 2,194 dissatisfied)
+and ReDial movie recommendation (999 dialogues; 7,619 user turns, 1,793 dissatisfied). Explicit emotion words
+(\emph{frustrated, annoyed, useless, angry}, \ldots) appear in only \textbf{0.3\%} [0.1, 0.5] of dissatisfied
+turns in SGD and \textbf{2.7\%} [1.9, 3.6] in ReDial, whereas REPAIR's surface repair cues (stage $\ge 1$)
+capture \textbf{63.6\%} [61.4, 65.8] and \textbf{51.2\%} [48.9, 53.8], doubling the dissatisfaction rate over
+stage~0 in SGD (30.5\% vs.\ 15.2\%) and raising it by $+12.3$ pp in ReDial (31.1\% vs.\ 18.8\%).
 
 These findings motivate a method that detects repetition-based repair cues and tracks pending needs, rather
 than relying on sentiment words or the model's own reflection.
@@ -140,8 +149,11 @@ when asked; at stage 4, say what can and cannot be done and offer a human.
 \end{enumerate}
 The reading is appended to the dialogue, together with the system's last turns marked ``do not repeat''.
 Any generator can use it. Among REPAIR's four components, the repair reader and the escalation policy are
-domain-agnostic; adapting to a new task domain requires only specifying its slot vocabulary and database table
-for the ledger.
+completely domain-agnostic (as validated zero-shot on SGD's 20 domains above); for the grounding ledger and
+database lookup, all entity names, categorical slot values (e.g.\ food types, attraction types, stations) and
+searchable columns are induced directly from the target JSON database tables at startup rather than
+hand-listed per venue, so adapting to a new schema requires only supplying its database table and a short map
+of domain trigger words.
 
 \paragraph{The repair ladder tracks emotion across the corpus.} Applying REPAIR's stage reader and grounding
 ledger to all 12,093 annotated user turns in DialMAGE (\texttt{analyze\allowbreak\_ladder.py}), user dissatisfaction
@@ -228,8 +240,10 @@ Gemini, D$-$B $+0.53$ [0.33, 0.72] and D$-$C $+0.78$ [0.60, 0.96]. Under both ju
 (C) significantly hurts the 8B model compared to B (Opus $-0.12$, Gemini $-0.25$ [$-0.42$, $-0.08$], give-ups
 $+17$ pts): inspecting 18 development cases where C lost, the model's own reading named needs from earlier in
 the dialogue or invented them (``Indian restaurant'' for a guesthouse request), and the reply apologized and
-promised (``please bear with me'') instead of delivering. The same pattern held on the 81 dev-split cases
-(D 1.10 vs.\ C 0.57).
+promised (``please bear with me'') instead of delivering. The same pattern held on the 81 dev-split cases (D 1.10 vs.\ C 0.57). Across all 241 evaluated cases spanning
+all three DialMAGE splits (213 with a database request), REPAIR raises objective real, matching entity
+delivery from 18.3\% (A), 20.6\% (B) and 17.4\% (C) to \textbf{62.9\%} (D) on the 8B model, and from 29.0\%
+(A), 41.6\% (B) and 45.8\% (C) to \textbf{74.3\%} (D) on Claude Sonnet.
 
 \paragraph{Strong model.} With Claude Sonnet as the generator (Table~\ref{tab:claude}), plain judges without
 database verification favour prompt-only reading. However, fact-checked judging reverses the picture under
@@ -298,10 +312,10 @@ lexical: on 200 sampled negative turns, 7.0\% matched with 92.9\% precision (1 f
 language ``no, I need a train...''); the low recall confirms our claim that word-level sentiment misses most
 dissatisfaction. The repeat threshold (Jaccard $\ge 0.5$, yielding 46.8\%) is robust: 0.4 gives 53.7\%, 0.6
 gives 37.0\%. The REPAIR reader identified the pending request in 19/20 spot-checked cases and provided
-database rows in 13/20. The DBDC3 comparison (Section~\ref{sec:corpus}) shows that the repetition cue is
-specific to task-oriented dialogue; more task-oriented corpora with frustration annotation would strengthen
-the claim. The database is static and booking is simulated. The objective check depends on the reader's own
-reading of the pending request.
+database rows in 13/20. Our corpus findings replicate across four datasets (EmoWOZ-MultiWOZ, EmoWOZ-DialMAGE,
+USS-SGD across 20 domains, and USS-ReDial), with DBDC3 as a chat-oriented contrast; the database-grounded
+intervention is evaluated on DialMAGE using the static MultiWOZ database and simulated booking. The objective
+check depends on the reader's own reading of the pending request.
 
 \section{Ethics}
 EmoWOZ is released under CC BY-NC 4.0 \citep{feng2022emowoz}; we use it for academic research and do not
