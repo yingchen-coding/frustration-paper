@@ -233,8 +233,13 @@ def dst_state(case):
         if GEN.startswith("ollama:"):
             raw = ollama_call(GEN.split(":", 1)[1], prompt)
         else:
-            raw = subprocess.run(["claude", "-p", "--model", "sonnet", prompt], capture_output=True, text=True,
-                                 timeout=900, check=True).stdout
+            raw = ""
+            for _attempt in range(3):
+                res = subprocess.run(["claude", "-p", "--model", "sonnet", prompt], capture_output=True, text=True,
+                                     timeout=900)
+                if res.returncode == 0:
+                    raw = res.stdout
+                    break
         try:
             cache[case["id"]] = parse_json(raw)
         except (ValueError, json.JSONDecodeError):
@@ -314,7 +319,8 @@ def judge(cases, replies, run_dir):
             order[c["id"]] = dict(zip(LETTERS[-len(conds):], conds))
     order_path.write_text(json.dumps(order, indent=1))
     todo = [c for c in cases if c["id"] not in done]
-    for k, batch in enumerate(batches(todo)):
+    jb = int(os.environ.get("JUDGE_BATCH", BATCH))
+    for k, batch in enumerate([todo[i:i + jb] for i in range(0, len(todo), jb)]):
         block = []
         for c in batch:
             opts = "\n".join(f"{slot}: {replies[cond][c['id']]['reply']}" for slot, cond in order[c["id"]].items())

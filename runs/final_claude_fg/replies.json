@@ -2291,6 +2291,36 @@
   },
   "DMAGE898.json#12": {
    "reply": "There are 33 expensive restaurants in the centre. They include Curry Garden (Indian), Stazione Restaurant and Coffee Bar (Italian) and Eraina (European). Which would you like, or would you prefer a particular type of food?"
+  },
+  "DMAGE66.json#12": {
+   "reply": "The address for pizza hut city centre is Regent Street City Centre, postcode CB2 1AB. Their phone number is 01223323737. Is there anything else I can help you with?"
+  },
+  "DMAGE454.json#14": {
+   "reply": "I can book that train for you. Where will you be departing from, and what day would you like to travel?"
+  },
+  "DMAGE2396.json#14": {
+   "reply": "I can help you find a train. Where will you be departing from, where is your destination, and what day would you like to travel?"
+  },
+  "DMAGE55.json#10": {
+   "reply": "I found Nandos City Centre, a cheap Portuguese restaurant in the centre. It is at 33-34 Saint Andrews Street, postcode CB2 3AR, and the phone number is 01223327908. Would you like me to book a table?"
+  },
+  "DMAGE3137.json#2": {
+   "reply": "I have 24 guesthouses available. For example, A and B Guest House is in the east, moderate price, 4 stars, no parking but with internet. Acorn Guest House is in the north, moderate price, 4 stars, with parking and internet. Alexander Bed and Breakfast is in the centre, cheap, 4 stars, with parking and internet. Do you have a preference for area, price range, or parking?"
+  },
+  "DMAGE2182.json#6": {
+   "reply": "I'm sorry, I couldn't find any trains from Kings Lynn to Ely on Wednesday. Would you like to try a different day or departure time?"
+  },
+  "DMAGE323.json#10": {
+   "reply": "I can help with a train from Cambridge to London Liverpool Street. What day would you like to travel?"
+  },
+  "DMAGE1358.json#10": {
+   "reply": "I can help you with a train to Cambridge. Where will you be departing from, and what day would you like to travel?"
+  },
+  "DMAGE969.json#22": {
+   "reply": "I've booked your taxi from Christ's College to Alpha-Milton Guest House, arriving by 12:15. Your car is a black Toyota, and the contact number is 0712345678. Is there anything else I can help you with?"
+  },
+  "DMAGE3177.json#8": {
+   "reply": "The address for Acorn Guest House is 154 Chesterton Road, postcode CB4 1DA. Their phone number is 01223353888. Is there anything else I can help you with?"
   }
  }
 }

@@ -115,6 +115,8 @@ def constraints(text, domain):
         day = re.search(r"\b(" + DAYS + r")\b", low) or re.search(r"\b(" + "|".join(DAY_ABBR) + r")\b", low)
         if day:
             c["day"] = DAY_ABBR.get(day.group(1), day.group(1))
+        elif re.search(r"\b(today|tomorrow|tonight|any day)\b", low):
+            c["day"] = "any"
         t = re.search(r"\b(after|leave at|leaves at|leaving at|depart at|by|arrive by|arrives by|before)\s+(\d{1,2}:\d{2})", low)
         if t:
             c["arriveBy" if t.group(1) in ("by", "arrive by", "arrives by", "before") else "leaveAt"] = t.group(2).zfill(5)
@@ -138,6 +140,8 @@ def constraints(text, domain):
 
 def matches(row, cons, domain):
     for k, v in cons.items():
+        if v == "any":
+            continue
         if domain == "train" and k == "leaveAt":
             if row["leaveAt"] < v:
                 return False

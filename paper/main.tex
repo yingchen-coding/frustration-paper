@@ -23,8 +23,10 @@ Human operators change their replies after a dissatisfied turn (acknowledgment r
 a deployed machine system does not (3.7\% vs.\ 3.5\%). Toward the machine, 46.8\% of dissatisfied turns repeat
 an earlier request, and only 7.7\% contain a complaint or negation word, so word-level sentiment misses most
 of them. We then ask whether a language model can be made to answer the unmet need rather than the last
-message. Asking the model to ``read the user first'' helps a strong model but hurts an 8B model, which
-misreads the need and apologizes instead of delivering. We propose REPAIR, which reads the dialogue
+message. Asking the model to diagnose the user's frustration before replying helps a frontier model but
+imposes a \emph{diagnostic reasoning tax} across three 7B--8B models (Llama~3, Llama~3.1, and Qwen~2.5):
+self-diagnosis primes small models into apologetic stalling and misreading earlier turns, raising user give-up
+rates up to fourfold (9\% to 36\%). We propose REPAIR, which reads the dialogue
 explicitly --- repair cues, a ledger of requested, delivered and pending items, and database rows for the
 pending item --- and hands this reading to the generator. On 100 unseen dialogue cases, REPAIR raises how
 well an 8B model resolves the user's need from 0.45 to 1.22 on a 0--2 scale (0 = unresolved, 1 = partly,
@@ -53,8 +55,8 @@ This paper makes three contributions.
 machine system does not react to dissatisfaction, that users express dissatisfaction in task dialogue mainly
 by climbing a repair ladder (dissatisfaction rises from 16.3\% at stage~0 to 79.3\% at stage~3+, capturing
 81.7\% of negative turns vs.\ 7.7\% for complaint words), and that repetition is task-specific.
-(2) A negative result: telling a model to infer the user's state from the dialogue helps a strong model and
-hurts a small one.
+(2) A negative result: asking a model to diagnose the user's frustration from the dialogue helps a frontier
+model yet imposes a \emph{diagnostic reasoning tax} on 7B--8B models across three model families.
 (3) REPAIR, an explicit reading of repair cues and pending needs, grounded in the task database, which makes
 a small model resolve the user's need far more often on unseen dialogues and outperforms ledger-only grounding
 on high-escalation turns. We release code, prompts and all model outputs.
@@ -169,7 +171,12 @@ other-initiated repair), and 79.3\% at stage~3+ (repeated repair or meta-complai
 negative turns at stage~$\ge 1$ (vs.\ 7.7\% for complaint words). Next-turn dissatisfaction likewise climbs
 from 32.7\% after stage~0 to 57.1\% after stage~3+. Independently, turns where the grounding ledger shows an
 undelivered request from an earlier turn are negative 40.5\% [38.9, 42.1] of the time ($n=7{,}919$) versus
-25.3\% [23.3, 27.3] otherwise ($n=4{,}174$).
+25.3\% [23.3, 27.3] otherwise ($n=4{,}174$). Directly comparing dissatisfaction detectors on 400 randomly
+sampled DialMAGE user turns (38\% negative, \texttt{emotion\_reader.py}), complaint words reach 0.17 F1
+[0.10, 0.24] (0.60 precision, 0.10 recall) and a language model (Claude Haiku) reading the single utterance
+alone reaches only 0.08 F1 [0.03, 0.15] (0.05 recall, missing 95\% of dissatisfied turns), whereas REPAIR's
+deterministic stage~$\ge 1$ reaches \textbf{0.65 F1} [0.59, 0.70] (0.85 recall) with no model call (the same
+LLM given the full dialogue context reaches 0.75 F1 [0.70, 0.80]).
 
 \begin{table}[h]
 \centering
@@ -202,8 +209,9 @@ REPAIR: F (last-message RAG, retrieving rows from the user's last turn alone) an
 state, where the generator itself reads the full dialogue, outputs JSON \texttt{\{domain, constraints\}}, and
 queries the database).
 \paragraph{Generators.} Claude 3.5 Sonnet \citep{anthropic2024claude} via the
-\texttt{claude} CLI, and two 8B small models via Ollama: Llama 3 8B (dolphin-llama3:8b) and official
-instruction-tuned Llama 3.1 8B \citep[llama3.1:8b;][]{grattafiori2024llama3}. A--C have no database; D--G
+\texttt{claude} CLI, and three 7B--8B small models via Ollama: Llama 3 8B (dolphin-llama3:8b), official
+instruction-tuned Llama 3.1 8B \citep[llama3.1:8b;][]{grattafiori2024llama3}, and Qwen 2.5 7B Instruct
+\citep[qwen2.5:7b;][]{qwen2024qwen25}. A--C have no database; D--G
 query the same MultiWOZ database.
 \paragraph{Evaluation.} Two judge models from different families (Claude 3 Opus and Gemini 2.5
 \citep{geminiteam2024gemini}) independently see
@@ -245,7 +253,7 @@ request (the original DialMAGE system achieved 10.3\%, after which 53.6\% of use
 \label{tab:llama}
 \end{table}
 
-\paragraph{Small model.} Under both judges, REPAIR resolves the need far more often than every baseline
+\paragraph{Small models and the diagnostic reasoning tax.} Under both judges, REPAIR resolves the need far more often than every baseline
 (Table~\ref{tab:llama}): with Claude Opus, D$-$B $+0.77$ [0.55, 0.98] and D$-$C $+0.89$ [0.70, 1.08]; with
 Gemini, D$-$B $+0.53$ [0.33, 0.72] and D$-$C $+0.78$ [0.60, 0.96]. Under both judges, prompt-only reading
 (C) significantly hurts the 8B model compared to B (Opus $-0.12$, Gemini $-0.25$ [$-0.42$, $-0.08$], give-ups
@@ -308,26 +316,36 @@ where users are most frustrated.
 
 \paragraph{Is the gain just database access? Fair RAG and LLM-DST baselines.} Because A--C have no database, a
 natural question is whether any database lookup would suffice. Evaluating F (last-message RAG) and G
-(LLM-tracked DST) with the exact same database and query function (\texttt{runs/final\_\{llama,claude\}\_fg})
-shows that database access alone falls far short of REPAIR. On the objective entity check ($n=87$), F delivers
-a valid matching entity in 46.0\% of cases on Llama 8B (naming a constraint-violating entity in 35.6\%) and G
-in 42.5\% (26.4\% invalid), versus \textbf{62.1\%} valid (\textbf{11.5\%} invalid) for D; on Claude Sonnet, F
-achieves 50.6\% valid (24.1\% invalid) and G 53.8\% valid (25.6\% invalid), versus \textbf{67.8\%} valid
-(\textbf{13.8\%} invalid) for D. In blind 7-way evaluation (candidates T--Z judged together by Gemini), D with
-the re-grounding policy (restate the need in one line, deliver the best option, never hand off to a human)
-significantly beats both F and G: on Llama 8B ($n=100$), plain D scores \textbf{1.44} vs.\ F 1.06 (D$-$F
-$+0.38$ [0.18, 0.58]) and G 0.97 (D$-$G $+0.47$ [0.27, 0.67], give-ups 16\% vs.\ 38\%), and fact-checked D
-scores \textbf{1.44} vs.\ F 0.85 (D$-$F $+0.59$ [0.37, 0.80]) and G 0.78 (D$-$G $+0.66$ [0.46, 0.87], give-ups
-15\% vs.\ 39\%). Replicating all seven conditions on official instruction-tuned Llama 3.1 8B
-(\texttt{runs/final\_llama31}, $n=100$) yields an even sharper separation: prompt-only reading again hurts the
-small model (plain C 0.51 vs.\ B 0.81, C$-$B $-0.30$ [$-0.43$, $-0.17$], give-ups 36\% vs.\ 9\%), while D
-achieves \textbf{63.2\%} objective valid entities (8.0\% invalid, vs.\ 41.4\%/25.3\% for F and 34.5\%/31.0\%
-for G), scores \textbf{1.60} plain and \textbf{1.54} fact-checked (give-ups \textbf{5\%}, vs.\ 9\% for E and
-20--23\% for F/G), and significantly outperforms both F (plain $+0.51$ [0.32, 0.69]; fact-checked $+0.68$
-[0.49, 0.87]) and G (plain $+0.53$ [0.33, 0.71]; fact-checked $+0.82$ [0.64, 0.99]). On Claude Sonnet ($n=90$), re-grounding eliminates the plain-judge gap --- D leads under
-both plain judging (\textbf{1.81}, give-ups \textbf{2.2\%}, vs.\ G 1.77, C 1.72, B 1.53 [D$-$B $+0.28$], F
-1.28 [D$-$F $+0.53$]) and fact-checked judging (\textbf{1.92}, give-ups \textbf{1.1\%}, vs.\ G 1.58 [D$-$G
-$+0.34$ [0.21, 0.49]] and F 1.21 [D$-$F $+0.71$ [0.52, 0.90]]). When users are frustrated, their last turn is
+(LLM-tracked DST) with the exact same database and query function across all four generators ($n=100$ each)
+shows that database access alone falls short of REPAIR's explicit grounding ledger. On the objective entity
+check ($n=87$), F delivers a valid matching entity in 46.0\% of cases on Llama 8B (naming a
+constraint-violating entity in 35.6\%) and G in 42.5\% (26.4\% invalid), versus \textbf{62.1\%} valid
+(\textbf{11.5\%} invalid) for D; on Claude Sonnet, F achieves 50.6\% valid (24.1\% invalid) and G 52.9\%
+valid (24.1\% invalid), versus \textbf{67.8\%} valid (\textbf{13.8\%} invalid) for D. In blind 7-way
+evaluation (candidates T--Z judged together by Gemini), D with the re-grounding policy (restate the need in
+one line, deliver the best option, never hand off to a human) significantly beats both F and G: on Llama 8B
+($n=100$), plain D scores \textbf{1.44} vs.\ F 1.06 (D$-$F $+0.38$ [0.18, 0.58]) and G 0.97 (D$-$G $+0.47$
+[0.27, 0.67], give-ups 16\% vs.\ 38\%), and fact-checked D scores \textbf{1.44} vs.\ F 0.85 (D$-$F $+0.59$
+[0.37, 0.80]) and G 0.78 (D$-$G $+0.66$ [0.46, 0.87], give-ups 15\% vs.\ 39\%). Replicating all seven
+conditions on official instruction-tuned Llama 3.1 8B (\texttt{runs/final\_llama31}, $n=100$) yields an even
+sharper separation: prompt-only reading again hurts the small model (plain C 0.51 vs.\ B 0.81, C$-$B $-0.30$
+[$-0.43$, $-0.17$], give-ups 36\% vs.\ 9\%), while D achieves \textbf{63.2\%} objective valid entities (8.0\%
+invalid, vs.\ 41.4\%/25.3\% for F and 34.5\%/31.0\% for G), scores \textbf{1.60} plain and \textbf{1.54}
+fact-checked (give-ups \textbf{5\%}, vs.\ 9\% for E and 20--23\% for F/G), and significantly outperforms both
+F (plain $+0.51$ [0.32, 0.69]; fact-checked $+0.68$ [0.49, 0.87]) and G (plain $+0.53$ [0.33, 0.71];
+fact-checked $+0.82$ [0.64, 0.99]). On Qwen 2.5 7B Instruct (\texttt{runs/final\_qwen}, $n=100$), the
+diagnostic reasoning tax replicates for a third small model (plain C 0.87 vs.\ B 1.04, C$-$B $-0.17$
+[$-0.30$, $-0.04$], give-ups 21\% vs.\ 10\%; Opus C 0.34 vs.\ B 0.42), and D achieves \textbf{59.8\%}
+objective valid entities with the lowest constraint-violation rate of any condition (\textbf{6.9\%} invalid,
+vs.\ 48.3\%/29.9\% for F and 48.3\%/28.7\% for G); under Gemini judging, D (\textbf{1.70} plain and
+\textbf{1.70} fact-checked, give-ups \textbf{3\%}) significantly beats F (plain $+0.40$ [0.22, 0.58];
+fact-checked $+0.80$ [0.61, 1.00]) and G (plain $+0.29$ [0.11, 0.46]; fact-checked $+0.61$ [0.43, 0.80]),
+whereas plain Opus judging without fact-checking rates D (1.08), G (1.15) and E (1.22) closely (D$-$G $-0.07$
+[$-0.25$, 0.11]). On Claude Sonnet ($n=100$), re-grounding eliminates the plain-judge gap --- D leads under
+both plain Gemini judging (\textbf{1.81}, give-ups \textbf{2\%}, vs.\ G 1.78, C 1.70, B 1.52 [D$-$B $+0.29$],
+F 1.31 [D$-$F $+0.50$]; plain Opus D 1.36 vs.\ B 1.11 [D$-$B $+0.25$] and F 1.04 [D$-$F $+0.32$]) and
+fact-checked Gemini judging (\textbf{1.93}, give-ups \textbf{1\%}, vs.\ G 1.59 [D$-$G $+0.34$ [0.22, 0.47]]
+and F 1.24 [D$-$F $+0.69$ [0.51, 0.87]]). When users are frustrated, their last turn is
 often an elliptical repair fragment (``postcode?'', ``any area'', ``book it''), so F loses earlier constraints,
 while G's LLM state tracker is misled by failed system turns and earlier completed domains. Tracking
 \emph{requested minus delivered} explicitly is what makes the database useful.

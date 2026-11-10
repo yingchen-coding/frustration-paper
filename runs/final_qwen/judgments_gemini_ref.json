@@ -1,0 +1,3802 @@
+{
+ "DMAGE2487.json#4": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE1490.json#20": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE2431.json#14": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE3198.json#20": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE1576.json#16": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE2459.json#4": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE786.json#2": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE1850.json#14": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE1354.json#18": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Y"
+ },
+ "DMAGE1551.json#4": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE1239.json#14": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE952.json#4": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE811.json#6": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE1115.json#8": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE1854.json#6": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE2347.json#2": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "X"
+ },
+ "DMAGE38.json#4": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE3103.json#8": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Y"
+ },
+ "DMAGE2734.json#10": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE1624.json#6": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE287.json#4": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE1318.json#4": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE2563.json#14": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE1825.json#2": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE330.json#4": {
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE3227.json#20": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE2195.json#8": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE1659.json#4": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE3045.json#10": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Y"
+ },
+ "DMAGE1118.json#8": {
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE350.json#14": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE2050.json#16": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE1074.json#28": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "X"
+ },
+ "DMAGE1090.json#32": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE1816.json#8": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "X"
+ },
+ "DMAGE2404.json#12": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE213.json#16": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE1701.json#12": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE2769.json#2": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "X"
+ },
+ "DMAGE400.json#28": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE2129.json#32": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE701.json#16": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE836.json#12": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE319.json#14": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Y"
+ },
+ "DMAGE2465.json#16": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE2992.json#4": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE2100.json#20": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE2239.json#22": {
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE474.json#8": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE3242.json#6": {
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE76.json#18": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE2740.json#10": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE1738.json#2": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE2105.json#6": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE1839.json#8": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE3073.json#8": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE949.json#4": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE2940.json#2": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE112.json#6": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE812.json#14": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE591.json#2": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE2661.json#20": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "X"
+ },
+ "DMAGE587.json#16": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE2354.json#2": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE1817.json#12": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE600.json#14": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE624.json#2": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE2198.json#4": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE2594.json#10": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE2853.json#8": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE965.json#14": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE823.json#8": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE2009.json#12": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE2618.json#2": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE2728.json#20": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE3109.json#10": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE1094.json#4": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE2415.json#4": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE271.json#8": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE3258.json#12": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE2395.json#16": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE1994.json#14": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE1182.json#12": {
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "X"
+ },
+ "DMAGE504.json#12": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE2687.json#2": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE3100.json#14": {
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "X"
+ },
+ "DMAGE1370.json#8": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE1342.json#10": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE2586.json#2": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ },
+ "DMAGE898.json#12": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE66.json#12": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE454.json#14": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE2396.json#14": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE55.json#10": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE3137.json#2": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "X"
+ },
+ "DMAGE2182.json#6": {
+  "T": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "V"
+ },
+ "DMAGE323.json#10": {
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "U"
+ },
+ "DMAGE1358.json#10": {
+  "T": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 1,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "W"
+ },
+ "DMAGE969.json#22": {
+  "T": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 0,
+   "give_up": true,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "Z"
+ },
+ "DMAGE3177.json#8": {
+  "T": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "U": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "V": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "W": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "X": {
+   "resolves": 0,
+   "give_up": false,
+   "repeats": false
+  },
+  "Y": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "Z": {
+   "resolves": 2,
+   "give_up": false,
+   "repeats": false
+  },
+  "best": "T"
+ }
+}

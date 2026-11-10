@@ -139,13 +139,15 @@ Files: `runs/final_llama_fg/{objective,summary_gemini*}.json`, `runs/final_claud
     - Fact-checked judge (`ref`): A 0.43, B 0.39, C 0.33 (give-up 41%), F_lastdb 0.85 (26%), G_llmdst 0.78 (39%),
       **D_repair 1.44** [1.28, 1.60] (give-up 15%), E 1.46 (16%).
       Paired diffs: **D - F +0.59 [0.37, 0.80]**, **D - G +0.66 [0.46, 0.87]**, D - B +1.05 [0.85, 1.25], D - C +1.11 [0.91, 1.28].
-  - **Claude Sonnet (`final_claude_fg`, n=90)**:
-    - Plain judge: A 1.20, B 1.53, C 1.72, F_lastdb 1.28 (give-up 23.3%), G_llmdst 1.77 (3.3%),
-      **D_repair 1.81** (give-up **2.2%**), E 1.74 (3.3%). (Policy v4 eliminates the v3 plain-judge gap: D > C even without fact-checking!)
-      Paired diffs: **D - F +0.53 [0.36, 0.71]**, **D - B +0.28 [0.11, 0.44]**, D - C +0.09 [-0.06, 0.23].
-    - Fact-checked judge (`ref`): A 0.92, B 1.01, C 1.12, F_lastdb 1.21 (give-up 23.3%), G_llmdst 1.58 (3.3%),
-      **D_repair 1.92** (give-up **1.1%**), E 1.88 (2.2%).
-      Paired diffs: **D - F +0.71 [0.52, 0.90]**, **D - G +0.34 [0.21, 0.49]**, **D - C +0.80 [0.64, 0.96]**, **D - B +0.91 [0.74, 1.07]**.
+  - **Claude Sonnet (`final_claude_fg`, n=100)**:
+    - Plain Gemini judge: A 1.21, B 1.52, C 1.70, F_lastdb 1.31 (give-up 23%), G_llmdst 1.78 (3%),
+      **D_repair 1.81** (give-up **2%**), E 1.75 (3%). (Policy v4 eliminates the v3 plain-judge gap: D > C even without fact-checking!)
+      Paired diffs: **D - F +0.50 [0.33, 0.68]**, **D - B +0.29 [0.13, 0.44]**, D - C +0.11 [-0.03, 0.25].
+    - Plain Opus judge: A 0.81, B 1.11, C 1.40, F_lastdb 1.04 (give-up 36%), G_llmdst 1.42 (14%),
+      **D_repair 1.36** (give-up 13%), E 1.31 (18%). Paired diffs: **D - F +0.32 [0.16, 0.49]**, **D - B +0.25 [0.07, 0.42]**.
+    - Fact-checked Gemini judge (`ref`): A 0.93, B 1.01, C 1.12, F_lastdb 1.24 (give-up 23%), G_llmdst 1.59 (3%),
+      **D_repair 1.93** (give-up **1%**), E 1.89 (2%).
+      Paired diffs: **D - F +0.69 [0.51, 0.87]**, **D - G +0.34 [0.22, 0.47]**, **D - C +0.81 [0.66, 0.96]**, **D - B +0.92 [0.77, 1.07]**.
   - **Official Llama 3.1 8B Instruct (`final_llama31`, n=100)**:
     - Objective check (`objective.py`, n=87): A 24.1% valid (19.5% invalid), B 21.8% (17.2%), C 18.4% (13.8%),
       **F_lastdb 41.4% valid (25.3% invalid)**, **G_llmdst 34.5% valid (31.0% invalid)**, **D_repair (v4) 63.2% valid
@@ -156,4 +158,39 @@ Files: `runs/final_llama_fg/{objective,summary_gemini*}.json`, `runs/final_claud
     - Fact-checked Gemini judge (`ref`): A 0.24 (14%), B 0.25 (11%), C 0.15 (36%; **C - B -0.10 [-0.18, -0.02]**),
       F_lastdb 0.86 (20%), G_llmdst 0.72 (23%), **D_repair 1.54** [1.40, 1.66] (give-up **5%**), E 1.45 (9%).
       Paired diffs: **D - F +0.68 [0.49, 0.87]**, **D - G +0.82 [0.64, 0.99]**, **D - B +1.29 [1.11, 1.44]**, **D - C +1.39 [1.23, 1.53]**.
-- **In progress**: `runs/final_qwen` (`qwen2.5:7b`) running in background; Opus judge on `*_fg` + last 10 Sonnet G cases queued for when `claude` CLI 5-hour window resets at 2:40pm.
+
+## In progress (2026-11-09 afternoon, this session) — closing the reviewer gaps
+- Gap 5 (judging): Opus re-judging of final_claude_fg, final_llama_fg, final_llama31 with JUDGE_BATCH=4
+  (7 candidates per case made 10-case batches fail); Gemini finishing final_claude_fg (90 -> 100).
+- Gap 2 (emotion in the method): `emotion_reader.py` — on 400 random DialMAGE user turns, compare detectors of
+  dissatisfaction: complaint words, REPAIR repair stage (no model), LLM on the single utterance, LLM with context.
+  Claim to test: the linguistic repair stage reads the user's emotional state better than word-level emotion.
+- Gaps 1+4 (multi-turn, does the stage policy matter over turns): `simulate.py` — Llama 3.1 8B system under
+  B/D/E/G, Claude Sonnet user simulator, fixed patience (2 unhelpful replies in a row = quit), up to 3 replies,
+  50 cases: success rate, quit rate, turns to success. runs/sim_llama31.
+- Reader v4.1: "today/tomorrow/any day" now counts as a given day (found in the simulator smoke test, where
+  REPAIR asked for the day again after "tomorrow"). Single-turn runs above used v4.
+- Gap 3 (human rating): not planned — Ying: humans cannot carry this volume; the paper uses two judge families,
+  an objective database check and a simulated user instead, and says so in Limitations.
+
+## Result 9 — Emotion is read from linguistic behaviour and context, not from the words (gap 2)
+`python3 emotion_reader.py data runs/emotion_reader 400` — 400 random DialMAGE user turns, 38% negative
+(EmoWOZ labels); LLM = Claude Haiku.
+| detector of a dissatisfied/abusive turn | precision | recall | F1 [95% CI] |
+|---|---|---|---|
+| complaint words | 0.60 | 0.10 | 0.17 [0.10, 0.24] |
+| LLM, single utterance only | 0.47 | 0.05 | 0.08 [0.03, 0.15] |
+| REPAIR repair stage >= 1 (no model) | 0.53 | 0.85 | 0.65 [0.59, 0.70] |
+| REPAIR repair stage >= 2 (no model) | 0.72 | 0.49 | 0.58 [0.51, 0.65] |
+| LLM with the dialogue context | 0.67 | 0.86 | 0.75 [0.70, 0.80] |
+An LLM that reads only the message misses 95% of dissatisfied turns; the same LLM with context catches 86%.
+The deterministic repair stage reaches 0.65 F1 with no model call. Dissatisfaction lives in the dialogue
+(repetition, repair), which is why REPAIR's reader is an emotion reader.
+
+## Result 10 — Qwen 2.5 7B, same 100 cases, 7 conditions (runs/final_qwen) — mixed
+Resolves (0-2): Opus judge A 0.53, B 0.42, C 0.34, D 1.08, E 1.22, F 0.96, G 1.15;
+Gemini judge A 1.00, B 1.04, C 0.87, D 1.70, E 1.74, F 1.30, G 1.41.
+D - G: Opus -0.07 [-0.25, 0.11] (no difference); Gemini +0.29 [0.11, 0.46]. D - E: Opus -0.14 [-0.27, -0.02].
+Objective: real & matching D 59.8%, E 62.1%, F 48.3%, G 48.3%; constraint-violating D 6.9%, G 28.7%.
+Reading: on Qwen the two judges disagree about REPAIR vs model-tracked state; the objective check favours
+REPAIR's reading (fewer wrong entities). Report as mixed, not as a win.

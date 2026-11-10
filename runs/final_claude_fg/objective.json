@@ -38,8 +38,8 @@
   "phones_fake": 0
  },
  "G_llmdst": {
-  "delivered_valid": 0.538,
-  "named_invalid": 0.256,
+  "delivered_valid": 0.529,
+  "named_invalid": 0.241,
   "phones_real": 0,
   "phones_fake": 0
  }

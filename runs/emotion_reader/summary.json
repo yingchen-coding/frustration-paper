@@ -1,0 +1,58 @@
+{
+ "n": 400,
+ "negative_rate": 0.38,
+ "complaint_words": {
+  "precision": 0.6,
+  "recall": 0.099,
+  "f1": 0.169,
+  "f1_ci95": [
+   0.095,
+   0.243
+  ]
+ },
+ "repair_stage>=1": {
+  "precision": 0.529,
+  "recall": 0.849,
+  "f1": 0.652,
+  "f1_ci95": [
+   0.593,
+   0.703
+  ]
+ },
+ "repair_stage>=2": {
+  "precision": 0.718,
+  "recall": 0.487,
+  "f1": 0.58,
+  "f1_ci95": [
+   0.506,
+   0.649
+  ]
+ },
+ "llm_single_utterance": {
+  "precision": 0.467,
+  "recall": 0.046,
+  "f1": 0.084,
+  "f1_ci95": [
+   0.026,
+   0.149
+  ]
+ },
+ "llm_with_context": {
+  "precision": 0.667,
+  "recall": 0.855,
+  "f1": 0.749,
+  "f1_ci95": [
+   0.696,
+   0.799
+  ]
+ },
+ "stage>=2_or_llm_single": {
+  "precision": 0.684,
+  "recall": 0.526,
+  "f1": 0.595,
+  "f1_ci95": [
+   0.524,
+   0.662
+  ]
+ }
+}

@@ -651,5 +651,51 @@
    "area": "centre",
    "food": "portuguese"
   }
+ },
+ "DMAGE3137.json#2": {
+  "domain": "hotel",
+  "constraints": {
+   "type": "guesthouse"
+  }
+ },
+ "DMAGE2182.json#6": {
+  "domain": "train",
+  "constraints": {
+   "destination": "ely",
+   "departure": "kings lynn",
+   "day": "wednesday"
+  }
+ },
+ "DMAGE323.json#10": {
+  "domain": "train",
+  "constraints": {
+   "destination": "london liverpool street",
+   "departure": "cambridge"
+  }
+ },
+ "DMAGE1358.json#10": {
+  "domain": "train",
+  "constraints": {
+   "destination": "cambridge"
+  }
+ },
+ "DMAGE969.json#22": {
+  "domain": "taxi",
+  "constraints": {
+   "departure": "Christ's college",
+   "destination": "alpha-milton guest house",
+   "arriveBy": "12:15"
+  }
+ },
+ "DMAGE3177.json#8": {
+  "domain": "hotel",
+  "constraints": {
+   "type": "guesthouse",
+   "parking": "yes",
+   "internet": "yes",
+   "name": "acorn guest house",
+   "area": "north",
+   "stars": "4"
+  }
  }
 }
